@@ -7,7 +7,7 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('toto'),
+        title: const Text('Recipe App'),
       ),
     );
   }
