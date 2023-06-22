@@ -39,11 +39,46 @@ class FirstPage extends StatelessWidget {
               Column(
                 children: <Widget>[
                   MaterialButton(
+                    minWidth: 330,
+                    height: 60,
                     onPressed: () {},
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(
+                          color: Colors.black,
+                          style: BorderStyle.solid,
+                          width: 3),
+                      borderRadius: BorderRadius.circular(70),
+                    ),
                     child: Text(
                       'login',
-                      style:
-                          TextStyle(fontWeight: FontWeight.w400, fontSize: 20),
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 28,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    child: MaterialButton(
+                      minWidth: 330,
+                      height: 60,
+                      onPressed: () {},
+                      color: Colors.amber,
+                      shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                              color: Colors.black,
+                              style: BorderStyle.solid,
+                              width: 3),
+                          borderRadius: BorderRadius.circular(70)),
+                      child: Text(
+                        'Sign Up',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 28,
+                        ),
+                      ),
                     ),
                   )
                 ],
