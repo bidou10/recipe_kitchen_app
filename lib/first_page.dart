@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
@@ -12,6 +13,9 @@ class FirstPage extends StatelessWidget {
           height: MediaQuery.of(context).size.height,
           child: Column(
             children: <Widget>[
+              SizedBox(
+                height: 20,
+              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
@@ -28,6 +32,9 @@ class FirstPage extends StatelessWidget {
                   ),
                 ],
               ),
+              SizedBox(
+                height: 30,
+              ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(
@@ -35,6 +42,9 @@ class FirstPage extends StatelessWidget {
                     image: AssetImage('assets/icons/login.png'),
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 80,
               ),
               Column(
                 children: <Widget>[
@@ -80,6 +90,46 @@ class FirstPage extends StatelessWidget {
                         ),
                       ),
                     ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          FontAwesomeIcons.facebook,
+                          color: Colors.blue,
+                          size: 33,
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          FontAwesomeIcons.google,
+                          color: Colors.redAccent,
+                          size: 33,
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          FontAwesomeIcons.twitter,
+                          color: Colors.orangeAccent,
+                          size: 33,
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          FontAwesomeIcons.linkedinIn,
+                          color: Colors.blueAccent,
+                          size: 33,
+                        ),
+                      )
+                    ],
                   )
                 ],
               )
