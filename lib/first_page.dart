@@ -44,7 +44,7 @@ class FirstPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 80,
+                height: 50,
               ),
               Column(
                 children: <Widget>[
@@ -94,6 +94,16 @@ class FirstPage extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
+                  Container(
+                    child: const Text(
+                      'Don t have an account Sign Up',
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -110,14 +120,6 @@ class FirstPage extends StatelessWidget {
                         icon: const Icon(
                           FontAwesomeIcons.google,
                           color: Colors.redAccent,
-                          size: 33,
-                        ),
-                      ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          FontAwesomeIcons.twitter,
-                          color: Colors.orangeAccent,
                           size: 33,
                         ),
                       ),
