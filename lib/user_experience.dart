@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipe_kitchen_app/login_page.dart';
+import 'package:recipe_kitchen_app/preferance_page.dart';
 import 'package:recipe_kitchen_app/sign_up_page.dart';
 
 class UserPage extends StatelessWidget {
@@ -61,7 +62,7 @@ class UserPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => LoginPage(),
+                          builder: (context) => PreferancePage(),
                         ),
                       );
                     },
@@ -92,7 +93,7 @@ class UserPage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => SignUpPage(),
+                            builder: (context) => PreferancePage(),
                           ),
                         );
                       },
