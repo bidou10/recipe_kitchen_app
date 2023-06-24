@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:recipe_kitchen_app/login_page.dart';
+import 'package:recipe_kitchen_app/sign_up_page.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
@@ -51,7 +53,14 @@ class FirstPage extends StatelessWidget {
                   MaterialButton(
                     minWidth: 330,
                     height: 60,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginPage(),
+                        ),
+                      );
+                    },
                     shape: RoundedRectangleBorder(
                       side: BorderSide(
                           color: Colors.black,
@@ -74,7 +83,14 @@ class FirstPage extends StatelessWidget {
                     child: MaterialButton(
                       minWidth: 330,
                       height: 60,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SignUpPage(),
+                          ),
+                        );
+                      },
                       color: Colors.amber,
                       shape: RoundedRectangleBorder(
                           side: BorderSide(
