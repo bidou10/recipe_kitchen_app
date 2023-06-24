@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_kitchen_app/user_experience.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -87,7 +88,14 @@ class LoginPage extends StatelessWidget {
                     child: MaterialButton(
                       minWidth: double.infinity,
                       height: 60,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => UserPage(),
+                          ),
+                        );
+                      },
                       color: Colors.amber[400],
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(40)),
