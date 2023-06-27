@@ -22,57 +22,8 @@ class PreferancePage extends StatelessWidget {
           ),
         ),
       ),
-      body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Column(
-              children: [
-                Column(
-                  children: [
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.only(
-                            left: 30,
-                            right: 30,
-                          ),
-                          child: Text(
-                            "Do you follow any special diet ?",
-                            textAlign: TextAlign.justify,
-                            maxLines: 3,
-                            style: TextStyle(
-                              fontSize: 32,
-                              color: Colors.grey[700],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                  ],
-                ), // pour les ligne suivante voire sur ListTile https://api.flutter.dev/flutter/material/ListTile-class.html
-                const ColoredBox(
-                  color: Colors.amber,
-                  child: Material(
-                    child: ListTile(
-                      title: Text('ListTile with red background'),
-                      tileColor: Colors.red,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
+      body: Center(
+        child: ListView(),
       ),
     );
   }
