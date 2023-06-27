@@ -59,11 +59,16 @@ class PreferancePage extends StatelessWidget {
                       height: 20,
                     ),
                   ],
+                ), // pour les ligne suivante voire sur ListTile https://api.flutter.dev/flutter/material/ListTile-class.html
+                const ColoredBox(
+                  color: Colors.amber,
+                  child: Material(
+                    child: ListTile(
+                      title: Text('ListTile with red background'),
+                      tileColor: Colors.red,
+                    ),
+                  ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [],
-                )
               ],
             ),
           ],
