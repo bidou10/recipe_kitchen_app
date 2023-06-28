@@ -23,7 +23,27 @@ class PreferancePage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: ListView(),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.red,
+          ),
+          child: ListTile(
+            leading: Image.network(
+              'https://picsum.photos/250?image=9',
+            ),
+            title: Text(
+              'Title',
+              style: TextStyle(fontSize: 20),
+            ),
+            subtitle: Text(
+              'Subtitle',
+              style: TextStyle(fontSize: 16),
+            ),
+            trailing: Icon(Icons.arrow_forward),
+            contentPadding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            dense: true,
+          ),
+        ),
       ),
     );
   }
