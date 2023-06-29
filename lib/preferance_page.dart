@@ -25,21 +25,28 @@ class PreferancePage extends StatelessWidget {
       body: Center(
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.red,
+            color: Colors.amber,
+            borderRadius: BorderRadius.circular(39.0),
+            border: Border.all(
+                style: BorderStyle.solid, color: Colors.black87, width: 3),
           ),
           child: ListTile(
-            leading: Image.network(
-              'https://picsum.photos/250?image=9',
+            minLeadingWidth: double.negativeInfinity,
+            leading: Image.asset(
+              'assets/images/dish/gyosa.jpeg',
+              fit: BoxFit.cover,
             ),
             title: Text(
-              'Title',
+              "Shrimp Pad Thai",
               style: TextStyle(fontSize: 20),
             ),
             subtitle: Text(
-              'Subtitle',
+              'Shrimp Pad Thai. Chewy rice noodles fried with jumbo shrimp, tofu and eggs with vegetables in a savoury, sweet and tangy sauce.',
               style: TextStyle(fontSize: 16),
             ),
-            trailing: Icon(Icons.arrow_forward),
+            trailing: Icon(
+              Icons.more_horiz_outlined,
+            ),
             contentPadding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             dense: true,
           ),

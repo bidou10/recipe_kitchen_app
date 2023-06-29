@@ -16,7 +16,7 @@ class FirstPage extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 20,
+                height: 10,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -26,7 +26,7 @@ class FirstPage extends StatelessWidget {
                     style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   Text(
                     "Be the best cook with our recipes",
@@ -35,7 +35,7 @@ class FirstPage extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 30,
+                height: 10,
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
@@ -46,7 +46,7 @@ class FirstPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 50,
+                height: 30,
               ),
               Column(
                 children: <Widget>[
@@ -108,13 +108,13 @@ class FirstPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   Container(
                     child: const Text(
                       'Don t have an account Sign Up',
                       style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                          TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
                     ),
                   ),
                   SizedBox(
@@ -128,7 +128,7 @@ class FirstPage extends StatelessWidget {
                         icon: const Icon(
                           FontAwesomeIcons.facebook,
                           color: Colors.blue,
-                          size: 33,
+                          size: 23,
                         ),
                       ),
                       IconButton(
@@ -136,7 +136,7 @@ class FirstPage extends StatelessWidget {
                         icon: const Icon(
                           FontAwesomeIcons.google,
                           color: Colors.redAccent,
-                          size: 33,
+                          size: 23,
                         ),
                       ),
                       IconButton(
@@ -144,7 +144,7 @@ class FirstPage extends StatelessWidget {
                         icon: const Icon(
                           FontAwesomeIcons.linkedinIn,
                           color: Colors.blueAccent,
-                          size: 33,
+                          size: 23,
                         ),
                       )
                     ],
