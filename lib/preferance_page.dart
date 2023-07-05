@@ -2,21 +2,11 @@ import 'package:countries_flag/countries_flag.dart';
 import 'package:flag/flag.dart';
 import 'package:flutter/material.dart';
 import 'package:recipe_kitchen_app/first_page.dart';
+import 'package:recipe_kitchen_app/thai.dart';
 
 class PreferancePage extends StatelessWidget {
   PreferancePage({super.key});
-  List<String> items = [
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
-    'Item 5',
-    'Item 6',
-    'Item 7',
-    'Item 8',
-    'Item 9',
-    'Item 10'
-  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,16 +27,26 @@ class PreferancePage extends StatelessWidget {
         ),
       ),
       body: ListView(
-        children: const <Widget>[
+        children: <Widget>[
           ListTile(
             leading: CircleAvatar(
+              child: SizedBox(
+                height: 10,
+              ),
               radius: 15,
               backgroundImage: NetworkImage(
                   'https://cdn.pixabay.com/photo/2013/07/12/17/58/thailand-152711_1280.png'),
             ),
             title: Text('Thai Food'),
             subtitle: Text('best thai food recipe dishes'),
-            trailing: Icon(Icons.more_vert),
+            trailing: Icon(Icons.arrow_forward),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => ThaiPage(),
+                ),
+              );
+            },
           ),
           Divider(height: 0),
           ListTile(
