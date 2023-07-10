@@ -1,0 +1,35 @@
+{
+  "thai": [
+    {
+      "title": "Pad Thai",
+      "cookTime": "30 min",
+      "level" : "easy",
+      "images" : "assets/images/dish/gyosa.jpeg"
+    },
+    {
+      "title": "sushis",
+      "cookTime": "20 min",
+      "level" : "medium",
+      "images" : "assets/images/dish/sushis.jpg"
+    },
+    {
+      "title": "tom yam",
+      "cookTime": "15 min",
+      "level" : "easy",
+      "images" : "assets/images/dish/sashimi.jpeg"
+    },
+    {
+      "title": "gyosa",
+      "cookTime": "15 min",
+      "level" : "difficult",
+      "images" : "assets/images/dish/gyosa.jpeg"
+    },
+    {
+      "title": "tom yam",
+      "cookTime": "15 min",
+      "level" : "easy",
+      "images" : "assets/images/dish/sushis.jpg"
+    }
+  ]
+}
+
