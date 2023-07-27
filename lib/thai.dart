@@ -26,11 +26,26 @@ class _ThaiPageState extends State<ThaiPage> {
       body: ListView.builder(
         itemCount: 9,
         itemBuilder: (context, index) => StickyHeader(
-          header: Container(
-            width: double.infinity,
-            color: Colors.amber,
-            padding: const EdgeInsets.all(16.0),
-            child: Text('Thai recipe $index'),
+          header: ListTile(
+            title: Text(
+              '${nameRecipe[index]}',
+              style: TextStyle(
+                fontSize: 16,
+                fontStyle: FontStyle.italic,
+                fontWeight: FontWeight.bold,
+                color: Colors.black87,
+              ),
+            ),
+            trailing: Text('Click here for Details recipe'),
+            tileColor: Colors.amber,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailPage('Test'),
+                ),
+              );
+            },
           ),
           content: Image.network(
             imageUrls[index],
@@ -44,6 +59,18 @@ class _ThaiPageState extends State<ThaiPage> {
   }
 }
 
+final nameRecipe = [
+  "Pad thai crevette",
+  "pad thai classic",
+  "red curry",
+  "minced prok",
+  "fried Chicken",
+  "Green Papaya",
+  "Curry noodle",
+  "cut",
+  "Pad see"
+];
+
 final imageUrls = [
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/pad-thai.webp",
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/pad-thai-2.webp",
@@ -56,23 +83,23 @@ final imageUrls = [
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Pad-See-Ew.webp",
 ];
 
-// class DetailPage extends StatelessWidget {
-//   final String sectionName;
+class DetailPage extends StatelessWidget {
+  final String sectionName;
 
-//   DetailPage(this.sectionName);
+  DetailPage(this.sectionName);
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text(sectionName),
-//       ),
-//       body: Center(
-//         child: Text('Thai Recipe $sectionName'),
-//       ),
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(sectionName),
+      ),
+      body: Center(
+        child: Text('Thai Recipe $sectionName'),
+      ),
+    );
+  }
+}
 
 // class ImageDetailPage extends StatelessWidget {
 //   final String imageUrl;
