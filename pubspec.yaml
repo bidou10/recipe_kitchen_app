@@ -41,6 +41,12 @@ dependencies:
   countries_flag: ^1.0.0
   http: ^1.1.0
   json_annotation: ^4.8.1
+  image_card: ^0.0.4
+  tag: ^2.0.0+2
+  transparent_image: ^2.0.1
+  sticky_headers: ^0.3.0+2
+  flutter_sticky_header: ^0.6.5
+  flutter_sticky_section_list: ^1.0.1
 
 dev_dependencies:
   flutter_test:
@@ -74,29 +80,7 @@ flutter:
     - assets/icons/facebook.png
     - assets/icons/google.png
     - assets/icons/user.png 
-    - assets/images/dish/panang_Curry.jpeg
-    - assets/images/dish/phat_Kaphrao.jpeg
-    - assets/images/dish/tom-kha-gai.jpeg
-    - assets/images/dish/tom-yam-kung.jpeg
-    - assets/images/dish/donburi.jpeg
-    - assets/images/dish/fugu.jpeg
-    - assets/images/dish/gyosa.jpeg
-    - assets/images/dish/kare-raisu.jpeg
-    - assets/images/dish/Katsuo-Tataki.jpg
-    - assets/images/dish/natto.jpeg
-    - assets/images/dish/nouille.jpeg
-    - assets/images/dish/okonomiyaki.jpeg
-    - assets/images/dish/Oyakudon.jpg
-    - assets/images/dish/Sara-udon.jpg
-    - assets/images/dish/sashimi.jpeg
-    - assets/images/dish/Sui-gyoza.jpeg
-    - assets/images/dish/sushi-makis.jpeg
-    - assets/images/dish/sushis.jpg
-    - assets/images/dish/Takoyaki.jpg
-    - assets/images/dish/tempura.jpeg
-    - assets/images/dish/Tonkatsu.jpg
-    - assets/images/dish/Udon-Inari-sushi.jpg
-    - assets/images/dish/yakitori.jpeg
+  
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

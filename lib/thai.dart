@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_kitchen_app/recipe_card.dart';
+import 'package:image_card/image_card.dart';
+import 'package:flutter_sticky_section_list/sticky_section_list.dart';
+import 'package:flutter_sticky_header/flutter_sticky_header.dart';
+import 'package:sticky_headers/sticky_headers.dart';
 
 class ThaiPage extends StatefulWidget {
   @override
@@ -20,13 +23,71 @@ class _ThaiPageState extends State<ThaiPage> {
           ],
         ),
       ),
-      body: RecipeCard(
-        title: 'Pad thai',
-        rating: '4.9',
-        cookTime: '30 min',
-        thumbnailUrl:
-            'https://cdn.pixabay.com/photo/2015/09/04/10/40/pad-thai-921884_1280.jpg',
+      body: ListView.builder(
+        itemCount: 9,
+        itemBuilder: (context, index) => StickyHeader(
+          header: Container(
+            width: double.infinity,
+            color: Colors.amber,
+            padding: const EdgeInsets.all(16.0),
+            child: Text('Thai recipe $index'),
+          ),
+          content: Image.network(
+            imageUrls[index],
+            fit: BoxFit.cover,
+            width: double.infinity,
+            height: 220,
+          ),
+        ),
       ),
     );
   }
 }
+
+final imageUrls = [
+  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/pad-thai.webp",
+  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/pad-thai-2.webp",
+  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/thai-red-curry(1).webp",
+  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Minced-Pork-Stir-Fried-with-Thai-Basil.webp",
+  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Stir-Fried-Chicken-with-Cashew-Nuts.webp",
+  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Spicy-Green-Papaya-Salad.webp",
+  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Thai-Coconut-Curry-Noodle-Soup.webp",
+  "https://images.asiahighlights.com/allpicture/2022/02/ca9d3c345fb14950adf2d939_cut_750x400_264.webp",
+  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Pad-See-Ew.webp",
+];
+
+// class DetailPage extends StatelessWidget {
+//   final String sectionName;
+
+//   DetailPage(this.sectionName);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text(sectionName),
+//       ),
+//       body: Center(
+//         child: Text('Thai Recipe $sectionName'),
+//       ),
+//     );
+//   }
+// }
+
+// class ImageDetailPage extends StatelessWidget {
+//   final String imageUrl;
+
+//   ImageDetailPage(this.imageUrl);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Image Detail Page'),
+//       ),
+//       body: Center(
+//         child: Image.network(imageUrl),
+//       ),
+//     );
+//   }
+// }
