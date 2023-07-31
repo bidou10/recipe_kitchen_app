@@ -8,7 +8,7 @@ class FirstPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // double screenWidth = MediaQuery.of(context).size.width;  si je veux mettre
+    // double screenWidth = MediaQuery.of(context).size.width;  si je veux mettre en responsive
     // double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       body: SafeArea(
