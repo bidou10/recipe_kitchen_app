@@ -36,13 +36,13 @@ class _ThaiPageState extends State<ThaiPage> {
                 color: Colors.black87,
               ),
             ),
-            trailing: Text('Click here for Details recipe'),
+            trailing: Text('Click here for Details of ${nameRecipe[index]}'),
             tileColor: Colors.amber,
             onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailPage('Test'),
+                  builder: (context) => DetailPage('${nameRecipe[index]}'),
                 ),
               );
             },
@@ -62,12 +62,12 @@ class _ThaiPageState extends State<ThaiPage> {
 final nameRecipe = [
   "Pad thai crevette",
   "pad thai classic",
-  "red curry",
-  "minced prok",
-  "fried Chicken",
+  "Red curry",
+  "Minced prok",
+  "Fried Chicken",
   "Green Papaya",
   "Curry noodle",
-  "cut",
+  "Cut",
   "Pad see"
 ];
 
