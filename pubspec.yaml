@@ -47,6 +47,8 @@ dependencies:
   sticky_headers: ^0.3.0+2
   flutter_sticky_header: ^0.6.5
   flutter_sticky_section_list: ^1.0.1
+  image_network: ^2.5.4+1
+  cached_network_image: ^3.2.3
 
 dev_dependencies:
   flutter_test:
