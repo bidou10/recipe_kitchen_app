@@ -83,6 +83,11 @@ final imageUrls = [
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Pad-See-Ew.webp",
 ];
 
+final description = ["", "", "", "", "", "", "", "", ""];
+
+final ingredients = ["", "", "", "", "", "", "", "", ""];
+// je dois creer ue class avec une description de l'element
+
 class DetailPage extends StatelessWidget {
   final String sectionName;
 
@@ -94,8 +99,56 @@ class DetailPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(sectionName),
       ),
-      body: Center(
-        child: Text('Thai Recipe $sectionName'),
+      body: SingleChildScrollView(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Image.network(
+              'https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/pad-thai.webp',
+              height: 200,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+            SizedBox(
+              height: 16.0,
+            ),
+            Text(
+              'Pad thai',
+              style: TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            SizedBox(
+              height: 8.0,
+            ),
+            Text(
+              'plat thai mélange poivre sel, envoutant ',
+              style: TextStyle(
+                fontSize: 14.0,
+              ),
+            ),
+            SizedBox(
+              height: 16.0,
+            ),
+            ListView.builder(
+              shrinkWrap: true,
+              itemCount: 5,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  leading: Text('${nameRecipe[index]}'),
+                  subtitle: Text('description element'),
+                  trailing: Image.network(
+                    '${imageUrls[index]}',
+                    height: 80,
+                    width: 100,
+                  ),
+                );
+              },
+            )
+          ],
+        ),
       ),
     );
   }
