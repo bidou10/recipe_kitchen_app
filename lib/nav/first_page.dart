@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:recipe_kitchen_app/login_page.dart';
-import 'package:recipe_kitchen_app/sign_up_page.dart';
+import 'package:recipe_kitchen_app/nav/login_page.dart';
+import 'package:recipe_kitchen_app/nav/sign_up_page.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});

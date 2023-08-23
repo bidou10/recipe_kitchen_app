@@ -82,7 +82,10 @@ flutter:
     - assets/icons/facebook.png
     - assets/icons/google.png
     - assets/icons/user.png 
-  
+    - assets/step/thai_stir_M.jpeg
+    - assets/step/thai_stir_S1.jpeg
+    - assets/step/thai_stir_S2.jpeg
+    - assets/step/thai_stir_S3.jpeg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

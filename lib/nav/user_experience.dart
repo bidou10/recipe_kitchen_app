@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_kitchen_app/login_page.dart';
-import 'package:recipe_kitchen_app/preferance_page.dart';
-import 'package:recipe_kitchen_app/sign_up_page.dart';
+import 'package:recipe_kitchen_app/nav/login_page.dart';
+import 'package:recipe_kitchen_app/nav/preferance_page.dart';
+import 'package:recipe_kitchen_app/nav/sign_up_page.dart';
 
 class UserPage extends StatelessWidget {
   const UserPage({super.key});

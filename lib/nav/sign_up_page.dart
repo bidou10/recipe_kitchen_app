@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_kitchen_app/user_experience.dart';
+import 'package:recipe_kitchen_app/nav/user_experience.dart';
 
 class SignUpPage extends StatelessWidget {
   @override

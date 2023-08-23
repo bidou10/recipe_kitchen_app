@@ -1,8 +1,8 @@
 import 'package:countries_flag/countries_flag.dart';
 import 'package:flag/flag.dart';
 import 'package:flutter/material.dart';
-import 'package:recipe_kitchen_app/first_page.dart';
-import 'package:recipe_kitchen_app/thai.dart';
+import 'package:recipe_kitchen_app/nav/first_page.dart';
+import 'package:recipe_kitchen_app/thai/thai.dart';
 
 class PreferancePage extends StatelessWidget {
   PreferancePage({super.key});
@@ -58,6 +58,13 @@ class PreferancePage extends StatelessWidget {
             title: Text('Japan Food'),
             subtitle: Text('best Japan food recipe dishes'),
             trailing: Icon(Icons.more_vert),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => ThaiPage(),
+                ),
+              );
+            },
           ),
           Divider(height: 0),
           ListTile(

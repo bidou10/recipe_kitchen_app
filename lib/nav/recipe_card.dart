@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_kitchen_app/thai.dart';
+import 'package:recipe_kitchen_app/thai/thai.dart';
 
 class RecipeCard extends StatelessWidget {
   final String title;
