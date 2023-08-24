@@ -86,6 +86,14 @@ flutter:
     - assets/step/thai_stir_S1.jpeg
     - assets/step/thai_stir_S2.jpeg
     - assets/step/thai_stir_S3.jpeg
+    - assets/step/pad_Thai_Shrimp_M.jpeg
+    - assets/step/pad_Thai_Shrimp_S1.jpeg
+    - assets/step/pad_Thai_Shrimp_S2.jpeg
+    - assets/step/pad_Thai_Shrimp_S3.jpeg
+    - assets/step/pad_Thai_Shrimp_S4.jpeg
+    - assets/step/pad_Thai_Shrimp_S5.jpeg
+    - assets/step/pad_Thai_Shrimp_S6.jpeg
+ 
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

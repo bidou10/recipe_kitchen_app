@@ -40,14 +40,14 @@ class _ThaiPageState extends State<ThaiPage> {
             trailing: Text('Click here for Details of ${nameRecipe[index]}'),
             tileColor: Colors.amber,
             onTap: () {
-              if (nameRecipe[index] == "Pad thai shrimp") {
+              if (nameRecipe[index] == "Pad Thai Shrimp") {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => ThaiShrimp(),
                   ),
                 );
-              } else if (nameRecipe[index] == "Pad thai classic") {
+              } else if (nameRecipe[index] == "Thai Stir Fried Noodles") {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -79,10 +79,10 @@ class _ThaiPageState extends State<ThaiPage> {
 }
 
 final nameRecipe = [
-  "Pad thai shrimp",
-  "Pad thai classic",
-  "Red curry",
-  "Minced prok",
+  "Pad Thai Shrimp",
+  "Thai Stir Fried Noodles",
+  "Red Curry",
+  "Minced pork",
   "Fried Chicken",
   "Green Papaya",
   "Curry noodle",
@@ -92,7 +92,7 @@ final nameRecipe = [
 
 final imageUrls = [
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/pad-thai.webp",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/pad-thai-2.webp",
+  "https://www.awesomecuisine.com/wp-content/uploads/2015/12/pad-see-ew.jpg",
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/thai-red-curry(1).webp",
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Minced-Pork-Stir-Fried-with-Thai-Basil.webp",
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Stir-Fried-Chicken-with-Cashew-Nuts.webp",
