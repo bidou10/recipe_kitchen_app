@@ -54,7 +54,7 @@ class _ThaiPageState extends State<ThaiPage> {
                     builder: (context) => ThaiClassic(),
                   ),
                 );
-              } else if (nameRecipe[index] == "Red curry") {
+              } else if (nameRecipe[index] == "Thai Red Curry") {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -81,7 +81,7 @@ class _ThaiPageState extends State<ThaiPage> {
 final nameRecipe = [
   "Pad Thai Shrimp",
   "Thai Stir Fried Noodles",
-  "Red Curry",
+  "Thai Red Curry",
   "Minced pork",
   "Fried Chicken",
   "Green Papaya",
@@ -91,9 +91,9 @@ final nameRecipe = [
 ];
 
 final imageUrls = [
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/pad-thai.webp",
+  "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2009/4/14/2/FNM060109WE031_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371589419461.jpeg",
   "https://www.awesomecuisine.com/wp-content/uploads/2015/12/pad-see-ew.jpg",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/thai-red-curry(1).webp",
+  "https://images.services.kitchenstories.io/gqslNuqfstd1T9mtoE64Q1mTmgw=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2960-final-photo-2.jpg",
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Minced-Pork-Stir-Fried-with-Thai-Basil.webp",
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Stir-Fried-Chicken-with-Cashew-Nuts.webp",
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Spicy-Green-Papaya-Salad.webp",

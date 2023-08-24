@@ -12,7 +12,7 @@ class ThaiRedCurry extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Red Curry'),
+        title: Text('Thai Red Curry'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -20,14 +20,14 @@ class ThaiRedCurry extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/thai_stir_M.jpeg',
+              'assets/step/red_curry_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Thai Stir fried noodles',
+              'Thai red curry with turkey',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class ThaiRedCurry extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
-              'Ingredient List: \n\n[Step 1] :  ,\n\n [Step 2] : \n\n [Step 3] :  ',
+              'Ingredient List: \n\n[Step 1] : 200 g turkey breasts ,½ bell pepper ,½ carrot ,1 shallots ,1 cloves garlic ,1 tsp ginger ,½ stalk lemongrass ,\n\n [Step 2] :½ tbsp Thai red curry paste, coconut oil (for frying) \n\n [Step 3] : ½ tbsp soy sauce 150 ml, coconut milk ,7½ g cilantro, 50 ml vegetable broth, 50 g spinach ,salt, sugar, jasmine rice (for serving) ',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -45,13 +45,13 @@ class ThaiRedCurry extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              'Items necessary: \n\n Step 1 : pot ,colander ,cutting board ,knife ,bowl \n\n Step 2 : wok ,spatula.',
+              'Items necessary: \n\n Step 1 :knife, cutting board \n\n Step 2 : frying pan (deep)spatula \n\n Step 3 : none',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),
             ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageThaiClassic.length,
+                imageRedCurry.length,
                 (index) {
                   return ListTile(
                     leading: SizedBox(
@@ -64,7 +64,10 @@ class ThaiRedCurry extends StatelessWidget {
                     ),
                     title: Text(
                       'Step $index',
-                      style: TextStyle(fontSize: 20, letterSpacing: 0.6),
+                      style: TextStyle(
+                          fontSize: 20,
+                          letterSpacing: 0.6,
+                          fontWeight: FontWeight.w700),
                     ),
                     subtitle: Text(
                       '${product[index]['info']},',
@@ -94,26 +97,29 @@ class ThaiRedCurry extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/thai_stir_M.jpeg",
+    "assets": "assets/step/red_curry_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/thai_stir_S1.jpeg",
-    "info": "Step 1",
+    "assets": "assets/step/red_curry_S1.jpeg",
+    "info":
+        "Cut turkey breast into approx. 2 cm/ 0.8 in. wide strips. Remove the core and slice the bell pepper into strips. Slice carrot diagonally. Halve shallots and slice into fine rings. Peel and finely mince garlic and ginger. Smash lemongrass with the back of a knife and chop finely.",
   },
   {
-    "assets": "assets/step/thai_stir_S2.jpeg",
-    "info": "Step 2",
+    "assets": "assets/step/red_curry_S2.jpeg",
+    "info":
+        "In a deep frying pan or a wok, heat some coconut oil over medium heat. Once it’s melted, add shallots, ginger and garlic. Fry for approx. 2–3 min., until the shallots have softened and turned translucent. Add Thai curry paste and lemongrass and fry for approx. 1 min. until fragrant. Then add the turkey pieces and fry for approx. 3–5 min. while stirring. Add vegetables and let cook for approx. 2 min.",
   },
   {
-    "assets": "assets/step/thai_stir_S3.jpeg",
-    "info": "Step 3",
+    "assets": "assets/step/red_curry_S3.jpeg",
+    "info":
+        "Deglaze with coconut milk, then season with soy sauce. Let simmer for approx. 15–20 min. or until the turkey is cooked through. Meanwhile, roughly chop most of the cilantro and set some aside for garnishing. If the curry is too creamy, add a little bit of broth one splash at a time until the desired consistency is reached. Then add spinach and cook briefly until the leaves wilt. Stir in the cilantro and season the curry with salt and sugar to taste. Serve with cooked jasmine rice and garnish with remaining cilantro.",
   },
 ];
 
-final imageThaiStir = [
-  "assets/step/thai_stir_M.jpeg",
-  "assets/step/thai_stir_S1.jpeg",
-  "assets/step/thai_stir_S2.jpeg",
-  "assets/step/thai_stir_S3.jpeg",
+final imageRedCurry = [
+  "assets/step/red_curry_M.jpeg",
+  "assets/step/red_curry_S1.jpeg",
+  "assets/step/red_curry_S2.jpeg",
+  "assets/step/red_curry_S3.jpeg",
 ];

@@ -65,7 +65,10 @@ class ThaiShrimp extends StatelessWidget {
                     ),
                     title: Text(
                       'Step $index',
-                      style: TextStyle(fontSize: 20, letterSpacing: 0.6),
+                      style: TextStyle(
+                          fontSize: 20,
+                          letterSpacing: 0.6,
+                          fontWeight: FontWeight.w800),
                     ),
                     subtitle: Text(
                       '${product[index]['info']},',
