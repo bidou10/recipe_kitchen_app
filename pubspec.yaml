@@ -97,7 +97,15 @@ flutter:
     - assets/step/red_curry_S1.jpeg
     - assets/step/red_curry_S2.jpeg
     - assets/step/red_curry_S3.jpeg
-
+    - assets/step/thai_Holy_Basil_M.jpeg
+    - assets/step/thai_Holy_Basil_S1.jpeg
+    - assets/step/thai_Holy_Basil_S2.jpeg
+    - assets/step/thai_Holy_Basil_S3.jpeg
+    - assets/step/thai_mushroom_M.jpeg
+    - assets/step/thai_mushroom_S1.jpeg
+    - assets/step/thai_mushroom_S2.jpeg
+    - assets/step/thai_mushroom_S3.jpeg
+    - assets/step/thai_mushroom_S4.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
