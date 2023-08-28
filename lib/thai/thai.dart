@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_kitchen_app/thai/thaiChickenNoodle.dart';
 import 'package:recipe_kitchen_app/thai/thaiClassic.dart';
 import 'package:recipe_kitchen_app/thai/thaiHolyBasil.dart';
+import 'package:recipe_kitchen_app/thai/thaiLemongrass.dart';
 import 'package:recipe_kitchen_app/thai/thaiMushroomOmelette.dart';
 import 'package:recipe_kitchen_app/thai/thaiRedCurry.dart';
 import 'package:recipe_kitchen_app/thai/thaiShrimp.dart';
@@ -78,6 +80,20 @@ class _ThaiPageState extends State<ThaiPage> {
                     builder: (context) => ThaiMushroomOmelette(),
                   ),
                 );
+              } else if (nameRecipe[index] == "Thai chicken noodles soup") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => thaiChickenNoodle(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Lemongrass meatballs") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => thaiLemongrass(),
+                  ),
+                );
               }
             },
           ),
@@ -101,8 +117,8 @@ final nameRecipe = [
   "Thai Red Curry",
   "Thai Holy basil and pork stir fry",
   "Thai mushroom tuffed omelette",
-  "Green Papaya",
-  "Curry noodle",
+  "Thai chicken noodles soup",
+  "Lemongrass meatballs",
   "Cut",
   "Pad see"
 ];
@@ -113,8 +129,8 @@ final imageUrls = [
   "https://images.services.kitchenstories.io/gqslNuqfstd1T9mtoE64Q1mTmgw=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2960-final-photo-2.jpg",
   "https://images.services.kitchenstories.io/GaL2UgQSez4gVzBLRYdd-5h1pDo=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2592-final-photo.jpg",
   "https://images.services.kitchenstories.io/UAzPu-TxYoZOUKiSQi2aK6RsJE0=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R1881-photo-final-4.jpg",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Spicy-Green-Papaya-Salad.webp",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Thai-Coconut-Curry-Noodle-Soup.webp",
+  "https://images.services.kitchenstories.io/cJ8vygOwgm8sjiCnY_GjBhTQ2GQ=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/ThaiChickenNoodleSoup_Final.jpg",
+  "https://images.services.kitchenstories.io/kFQUdE54EOvyVczP3z__XIULAT4=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2676-final-photo-_2.jpg",
   "https://images.asiahighlights.com/allpicture/2022/02/ca9d3c345fb14950adf2d939_cut_750x400_264.webp",
   "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Pad-See-Ew.webp",
 ];

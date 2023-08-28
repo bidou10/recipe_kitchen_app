@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ThaiMushroomOmelette extends StatelessWidget {
-  const ThaiMushroomOmelette({super.key});
+class thaiLemongrass extends StatelessWidget {
+  const thaiLemongrass({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Thai mushroom omelette'),
+        title: Text('Thai Lemongrass meatballs'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -15,14 +15,14 @@ class ThaiMushroomOmelette extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/thai_mushroom_M.jpeg',
+              'assets/step/assets/step/lemongrass_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Thai mushroom omelette',
+              'Thai Lemongrass meatballs',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -30,7 +30,7 @@ class ThaiMushroomOmelette extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
-              'Ingredient List: \n\n[Step 1],250 g mixed mushrooms ,4 scallions ,1 clove garlic ,1 Thai chili ,2 sprigs cilantro\n\n [Step 2] :1 tbsp tomato paste, vegetable oil ,salt \n\n [Step 3] :4 eggs ,2 tbsp fish sauce ,2 tsp black sesame seeds ,salt ,pepper ,vegetable oil \n\n [Step 4] : 2 tbsp oyster sauce (for serving) 2 tsp black sesame seeds,2 sprigs Thai basil',
+              'Ingredient List: \n\n[Step 1]:5 g ginger ,1 cloves garlic ,½ stalk lemongrass ,¼ chili ,7½ g cilantro ,½ lime ,½ tbsp sugar ,1 tbsp fish sauce \n\n [Step 2] :250 g ground pork ,1 tbsp fish sauce ,7½ g cilantro, salt,pepper \n\n [Step 3] :vegetable oil (for frying) \n\n [Step 4] : rice (cooked, for serving) white cabbage (for serving) lime (for serving) ',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -40,13 +40,13 @@ class ThaiMushroomOmelette extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              'Items necessary: \n\n Step 1 :knife,cutting board \n\n Step 2 :frying pan,spatula  \n\n Step 3 :bowl,whisk,frying pan (large) \n\n Step 4 : Garnish with oyster sauce, scallion greens, Thai basil, remaining black sesame seeds and cilantro. Enjoy! ',
+              'Items necessary: \n\n Step 1 :cutting board, knife,bowl, juicer \n\n Step 2 :bowl \n\n Step 3 :frying pan ,tongs \n\n Step 4 : bowl',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),
             ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageThaiMushroomOmelette.length,
+                imageThaiLemongrassMeatballs.length,
                 (index) {
                   return ListTile(
                     leading: SizedBox(
@@ -92,35 +92,35 @@ class ThaiMushroomOmelette extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/thai_mushroom_M.jpeg",
+    "assets": "assets/step/lemongrass_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/thai_mushroom_S1.jpeg",
+    "assets": "assets/step/lemongrass_S1.jpeg",
     "info":
-        "Roughly chop shallot, chili, and garlic then add to a food processor and pulse until finely chopped. Pluck the basil leaves. Mix light soy sauce, fish sauce, oyster sauce, dark soy sauce, and sugar together in a small bowl.",
+        "Finely mince ginger, garlic, lemongrass, and chili. Chop cilantro, saving some stalks for serving . To make the dressing, mix the juice of one lime, sugar, half of the fish sauce, half of the minced chili, and half of the minced cilantro in a small bowl. Set aside.",
   },
   {
-    "assets": "assets/step/thai_mushroom_S2.jpeg",
+    "assets": "assets/step/lemongrass_S2.jpeg",
     "info":
-        "In a frying pan, heat oil over medium-high heat. Crack in the eggs and fry until the edge is crispy and the whites are set. Remove and set aside.",
+        "Place ground pork, minced ginger, lemongrass, garlic and the remaining chili, fish sauce and remaining minced cilantro in a mixing bowl. Season with salt and pepper and mix thoroughly. Use wet hands to form the meatball mixture into walnut-sized balls.",
   },
   {
-    "assets": "assets/step/thai_mushroom_S3.jpeg",
+    "assets": "assets/step/lemongrass_S3.jpeg",
     "info":
-        "In the same pan, heat more oil over medium heat. Add the shallot-chili paste and fry for approx. 2–3 min., or until fragrant. Add minced pork, breaking it up with a spatula into small pieces as it browns. Fry for approx. 3 min., until well browned. Add the sauce mixture and stir to combine. Add basil and briefly stir-fry until the leaves are wilted. Remove from the pan and serve with cooked rice and a fried egg (one per serving).",
+        "Heat vegetable oil in a frying pan over medium heat. Once the pan is hot, add meatballs. Fry on one side until golden brown, then flip carefully. Fry the meatballs for about 7 minutes, or until all sides are golden brown and cooked through.",
   },
   {
-    "assets": "assets/step/thai_mushroom_S4.jpeg",
+    "assets": "assets/step/lemongrass_S4.jpeg",
     "info":
-        "In the same pan, heat more oil over medium heat. Add the shallot-chili paste and fry for approx. 2–3 min., or until fragrant. Add minced pork, breaking it up with a spatula into small pieces as it browns. Fry for approx. 3 min., until well browned. Add the sauce mixture and stir to combine. Add basil and briefly stir-fry until the leaves are wilted. Remove from the pan and serve with cooked rice and a fried egg (one per serving).",
+        "Assemble a bowl with steamed rice, meatballs, white cabbage and cilantro, and lime wedges if desired. Spoon some of the sauce over.",
   },
 ];
 
-final imageThaiMushroomOmelette = [
-  "assets/step/thai_mushroom_M.jpeg",
-  "assets/step/thai_mushroom_S1.jpeg",
-  "assets/step/thai_mushroom_S2.jpeg",
-  "assets/step/thai_mushroom_S3.jpeg",
-  "assets/step/thai_mushroom_S4.jpeg"
+final imageThaiLemongrassMeatballs = [
+  "assets/step/lemongrass_M.jpeg",
+  "assets/step/lemongrass_S1.jpeg",
+  "assets/step/lemongrass_S2.jpeg",
+  "assets/step/lemongrass_S3.jpeg",
+  "assets/step/lemongrass_S4.jpeg"
 ];
