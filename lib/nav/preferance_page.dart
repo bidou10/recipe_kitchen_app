@@ -1,6 +1,7 @@
 import 'package:countries_flag/countries_flag.dart';
 import 'package:flag/flag.dart';
 import 'package:flutter/material.dart';
+import 'package:recipe_kitchen_app/japan/japan.dart';
 import 'package:recipe_kitchen_app/nav/first_page.dart';
 import 'package:recipe_kitchen_app/thai/thai.dart';
 
@@ -61,7 +62,7 @@ class PreferancePage extends StatelessWidget {
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => ThaiPage(),
+                  builder: (context) => JapanPage(),
                 ),
               );
             },

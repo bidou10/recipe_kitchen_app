@@ -133,6 +133,34 @@ flutter:
     - assets/step/thaiGreenCurry_S6.jpeg
     - assets/step/thaiGreenCurry_S7.jpeg
     - assets/step/thaiGreenCurry_S8.jpeg
+    - assets/step/Gyudon_M.jpeg
+    - assets/step/Gyudon_S1.jpeg
+    - assets/step/Gyudon_S2.jpeg
+    - assets/step/Gyudon_S3.jpeg
+    - assets/step/Gyudon_S4.jpeg
+    - assets/step/Gyudon_S5.jpeg
+    - assets/step/Gyudon_S6.jpeg
+    - assets/step/ChickenTarragon_M.jpeg
+    - assets/step/ChickenTarragon_S1.jpeg
+    - assets/step/ChickenTarragon_S2.jpeg
+    - assets/step/ChickenTarragon_S3.jpeg
+    - assets/step/ChickenTarragon_S4.jpeg
+    - assets/step/Okonomiyaki_M.jpeg
+    - assets/step/Okonomiyaki_S1.jpeg
+    - assets/step/Okonomiyaki_S2.jpeg
+    - assets/step/Okonomiyaki_S3.jpeg
+    - assets/step/Okonomiyaki_S4.jpeg
+    - assets/step/sushiUramaki_M.jpeg
+    - assets/step/sushiUramaki_S1.jpeg
+    - assets/step/sushiUramaki_S2.jpeg
+    - assets/step/sushiUramaki_S3.jpeg
+    - assets/step/sushiUramaki_S4.jpeg
+    - assets/step/sushiUramaki_S5.jpeg
+    - assets/step/chickenKatsu_M.jpeg
+    - assets/step/chickenKatsu_S1.jpeg
+    - assets/step/chickenKatsu_S2.jpeg
+    - assets/step/chickenKatsu_S3.jpeg
+    - assets/step/chickenKatsu_S4.jpeg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
