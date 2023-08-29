@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class thaiLemongrass extends StatelessWidget {
-  const thaiLemongrass({super.key});
+class thaiChickenPotato extends StatelessWidget {
+  const thaiChickenPotato({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Thai Lemongrass meatballs'),
+        title: Text('Thai chicken sweet potato'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -15,14 +15,14 @@ class thaiLemongrass extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/lemongrass_M.jpeg',
+              'assets/step/thaiChickenPotato_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Thai Lemongrass meatballs',
+              'Thai chicken with sweet potato',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -30,7 +30,7 @@ class thaiLemongrass extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
-              'Ingredient List: \n\n[Step 1]:5 g ginger ,1 cloves garlic ,½ stalk lemongrass ,¼ chili ,7½ g cilantro ,½ lime ,½ tbsp sugar ,1 tbsp fish sauce \n\n [Step 2] :250 g ground pork ,1 tbsp fish sauce ,7½ g cilantro, salt,pepper \n\n [Step 3] :vegetable oil (for frying) \n\n [Step 4] : rice (cooked, for serving) white cabbage (for serving) lime (for serving) ',
+              'Ingredient List: \n\n[Step 1] : ⅓ onion, ⅓ tbsp coconut oi,l 183⅓ g chicken breasts ,salt ,pepper \n\n [Step 2] :none \n\n [Step 3] :⅓ sweet potato ,133⅓ ml coconut milk ,40 ml water ,1 tbsp Thai red curry paste ,½ tsp light brown sugar ,⅛ tsp chicken flavor bouillon (powdered) \n\n [Step 4]:8⅓ g cilantro, ⅓ Thai chili pepper for serving, 200 g jasmine rice for serving, purple cabbage for serving, fish sauce for serving lime for serving',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -40,13 +40,13 @@ class thaiLemongrass extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              'Items necessary: \n\n Step 1 :cutting board, knife,bowl, juicer \n\n Step 2 :bowl \n\n Step 3 :frying pan ,tongs \n\n Step 4 : bowl',
+              'Items necessary: \n\n Step 1 :large frying pan with lid,cooking spoon,cutting board, knife,large mixing bowl \n\n Step 2 :none \n\n Step 3 :none \n\n Step 4 : cutting board, knife',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),
             ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageThaiLemongrassMeatballs.length,
+                imageThaiChickenPotato.length,
                 (index) {
                   return ListTile(
                     leading: SizedBox(
@@ -92,35 +92,35 @@ class thaiLemongrass extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/lemongrass_M.jpeg",
+    "assets": "assets/step/thaiChickenPotato_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/lemongrass_S1.jpeg",
+    "assets": "assets/step/thaiChickenPotato_S1.jpeg",
     "info":
-        "Finely mince ginger, garlic, lemongrass, and chili. Chop cilantro, saving some stalks for serving . To make the dressing, mix the juice of one lime, sugar, half of the fish sauce, half of the minced chili, and half of the minced cilantro in a small bowl. Set aside.",
+        "Slice onion. Dice chicken and season with salt and pepper. Heat coconut oil in large skillet over medium-high heat, then add chicken. Cook, stirring frequently, for approx. 5 – 7 min. or until browned and cooked through. Transfer to a bowl.",
   },
   {
-    "assets": "assets/step/lemongrass_S2.jpeg",
+    "assets": "assets/step/thaiChickenPotato_S2.jpeg",
     "info":
-        "Place ground pork, minced ginger, lemongrass, garlic and the remaining chili, fish sauce and remaining minced cilantro in a mixing bowl. Season with salt and pepper and mix thoroughly. Use wet hands to form the meatball mixture into walnut-sized balls.",
+        "Add sliced onion to the same frying pan; sauté, stirring frequently, until golden brown.",
   },
   {
-    "assets": "assets/step/lemongrass_S3.jpeg",
+    "assets": "assets/step/thaiChickenPotato_S3.jpeg",
     "info":
-        "Heat vegetable oil in a frying pan over medium heat. Once the pan is hot, add meatballs. Fry on one side until golden brown, then flip carefully. Fry the meatballs for about 7 minutes, or until all sides are golden brown and cooked through.",
+        "Add sweet potato, coconut milk, water, curry paste, brown sugar, and bouillon to pan. Stir well, scraping up brown bits from bottom of pan. Bring to a boil, then reduce heat to low. Cover and cook for approx. 10 min. or until potatoes are fork tender..",
   },
   {
-    "assets": "assets/step/lemongrass_S4.jpeg",
+    "assets": "assets/step/thaiChickenPotato_S4.jpeg",
     "info":
-        "Assemble a bowl with steamed rice, meatballs, white cabbage and cilantro, and lime wedges if desired. Spoon some of the sauce over.",
+        "Meanwhile, chop cilantro and chili and slice cabbage into strips. Cut lime into wedges. Stir in chicken and accumulated juices, along with fish sauce to taste. Cook until heated through. Divide rice between bowls and top with chicken mixture, cilantro, chili, and cabbage. Serve with lime wedges. Enjoy!",
   },
 ];
 
-final imageThaiLemongrassMeatballs = [
-  "assets/step/lemongrass_M.jpeg",
-  "assets/step/lemongrass_S1.jpeg",
-  "assets/step/lemongrass_S2.jpeg",
-  "assets/step/lemongrass_S3.jpeg",
-  "assets/step/lemongrass_S4.jpeg"
+final imageThaiChickenPotato = [
+  "assets/step/thaiChickenPotato_M.jpeg",
+  "assets/step/thaiChickenPotato_S1.jpeg",
+  "assets/step/thaiChickenPotato_S2.jpeg",
+  "assets/step/thaiChickenPotato_S3.jpeg",
+  "assets/step/thaiChickenPotato_S4.jpeg"
 ];

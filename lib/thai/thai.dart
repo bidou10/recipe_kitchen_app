@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:recipe_kitchen_app/thai/thaiChickenNoodle.dart';
+import 'package:recipe_kitchen_app/thai/thaiChickenPotato.dart';
 import 'package:recipe_kitchen_app/thai/thaiClassic.dart';
+import 'package:recipe_kitchen_app/thai/thaiGreenCurry.dart';
 import 'package:recipe_kitchen_app/thai/thaiHolyBasil.dart';
 import 'package:recipe_kitchen_app/thai/thaiLemongrass.dart';
 import 'package:recipe_kitchen_app/thai/thaiMushroomOmelette.dart';
@@ -94,6 +96,16 @@ class _ThaiPageState extends State<ThaiPage> {
                     builder: (context) => thaiLemongrass(),
                   ),
                 );
+              } else if (nameRecipe[index] == "Thai chicken sweet potato") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => thaiChickenPotato()),
+                );
+              } else if (nameRecipe[index] == "Thai green curry shrimp") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => thaiGreenCurry()),
+                );
               }
             },
           ),
@@ -119,8 +131,8 @@ final nameRecipe = [
   "Thai mushroom tuffed omelette",
   "Thai chicken noodles soup",
   "Lemongrass meatballs",
-  "Cut",
-  "Pad see"
+  "Thai chicken sweet potato",
+  "Thai green curry shrimp"
 ];
 
 final imageUrls = [
@@ -131,6 +143,6 @@ final imageUrls = [
   "https://images.services.kitchenstories.io/UAzPu-TxYoZOUKiSQi2aK6RsJE0=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R1881-photo-final-4.jpg",
   "https://images.services.kitchenstories.io/cJ8vygOwgm8sjiCnY_GjBhTQ2GQ=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/ThaiChickenNoodleSoup_Final.jpg",
   "https://images.services.kitchenstories.io/kFQUdE54EOvyVczP3z__XIULAT4=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2676-final-photo-_2.jpg",
-  "https://images.asiahighlights.com/allpicture/2022/02/ca9d3c345fb14950adf2d939_cut_750x400_264.webp",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Pad-See-Ew.webp",
+  "https://images.services.kitchenstories.io/grYIGt5CdDqeTCZLShfMlnu9jT0=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/R666-photo-final-4x3.jpg",
+  "https://images.services.kitchenstories.io/7OFl-ilAoCeWSvrX5nvo2MRRJYY=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/09_01_ThaiGreenCurryWithShrimp_titlePicture.jpg",
 ];

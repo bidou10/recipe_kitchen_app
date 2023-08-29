@@ -119,6 +119,21 @@ flutter:
     - assets/step/lemongrass_S2.jpeg
     - assets/step/lemongrass_S3.jpeg
     - assets/step/lemongrass_S4.jpeg
+    - assets/step/thaiChickenPotato_M.jpeg
+    - assets/step/thaiChickenPotato_S1.jpeg
+    - assets/step/thaiChickenPotato_S2.jpeg
+    - assets/step/thaiChickenPotato_S3.jpeg
+    - assets/step/thaiChickenPotato_S4.jpeg
+    - assets/step/thaiGreenCurry_M.jpeg
+    - assets/step/thaiGreenCurry_S1.jpeg
+    - assets/step/thaiGreenCurry_S2.jpeg
+    - assets/step/thaiGreenCurry_S3.jpeg
+    - assets/step/thaiGreenCurry_S4.jpeg
+    - assets/step/thaiGreenCurry_S5.jpeg
+    - assets/step/thaiGreenCurry_S6.jpeg
+    - assets/step/thaiGreenCurry_S7.jpeg
+    - assets/step/thaiGreenCurry_S8.jpeg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
