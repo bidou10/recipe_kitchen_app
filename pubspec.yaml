@@ -161,6 +161,18 @@ flutter:
     - assets/step/chickenKatsu_S2.jpeg
     - assets/step/chickenKatsu_S3.jpeg
     - assets/step/chickenKatsu_S4.jpeg
+    - assets/step/tacosVegan_M.jpeg
+    - assets/step/tacosVegan_S1.jpeg
+    - assets/step/tacosVegan_S2.jpeg
+    - assets/step/tacosVegan_S3.jpeg
+    - assets/step/tacosVegan_S4.jpeg
+    - assets/step/MexicanChickenRice_M.jpeg
+    - assets/step/MexicanChickenRice_S1.jpeg
+    - assets/step/MexicanChickenRice_S2.jpeg
+    - assets/step/MexicanChickenRice_S3.jpeg
+    - assets/step/MexicanChickenRice_S4.jpeg
+    - assets/step/MexicanChickenRice_S5.jpeg
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

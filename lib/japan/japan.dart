@@ -5,7 +5,6 @@ import 'package:recipe_kitchen_app/japan/gyudon.dart';
 import 'package:recipe_kitchen_app/japan/okonomiyaki.dart';
 import 'package:recipe_kitchen_app/japan/sushi.dart';
 import 'package:sticky_headers/sticky_headers.dart';
-import 'package:flutter_sticky_header/flutter_sticky_header.dart';
 
 class JapanPage extends StatefulWidget {
   @override
