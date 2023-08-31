@@ -30,6 +30,13 @@ class ThaiMushroomOmelette extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1],250 g mixed mushrooms ,4 scallions ,1 clove garlic ,1 Thai chili ,2 sprigs cilantro\n\n [Step 2] :1 tbsp tomato paste, vegetable oil ,salt \n\n [Step 3] :4 eggs ,2 tbsp fish sauce ,2 tsp black sesame seeds ,salt ,pepper ,vegetable oil \n\n [Step 4] : 2 tbsp oyster sauce (for serving) 2 tsp black sesame seeds,2 sprigs Thai basil',
               style: TextStyle(
                 letterSpacing: 0.8,

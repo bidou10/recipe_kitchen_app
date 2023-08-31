@@ -30,6 +30,13 @@ class Sushi extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1] :¾ cucumber ¾ avocado 178⅝ g salmon fillets ¾ sweet potato  \n\n [Step 2] :2⅞ dried seaweed sheets 428⅝ g sushi rice (cooked) 1⅜ tbsp sesame seeds 1⅜ tbsp masago (fish roe) \n\n [Step 3] :1⅜ tbsp wasabi paste \n\n [Step 4]: \n\n [Step 5] : sushi ginger (for serving) soy sauce (for serving)',
               style: TextStyle(
                 letterSpacing: 0.8,

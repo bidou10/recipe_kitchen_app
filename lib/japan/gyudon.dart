@@ -32,6 +32,13 @@ class Gyudon extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1] :200 g basmati rice 400 ml water salt  ,\n\n [Step 2] :300 g beef 2 red onions 3 green onions\n\n [Step 3] :3 tbsp soy sauce 3 tbsp mirin 2 tbsp oyster sauce 3 tbsp sake 3 tbsp sugar \n\n, [Step 4] :none \n\n,[Step 5] : none  \n\n,[Step 6] :none \n\n ',
               style: TextStyle(
                 letterSpacing: 0.8,

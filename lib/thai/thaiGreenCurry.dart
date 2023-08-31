@@ -30,6 +30,13 @@ class thaiGreenCurry extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1]:3 tsp mustard seeds 1 tsp cumin 20 g ginger 2 cloves garlic 15 g cilantro 3 tsp turmeric 1 chili pepper  \n\n [Step 2] : 1 eggplant 200 g spinach 200 g bok choy \n\n [Step 3] :  oil for frying\n\n [Step 4] :none \n\n [step 5] :400 ml coconut milk 2 stalks lemon grass 150 g soybean sprouts\n\n [Step 6] :300 g shrimp 300 ml vegetable stock \n\n [Step 7] :2 limes, 5 g cilantro \n\n [Step 8] :salt, pepper, rice to serve',
               style: TextStyle(
                 letterSpacing: 0.8,

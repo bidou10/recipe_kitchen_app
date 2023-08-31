@@ -30,6 +30,13 @@ class MexicanChickenRice extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1] :133⅓ g chicken breast 1 cloves garlic 6⅔ g cilantro ⅓ red bell pepper ⅓ green bell pepper 1⅓ scallions \n\n [Step 2] :⅓ tbsp vegetable oil \n\n [Step 3] :⅓ tbsp vegetable oil 91⅔ g corn (canned or frozen) 158⅓ ml chicken stock 226⅔ g enchilada sauce salt pepper \n\n [Step 4]:86⅔ g rice (brown or white) \n\n [Step 5] :33⅓ g cheddar cheese (grated) ,⅓ small bunch cilantro',
               style: TextStyle(
                 letterSpacing: 0.8,

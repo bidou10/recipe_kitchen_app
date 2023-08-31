@@ -30,6 +30,13 @@ class chickenTarragon extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1] :2 scallions 10 g ginger 25 g tarragon  \n\n [Step 2] :400 g chicken thighs (boneless) 250 ml dashi 3 tbsp soy sauce 3 tbsp mirin salt vegetable oil (for frying) \n\n [Step 3] :2 tbsp sesame oil 1 tbsp butter 1 tsp starch 1 tbsp water \n\n [Step 4]:none',
               style: TextStyle(
                 letterSpacing: 0.8,

@@ -103,6 +103,9 @@ class RecipeCard extends StatelessWidget {
                         cookTime,
                         style: TextStyle(fontSize: 15, color: Colors.white),
                       ),
+                      SizedBox(
+                        height: 2,
+                      )
                     ],
                   ),
                 )

@@ -30,6 +30,13 @@ class ChickenKatsu extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1] :1 Chinese cabbage 1 shallot ½ clove garlic  \n\n [Step 2] :3 tbsp mirin ,2 tbsp soy sauce ,4 tbsp mayonnaise ,½ lemon (juice) ,1 tbsp sesame oil, sugar to taste, salt, oil for frying \n\n [Step 3] :2 chicken breasts, 3 eggs, 100 g flour, 200 g bread crumbs, salt, pepper \n\n [Step 4]:200 ml oil ,rice for serving ',
               style: TextStyle(
                 letterSpacing: 0.8,

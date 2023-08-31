@@ -30,6 +30,13 @@ class Okonomiyaki extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1] : ½ head Napa cabbage 1 carrot 3 stalks scallions 4 tbsp ketchup 3 tbsp Worcestershire sauce \n\n [Step 2] :3 eggs 120 ml water 2 tbsp light soy sauce 1 tbsp toasted sesame oil 140 g flour \n\n [Step 3] :none \n\n [Step 4]:vegetable oil (for frying) black sesame seeds (for serving) Japanese mayonnaise (for serving)',
               style: TextStyle(
                 letterSpacing: 0.8,

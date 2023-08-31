@@ -30,6 +30,13 @@ class thaiChickenNoodle extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1]: 1 stalk lemongrass ,1 clove garlic ,20 g ginger \n\n [Step 2] : 1 tbsp peanut oil ,2 tbsp soy sauce ,1 tbsp oyster sauce ,350 ml chicken stock ,2 kaffir lime leaves \n\n [Step 3] :2 stalks celery ,1 carrot ,150 g chicken breast \n\n [Step 4] :none \n\n [step 5] :100 g rice noodles  \n\n [Step 6] : 2 green onions ,100 g enoki mushrooms ,10 g cilantro \n\n [Step 7] : none',
               style: TextStyle(
                 letterSpacing: 0.8,
@@ -71,14 +78,6 @@ class thaiChickenNoodle extends StatelessWidget {
                           letterSpacing: 0.7,
                           fontWeight: FontWeight.w600),
                     ),
-                    // trailing: SizedBox(
-                    //   height: 110,
-                    //   width: 110,
-                    //   child: Image.asset(
-                    //     imageThaiClassic[index],
-                    //     fit: BoxFit.cover,
-                    //   ),
-                    // ), je garde le code au cas ou , j'ai envie de mettre les images sur la droite plutot que la gauche
                   );
                 },
               ),

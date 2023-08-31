@@ -35,6 +35,13 @@ class ThaiRedCurry extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1] : 200 g turkey breasts ,½ bell pepper ,½ carrot ,1 shallots ,1 cloves garlic ,1 tsp ginger ,½ stalk lemongrass ,\n\n [Step 2] :½ tbsp Thai red curry paste, coconut oil (for frying) \n\n [Step 3] : ½ tbsp soy sauce 150 ml, coconut milk ,7½ g cilantro, 50 ml vegetable broth, 50 g spinach ,salt, sugar, jasmine rice (for serving) ',
               style: TextStyle(
                 letterSpacing: 0.8,

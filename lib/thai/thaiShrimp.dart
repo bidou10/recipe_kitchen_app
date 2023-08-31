@@ -36,6 +36,13 @@ class ThaiShrimp extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1] : ¼ tbsp tamarind paste 20 ml water (warm) 1 cloves garlic ,1 eggs ,1¼ scallions 31¼ g roasted peanuts, ½ limes ,\n\n [Step 2] :60 g broad rice noodles, 25 ml vegetable oil \n\n [Step 3] :fish sauce (for serving) ,18¾ g raw sugar  \n\n, [Step 4] :3 jumbo shrimp  \n\n,[Step 5] : none  \n\n,[Step 6] :25 g soy sprouts fish sauce (for serving),raw sugar (for serving)  \n\n ',
               style: TextStyle(
                 letterSpacing: 0.8,

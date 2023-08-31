@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_kitchen_app/mexican/GuacamoleTuna.dart';
+import 'package:recipe_kitchen_app/mexican/burrito.dart';
+import 'package:recipe_kitchen_app/mexican/chickenEnchiladas.dart';
+import 'package:recipe_kitchen_app/mexican/chickenFajitas.dart';
 import 'package:recipe_kitchen_app/mexican/mexicanChickenRice.dart';
+import 'package:recipe_kitchen_app/mexican/mexicanPastaSalad.dart';
+import 'package:recipe_kitchen_app/mexican/quinoa.dart';
 import 'package:recipe_kitchen_app/mexican/tacosVegan.dart';
-import 'package:recipe_kitchen_app/thai/thaiChickenNoodle.dart';
-import 'package:recipe_kitchen_app/thai/thaiChickenPotato.dart';
-import 'package:recipe_kitchen_app/thai/thaiClassic.dart';
-import 'package:recipe_kitchen_app/thai/thaiGreenCurry.dart';
-import 'package:recipe_kitchen_app/thai/thaiHolyBasil.dart';
-import 'package:recipe_kitchen_app/thai/thaiLemongrass.dart';
+import 'package:recipe_kitchen_app/mexican/veggieBurrito.dart';
 import 'package:recipe_kitchen_app/thai/thaiMushroomOmelette.dart';
-import 'package:recipe_kitchen_app/thai/thaiRedCurry.dart';
-import 'package:recipe_kitchen_app/thai/thaiShrimp.dart';
 import 'package:sticky_headers/sticky_headers.dart';
-import 'package:flutter_sticky_header/flutter_sticky_header.dart';
 
 class MexicanPage extends StatefulWidget {
   @override
@@ -58,54 +56,44 @@ class _MexicanPageState extends State<MexicanPage> {
               } else if (nameRecipe[index] == "Mexican Chicken Rice") {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => MexicanChickenRice(),
-                  ),
-                );
-              } else if (nameRecipe[index] == "") {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => ThaiRedCurry(),
-                  ),
-                );
-              } else if (nameRecipe[index] == "") {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => ThaiHolyBasil(),
-                  ),
-                );
-              } else if (nameRecipe[index] == "") {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => ThaiMushroomOmelette(),
-                  ),
-                );
-              } else if (nameRecipe[index] == "") {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => thaiChickenNoodle(),
-                  ),
-                );
-              } else if (nameRecipe[index] == "tacos Vegan") {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => thaiLemongrass(),
-                  ),
-                );
-              } else if (nameRecipe[index] == "tacos Vegan") {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => TacosVegan()),
-                );
-              } else if (nameRecipe[index] == "Mexican Chicken Rice") {
-                Navigator.push(
-                  context,
                   MaterialPageRoute(builder: (context) => MexicanChickenRice()),
+                );
+              } else if (nameRecipe[index] == "Chicken Fajitas") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ChickenFajitas()),
+                );
+              } else if (nameRecipe[index] == "Burrito") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Burrito()),
+                );
+              } else if (nameRecipe[index] == "Veggie Burrito") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => VeggieBurrito(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Chicken enchiladas") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ChickenEnchiladas()),
+                );
+              } else if (nameRecipe[index] == "Quinoa") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Quinoa()),
+                );
+              } else if (nameRecipe[index] == "Mexican Pasta Salad") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MexicanPastaSalad()),
+                );
+              } else if (nameRecipe[index] == "Guacaomole Tuna Steak") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => GuacamoleTuna()),
                 );
               }
             },
@@ -125,23 +113,23 @@ class _MexicanPageState extends State<MexicanPage> {
 final nameRecipe = [
   "Tacos Vegan",
   "Mexican Chicken Rice",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  ""
+  "Chicken Fajitas",
+  "Burrito",
+  "Veggie Burrito",
+  "Chicken enchiladas",
+  "Quinoa",
+  "Mexican Pasta Salad",
+  "Guacaomole Tuna Steak"
 ];
 
 final imageUrls = [
   "https://images.services.kitchenstories.io/Hl6qpHaLmvu6rnGE4Ma-BIFVcEM=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/R1007-photo-final-4x3.jpg",
   "https://images.services.kitchenstories.io/rJQvT4BhBPtVrCJUr7QE7hxWMgs=/640x0/filters:quality(80)/images.kitchenstories.io/recipeImages/16_01_98_Final.jpg",
-  "https://images.services.kitchenstories.io/gqslNuqfstd1T9mtoE64Q1mTmgw=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2960-final-photo-2.jpg",
-  "https://images.services.kitchenstories.io/GaL2UgQSez4gVzBLRYdd-5h1pDo=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2592-final-photo.jpg",
-  "https://images.services.kitchenstories.io/UAzPu-TxYoZOUKiSQi2aK6RsJE0=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R1881-photo-final-4.jpg",
-  "https://images.services.kitchenstories.io/cJ8vygOwgm8sjiCnY_GjBhTQ2GQ=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/ThaiChickenNoodleSoup_Final.jpg",
-  "https://images.services.kitchenstories.io/kFQUdE54EOvyVczP3z__XIULAT4=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2676-final-photo-_2.jpg",
-  "https://images.services.kitchenstories.io/grYIGt5CdDqeTCZLShfMlnu9jT0=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/R666-photo-final-4x3.jpg",
-  "https://images.services.kitchenstories.io/7OFl-ilAoCeWSvrX5nvo2MRRJYY=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/09_01_ThaiGreenCurryWithShrimp_titlePicture.jpg",
+  "https://images.services.kitchenstories.io/ChIwzhNKp34zIc3kFl9g_TEtoj0=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/ChickenFajitas_Final.jpg",
+  "https://images.services.kitchenstories.io/TqkoDNI2_YE-D94bndG-jTWNpDI=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/RP04_21_04_BreakfastBurito_TitlePicture.jpg",
+  "https://images.services.kitchenstories.io/YEtGFACep8A1ptcBlya7fV6jzkI=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2453-photo-title-1.jpg",
+  "https://images.services.kitchenstories.io/jTP-z70gXF4ykBm71JdPBgQnLfE=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/06_05_ChickenEnchiladas_4x3.jpg",
+  "https://images.services.kitchenstories.io/4NSKYR0iW7r5S9yKHWfI8a9_o6g=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/R623-photo-final-4x3.jpg",
+  "https://images.services.kitchenstories.io/uttSPcDYSvSk3gDDEwTCZEyQ_QY=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailResizedImages/R2978-abtesting2.original.jpg",
+  "https://images.services.kitchenstories.io/d3oQU0oWuHozTy1DDqdS8EzinWk=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/R771-photo-final-4x3.jpg",
 ];

@@ -41,7 +41,7 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('Thai Food'),
             subtitle: Text('best thai food recipe dishes'),
-            trailing: Icon(Icons.arrow_forward),
+            trailing: Icon(Icons.more_vert),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -93,17 +93,17 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('French Food'),
             subtitle: Text('best french food recipe dishes'),
-            trailing: Icon(Icons.more_vert),
+            trailing: Icon(Icons.arrow_forward),
           ),
           Divider(height: 0),
           ListTile(
             leading: CircleAvatar(
               radius: 15,
               backgroundImage: NetworkImage(
-                  'https://cdn.pixabay.com/photo/2012/04/11/15/35/flag-28543_1280.png'),
+                  'https://cdn.pixabay.com/photo/2013/07/13/14/17/south-korea-162427_1280.png'),
             ),
-            title: Text('Italian Food'),
-            subtitle: Text('best italian food recipe dishes'),
+            title: Text('Korea Food'),
+            subtitle: Text('best korean food recipe dishes'),
             trailing: Icon(Icons.more_vert),
           ),
           Divider(height: 0),
@@ -243,17 +243,6 @@ class PreferancePage extends StatelessWidget {
             leading: CircleAvatar(
               radius: 15,
               backgroundImage: NetworkImage(
-                  'https://cdn.pixabay.com/photo/2013/07/13/14/17/south-korea-162427_1280.png'),
-            ),
-            title: Text('korea Food'),
-            subtitle: Text('best korean food recipe dishes'),
-            trailing: Icon(Icons.more_vert),
-          ),
-          Divider(height: 0),
-          ListTile(
-            leading: CircleAvatar(
-              radius: 15,
-              backgroundImage: NetworkImage(
                   'https://cdn.pixabay.com/photo/2012/04/10/23/11/switzerland-26891_1280.png'),
             ),
             title: Text('swiss Food'),
@@ -291,6 +280,17 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('montenegro Food'),
             subtitle: Text('best montenegro food recipe dishes'),
+            trailing: Icon(Icons.more_vert),
+          ),
+          Divider(height: 0),
+          ListTile(
+            leading: CircleAvatar(
+              radius: 15,
+              backgroundImage: NetworkImage(
+                  'https://cdn.pixabay.com/photo/2012/04/11/15/35/flag-28543_1280.png'),
+            ),
+            title: Text('Italian Food'),
+            subtitle: Text('best italian food recipe dishes'),
             trailing: Icon(Icons.more_vert),
           ),
           Divider(height: 0),

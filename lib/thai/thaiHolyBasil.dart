@@ -30,6 +30,13 @@ class ThaiHolyBasil extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1]1 shallot ,4 cloves garlic ,3 Thai chilis ,15 g holy basil ,1 tbsp light soy sauce ,1 tbsp fish sauce ,½ tbsp oyster sauce ,½ tbsp dark soy sauce ,1 tsp sugar ,\n\n [Step 2] :2 eggs ,oil (for frying) \n\n [Step 3] : jasmine rice (for serving) ',
               style: TextStyle(
                 letterSpacing: 0.8,

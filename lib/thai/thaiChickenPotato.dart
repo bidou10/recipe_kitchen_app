@@ -30,6 +30,13 @@ class thaiChickenPotato extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1] : ⅓ onion, ⅓ tbsp coconut oi,l 183⅓ g chicken breasts ,salt ,pepper \n\n [Step 2] :none \n\n [Step 3] :⅓ sweet potato ,133⅓ ml coconut milk ,40 ml water ,1 tbsp Thai red curry paste ,½ tsp light brown sugar ,⅛ tsp chicken flavor bouillon (powdered) \n\n [Step 4]:8⅓ g cilantro, ⅓ Thai chili pepper for serving, 200 g jasmine rice for serving, purple cabbage for serving, fish sauce for serving lime for serving',
               style: TextStyle(
                 letterSpacing: 0.8,

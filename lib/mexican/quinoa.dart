@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Burrito extends StatelessWidget {
-  const Burrito({super.key});
+class Quinoa extends StatelessWidget {
+  const Quinoa({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Burrito'),
+        title: Text('Quinoa'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -15,14 +15,14 @@ class Burrito extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/Burrito_M.jpeg',
+              'assets/step/Quinoa_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Burrito',
+              'Quinoia',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -36,8 +36,18 @@ class Burrito extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            SizedBox(
+              height: 8.0,
+            ),
             Text(
-              'Ingredient List: \n\n[Step 1] :½ red bell pepper 1 red onion 10 g chives \n\n [Step 2] :20 g cheddar cheese \n\n [Step 3] :5 eggs Tabasco \n\n [Step 4]:1 tbsp butter ,½ tsp Kitchen Stories Viva la Spice seasoning \n\n [Step 5]:none \n\n [Step 6]:none \n\n',
+              'Ingredient List: \n\n Step 1 :200 g quinoa 2 clove garlic 1 avocado 40 g baby spinach 200 g kidney beans (drained and rinsed) 4 sprigs cilantro 4 tbsp water salt \n\n Step 2 :salt \n\n Step 3 : olive oil for frying 2 egg salt pepper\n\n Step 4 :cilantro for garnish hot sauce for serving ',
+              style: TextStyle(fontSize: 16, letterSpacing: 0.5),
+            ),
+            SizedBox(
+              height: 8.0,
+            ),
+            Text(
+              'Items List: \n\n[Step 1] :small pot,small sauce,pan with lid,cooking spoon,cutting board,knife\n\n [Step 2] :none\n\n [Step 3] :frying pan,spatula\n\n [Step 4]: none\n\n ',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -46,14 +56,10 @@ class Burrito extends StatelessWidget {
             SizedBox(
               height: 8.0,
             ),
-            Text(
-              'Items necessary: \n\n Step 1:cutting board,knife \n\n Step 2 :box grater \n\n Step 3 :bowl (large) \n\n Step 4 :frying pan,cooking spoon,Viva la Spice seasoning\n\n Step 5 :none \n\n Step 6 :2 flour tortillas',
-              style: TextStyle(fontSize: 16, letterSpacing: 0.5),
-            ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageBurrito.length,
+                imageQuinoa.length,
                 (index) {
                   return ListTile(
                     leading: SizedBox(
@@ -91,46 +97,35 @@ class Burrito extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/Burrito_M.jpeg",
+    "assets": "assets/step/Quinoa_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/Burrito_S1.jpeg",
+    "assets": "assets/step/Quinoa_S1.jpeg",
     "info":
-        "Finely dice bell pepper. Thinly slice onion into half rings. Finely chop chives.",
+        "Add quinoa to a sieve, rinse under lukewarm water, and transfer to a pot. Add water and salt, bring to a boil, and cook for approx. 20 min. In the meantime, peel and crush garlic, slice avocado, and tear spinach leaves. Combine kidney beans, garlic clove, cilantro sprigs, and 2 tbsp water in a small saucepan. Add a pinch of salt and bring to a boil, then lower heat and simmer, covered partially, for approx. 5 min.",
   },
   {
-    "assets": "assets/step/Burrito_S2.jpeg",
-    "info": "Using a box grater, roughly grate cheese.",
+    "assets": "assets/step/Quinoa_S2.jpeg",
+    "info":
+        "Add cooked quinoa and torn spinach leaves to bean mixture with a pinch of salt. Stir to combine, then partially cover and let cook over low heat for approx. 2 min.",
   },
   {
-    "assets": "assets/step/Burrito_S3.jpeg",
+    "assets": "assets/step/Quinoa_S3.jpeg",
     "info":
-        "In a large bowl, beat together a little bit of Tabasco sauce with the eggs.",
+        "In a frying pan, heat olive oil over medium-high heat and fry egg. Season with salt and pepper.",
   },
   {
-    "assets": "assets/step/Burrito_S4.jpeg",
+    "assets": "assets/step/Quinoa_S4.jpeg",
     "info":
-        "Heat up butter in a frying pan and sauté onions over medium heat for approx. 1 – 2 minutes. Then, add the bell pepper, VIVA LA SPICE seasoning (if using), and continue to sauté for an additional 2 – 3 min.",
-  },
-  {
-    "assets": "assets/step/Burrito_S5.jpeg",
-    "info":
-        "Add eggs to the pan and continue to sauté, stirring occasionally, for approx. 3 – 5 min. Then, add the cheese and stir until melted.",
-  },
-  {
-    "assets": "assets/step/Burrito_S6.jpeg",
-    "info":
-        "Place some of the eggs in the middle of the tortilla, taking care not to overfill. Sprinkle some chives on top. Fold tortilla in from the sides. Then, roll forward from bottom with thumbs until burrito is tightly rolled. Enjoy!",
+        "Remove garlic clove and cilantro stems from quinoa mixture and transfer mixture to a serving bowl. Top with avocado slices, fried egg, and cilantro leaves. Serve with hot sauce to taste.",
   },
 ];
 
-final imageBurrito = [
-  "assets/step/Burrito_M.jpeg",
-  "assets/step/Burrito_S1.jpeg",
-  "assets/step/Burrito_S2.jpeg",
-  "assets/step/Burrito_S3.jpeg",
-  "assets/step/Burrito_S4.jpeg",
-  "assets/step/Burrito_S5.jpeg",
-  "assets/step/Burrito_S6.jpeg"
+final imageQuinoa = [
+  "assets/step/Quinoa_M.jpeg",
+  "assets/step/Quinoa_S1.jpeg",
+  "assets/step/Quinoa_S2.jpeg",
+  "assets/step/Quinoa_S3.jpeg",
+  "assets/step/Quinoa_S4.jpeg"
 ];

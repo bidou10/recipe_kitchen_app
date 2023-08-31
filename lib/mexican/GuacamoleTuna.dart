@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Burrito extends StatelessWidget {
-  const Burrito({super.key});
+class GuacamoleTuna extends StatelessWidget {
+  const GuacamoleTuna({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Burrito'),
+        title: Text('Guacamole Tuna Steak'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -15,14 +15,14 @@ class Burrito extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/Burrito_M.jpeg',
+              'assets/step/Guacamole_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Burrito',
+              'Guacamole Tuna Steak',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -36,8 +36,18 @@ class Burrito extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            SizedBox(
+              height: 8.0,
+            ),
             Text(
-              'Ingredient List: \n\n[Step 1] :½ red bell pepper 1 red onion 10 g chives \n\n [Step 2] :20 g cheddar cheese \n\n [Step 3] :5 eggs Tabasco \n\n [Step 4]:1 tbsp butter ,½ tsp Kitchen Stories Viva la Spice seasoning \n\n [Step 5]:none \n\n [Step 6]:none \n\n',
+              'Ingredient List: \n\n Step 1 : ½ red onion 1 clove garlic 10 g cilantro ½ jalapeño 1 cucumber 2 avocados ½ lime (juice) ½ orange (juice) ½ tsp cumin salt\n\n Step 2 :none \n\n Step 3 :800 g tuna fillet (sushi-grade) salt pepper oil for frying ½ lemon (juice) for serving olive oil for serving \n\n  ',
+              style: TextStyle(fontSize: 16, letterSpacing: 0.5),
+            ),
+            SizedBox(
+              height: 8.0,
+            ),
+            Text(
+              'Items List: \n\n[Step 1] :citrus press,cutting board,knifelarge mixing bowl\n\n [Step 2] :none\n\n [Step 3] :nonstick pan\n\n ',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -46,14 +56,10 @@ class Burrito extends StatelessWidget {
             SizedBox(
               height: 8.0,
             ),
-            Text(
-              'Items necessary: \n\n Step 1:cutting board,knife \n\n Step 2 :box grater \n\n Step 3 :bowl (large) \n\n Step 4 :frying pan,cooking spoon,Viva la Spice seasoning\n\n Step 5 :none \n\n Step 6 :2 flour tortillas',
-              style: TextStyle(fontSize: 16, letterSpacing: 0.5),
-            ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageBurrito.length,
+                imageGuacamoleTuna.length,
                 (index) {
                   return ListTile(
                     leading: SizedBox(
@@ -91,46 +97,29 @@ class Burrito extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/Burrito_M.jpeg",
+    "assets": "assets/step/Guacamole_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/Burrito_S1.jpeg",
+    "assets": "assets/step/Guacamole_S1.jpeg",
     "info":
-        "Finely dice bell pepper. Thinly slice onion into half rings. Finely chop chives.",
+        "Peel the onion and garlic and finely chop. Chop cilantro, halve jalapeño, remove seeds, and finely chop. Wash cucumber, halve, and finely dice. For the guacamole, halve avocados and remove pit and flesh. Transfer half of the flesh to the bowl and mash. Mix with lime juice and orange juice until creamy. Add onion, cilantro, and jalapeño, and mix to combine. Season with garlic, cumin, and salt to taste.",
   },
   {
-    "assets": "assets/step/Burrito_S2.jpeg",
-    "info": "Using a box grater, roughly grate cheese.",
+    "assets": "assets/step/Guacamole_S2.jpeg",
+    "info":
+        "Dice the remaining avocado and fold into the guacamole along with cucumber.",
   },
   {
-    "assets": "assets/step/Burrito_S3.jpeg",
+    "assets": "assets/step/Guacamole_S3.jpeg",
     "info":
-        "In a large bowl, beat together a little bit of Tabasco sauce with the eggs.",
-  },
-  {
-    "assets": "assets/step/Burrito_S4.jpeg",
-    "info":
-        "Heat up butter in a frying pan and sauté onions over medium heat for approx. 1 – 2 minutes. Then, add the bell pepper, VIVA LA SPICE seasoning (if using), and continue to sauté for an additional 2 – 3 min.",
-  },
-  {
-    "assets": "assets/step/Burrito_S5.jpeg",
-    "info":
-        "Add eggs to the pan and continue to sauté, stirring occasionally, for approx. 3 – 5 min. Then, add the cheese and stir until melted.",
-  },
-  {
-    "assets": "assets/step/Burrito_S6.jpeg",
-    "info":
-        "Place some of the eggs in the middle of the tortilla, taking care not to overfill. Sprinkle some chives on top. Fold tortilla in from the sides. Then, roll forward from bottom with thumbs until burrito is tightly rolled. Enjoy!",
+        "Season the tuna fillets with salt and pepper, rub with oil, and fry in a nonstick pan set over high heat. Fry for approx. 30 – 60 sec. on each side, for a rare seared steak. Serve immediately with a side of the guacamole, a sprinkle of lemon juice, and a drizzle of olive oil. Enjoy!",
   },
 ];
 
-final imageBurrito = [
-  "assets/step/Burrito_M.jpeg",
-  "assets/step/Burrito_S1.jpeg",
-  "assets/step/Burrito_S2.jpeg",
-  "assets/step/Burrito_S3.jpeg",
-  "assets/step/Burrito_S4.jpeg",
-  "assets/step/Burrito_S5.jpeg",
-  "assets/step/Burrito_S6.jpeg"
+final imageGuacamoleTuna = [
+  "assets/step/Guacamole_M.jpeg",
+  "assets/step/Guacamole_S1.jpeg",
+  "assets/step/Guacamole_S2.jpeg",
+  "assets/step/Guacamole_S3.jpeg",
 ];

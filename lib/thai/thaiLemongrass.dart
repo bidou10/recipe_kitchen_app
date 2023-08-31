@@ -30,6 +30,13 @@ class thaiLemongrass extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1]:5 g ginger ,1 cloves garlic ,½ stalk lemongrass ,¼ chili ,7½ g cilantro ,½ lime ,½ tbsp sugar ,1 tbsp fish sauce \n\n [Step 2] :250 g ground pork ,1 tbsp fish sauce ,7½ g cilantro, salt,pepper \n\n [Step 3] :vegetable oil (for frying) \n\n [Step 4] : rice (cooked, for serving) white cabbage (for serving) lime (for serving) ',
               style: TextStyle(
                 letterSpacing: 0.8,

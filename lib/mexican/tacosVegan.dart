@@ -29,16 +29,13 @@ class TacosVegan extends StatelessWidget {
               ),
             ),
             SizedBox(height: 8.0),
-            // Text(
-            //   'Ingredient List: \n\n[Step 1] : \n\n [Step 2] : \n\n [Step 3] : \n\n [Step 4]: ',
-            //   style: TextStyle(
-            //     letterSpacing: 0.8,
-            //     fontSize: 16.0,
-            //   ),
-            // ),
-            // SizedBox(
-            //   height: 8.0,
-            // ),
+            Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             Text(
               'Items necessary: \n\n Step 1 :cutting board,knife,small mixing bowl \n\n Step 2 :fine grater,citrus press,small mixing bowl \n\n Step 3 :large frying pan,cutting board,knife \n\n Step 4 :none ',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),

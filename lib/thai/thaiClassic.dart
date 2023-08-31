@@ -28,6 +28,13 @@ class ThaiClassic extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
               'Ingredient List: \n\n[Step 1] : 300 g rice noodles ,7 g ginger, 2 cloves garlic, 1 chili, 400 g chicken legs (boneless) ,150 bok choy ,4 tbsp dark soy sauce, 4 tbsp sweet soy sauce, 2 tbsp oyster sauce ,1 tbsp rice vinegar ,1 tsp sugar ,\n\n [Step 2] : 2 tbsp vegetable oil 2 eggs\n\n [Step 3] : sesame oil (for serving), sesame seed (for serving) ',
               style: TextStyle(
                 letterSpacing: 0.8,
