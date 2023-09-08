@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipe_kitchen_app/france/coqAuVin.dart';
+import 'package:recipe_kitchen_app/france/crepe.dart';
 import 'package:recipe_kitchen_app/france/croqueMonsieur.dart';
 import 'package:recipe_kitchen_app/france/frenchTuna.dart';
 import 'package:recipe_kitchen_app/france/macarons.dart';
@@ -69,11 +70,15 @@ class _FrancePageState extends State<FrancePage> {
                   context,
                   MaterialPageRoute(builder: (context) => miniQuiche()),
                 );
-              } else if (nameRecipe[index] ==
-                  "Lemon pistachio Macarons buttercream") {
+              } else if (nameRecipe[index] == "Macarons buttercream") {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => macarons()),
+                );
+              } else if (nameRecipe[index] == "Crepe") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => crepe()),
                 );
               }
             },
@@ -96,8 +101,8 @@ final nameRecipe = [
   "Coq Au vin",
   "Croque Monsieur",
   "Mini Quiche Lorraine",
-  "Lemon pistachio Macarons buttercream",
-  "Quinoa",
+  "Macarons buttercream",
+  "Crepe",
   "Mexican Pasta Salad",
   "Guacaomole Tuna Steak"
 ];
@@ -109,7 +114,7 @@ final imageUrls = [
   "https://images.services.kitchenstories.io/yHlZ8miHBfnNidx6-lCc5GenQWM=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/16_01_24_CroqueMonsier_Final.jpg",
   "https://images.services.kitchenstories.io/8Cjk1BbdiAYe2XlWplomcJV1UTI=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/04_04_MiniQuicheLorraine_Final4x3.jpg",
   "https://images.services.kitchenstories.io/KA8UNtiftT9fbucrkduHjGQcnzU=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/04_22_PistazienMacarons_TitlePicture.jpg",
-  "https://images.services.kitchenstories.io/4NSKYR0iW7r5S9yKHWfI8a9_o6g=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/R623-photo-final-4x3.jpg",
+  "https://images.services.kitchenstories.io/eGo1uxv0-C1NTLBI5LFdeoqS9B0=/1200x0/filters:quality(80)/images.kitchenstories.io/recipeImages/05_07_CrepesSuzette_titlePicture.jpg",
   "https://images.services.kitchenstories.io/uttSPcDYSvSk3gDDEwTCZEyQ_QY=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailResizedImages/R2978-abtesting2.original.jpg",
   "https://images.services.kitchenstories.io/d3oQU0oWuHozTy1DDqdS8EzinWk=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/R771-photo-final-4x3.jpg",
 ];
