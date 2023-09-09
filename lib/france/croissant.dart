@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class crepe extends StatelessWidget {
-  const crepe({super.key});
+class croissant extends StatelessWidget {
+  const croissant({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Crepe'),
+        title: Text('Croissant'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -15,14 +15,14 @@ class crepe extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/CrepeSuzette_M.jpeg',
+              'assets/step/croissant_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Crepe',
+              'Chocolate Croissant',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -37,7 +37,7 @@ class crepe extends StatelessWidget {
               ),
             ),
             Text(
-              'Ingredient List: \n\n[Step 1] :15 g butter 1 eggs 3½ g vanilla sugar 1 cl Grand Marnier 125 ml milk 60 g all-purpose flour salt\n\n[Step 2] :1 oranges\n\n [Step 3] :15 g sugar 75 ml orange juice \n\n [Step 4]: 25 g butter\n\n [Step 5]:  butter for frying\n\n [Step 6] :none',
+              'Ingredient List: \n\n[Step 1] :1 sheet puff pastry sheet\n\n[Step 2] :6 tsp chocolate-hazelnut spread\n\n [Step 3] :20 g chopped almonds\n\n [Step 4] :none \n\n [Step 5] :1 egg',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -47,13 +47,13 @@ class crepe extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              'Items necessary: \n\n Step 1: strainer,large bowl,whisk,small sauce pan \n\n Step 2 :zester,strainer,knife,small bowl \n\n Step 3 :small frying pan,cooking spoon \n\n Step 4 :none \n\n Step 5 :large frying pan,ladle \n\n Step 6 :none ',
+              'Items necessary: \n\n Step 1:cutting board,pizza wheel \n\n Step 2 :6 tsp chocolate-hazelnut spread \n\n Step 3 :20 g chopped almonds \n\n Step 4 :none \n\n Step 5 :bowl (small)whisk,baking sheet,parchment paper,pastry brush ',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),
             ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageCrepes.length,
+                imageCroissant.length,
                 (index) {
                   return ListTile(
                     leading: SizedBox(
@@ -91,45 +91,38 @@ class crepe extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/CrepeSuzette_M.jpeg",
+    "assets": "assets/step/croissant_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/CrepeSuzette_S1.jpeg",
+    "assets": "assets/step/croissant_S1.jpeg",
+    "info": "Roll out puff pastry and cut into long triangles.",
+  },
+  {
+    "assets": "assets/step/croissant_S2.jpeg",
     "info":
-        "Melt butter and allow to cool slightly. Then, beat together with the eggs, vanilla sugar, Grand Marnier, and milk. Strain the flour and a pinch of salt into the mixture and stir in. Allow the mixture to chill for approx. 30 – 35 min.",
+        "Preheat oven to 170°C (350°F). Evenly distribute hazelnut spread among puff pastry triangles, taking care to leave space around the edges.",
   },
   {
-    "assets": "assets/step/CrepeSuzette_S2.jpeg",
-    "info": "Meanwhile, zest one orange and fillet both.",
+    "assets": "assets/step/croissant_S3.jpeg",
+    "info": "Sprinkle almonds on top of hazelnut spread.",
   },
   {
-    "assets": "assets/step/CrepeSuzette_S3.jpeg",
+    "assets": "assets/step/croissant_S4.jpeg",
+    "info": "Roll the puff pastry forward, starting from the bottom.",
+  },
+  {
+    "assets": "assets/step/croissant_S5.jpeg",
     "info":
-        "Caramelize sugar in a pan. Deglaze with orange juice and bring to a boil for approx. 5 - 10 min. until the juice has thickened.",
-  },
-  {
-    "assets": "assets/step/CrepeSuzette_S4.jpeg",
-    "info": "Next, stir in remaining butter until a velvety sauce is formed.",
-  },
-  {
-    "assets": "assets/step/CrepeSuzette_S5.jpeg",
-    "info":
-        "Now, fry the Crêpes as thinly as possible in a hot pan with some butter for approx. 1 – 2 min. per side until golden.",
-  },
-  {
-    "assets": "assets/step/CrepeSuzette_S6.jpeg",
-    "info":
-        "Warm the cooked Crêpe in the orange sauce. Add the orange segments and orange zest. Fold if desired and serve warm.",
+        "Whisk egg. Place the croissants onto a baking paper-lined baking sheet and lightly brush with egg. Transfer to oven and bake for approx. 8 – 10 min. until golden brown. Enjoy for breakfast or as a afternoon treat.",
   },
 ];
 
-final imageCrepes = [
-  "assets/step/CrepeSuzette_M.jpeg",
-  "assets/step/CrepeSuzette_S1.jpeg",
-  "assets/step/CrepeSuzette_S2.jpeg",
-  "assets/step/CrepeSuzette_S3.jpeg",
-  "assets/step/CrepeSuzette_S4.jpeg",
-  "assets/step/CrepeSuzette_S5.jpeg",
-  "assets/step/CrepeSuzette_S6.jpeg",
+final imageCroissant = [
+  "assets/step/croissant_M.jpeg",
+  "assets/step/croissant_S1.jpeg",
+  "assets/step/croissant_S2.jpeg",
+  "assets/step/croissant_S3.jpeg",
+  "assets/step/croissant_S4.jpeg",
+  "assets/step/croissant_S5.jpeg"
 ];

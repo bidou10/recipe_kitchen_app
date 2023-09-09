@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:recipe_kitchen_app/france/coqAuVin.dart';
 import 'package:recipe_kitchen_app/france/crepe.dart';
+import 'package:recipe_kitchen_app/france/croissant.dart';
 import 'package:recipe_kitchen_app/france/croqueMonsieur.dart';
 import 'package:recipe_kitchen_app/france/frenchTuna.dart';
 import 'package:recipe_kitchen_app/france/macarons.dart';
 import 'package:recipe_kitchen_app/france/miniQuiche.dart';
+import 'package:recipe_kitchen_app/france/tarteTatin.dart';
 import 'package:recipe_kitchen_app/france/tartiflette.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 
@@ -80,6 +82,16 @@ class _FrancePageState extends State<FrancePage> {
                   context,
                   MaterialPageRoute(builder: (context) => crepe()),
                 );
+              } else if (nameRecipe[index] == "Chocolate Croissant") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => croissant()),
+                );
+              } else if (nameRecipe[index] == "Tarte tatin") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => tarteTatin()),
+                );
               }
             },
           ),
@@ -103,8 +115,8 @@ final nameRecipe = [
   "Mini Quiche Lorraine",
   "Macarons buttercream",
   "Crepe",
-  "Mexican Pasta Salad",
-  "Guacaomole Tuna Steak"
+  "Chocolate Croissant",
+  "Tarte tatin"
 ];
 
 final imageUrls = [
@@ -115,6 +127,6 @@ final imageUrls = [
   "https://images.services.kitchenstories.io/8Cjk1BbdiAYe2XlWplomcJV1UTI=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/04_04_MiniQuicheLorraine_Final4x3.jpg",
   "https://images.services.kitchenstories.io/KA8UNtiftT9fbucrkduHjGQcnzU=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/04_22_PistazienMacarons_TitlePicture.jpg",
   "https://images.services.kitchenstories.io/eGo1uxv0-C1NTLBI5LFdeoqS9B0=/1200x0/filters:quality(80)/images.kitchenstories.io/recipeImages/05_07_CrepesSuzette_titlePicture.jpg",
-  "https://images.services.kitchenstories.io/uttSPcDYSvSk3gDDEwTCZEyQ_QY=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailResizedImages/R2978-abtesting2.original.jpg",
-  "https://images.services.kitchenstories.io/d3oQU0oWuHozTy1DDqdS8EzinWk=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/R771-photo-final-4x3.jpg",
+  "https://images.services.kitchenstories.io/0p5NLxB8SU--Nw26cyNk7D0UPag=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/RP02_21_05_quickChocolateCroissant_TitlePicture.jpg",
+  "https://images.services.kitchenstories.io/C8_S6f1oV0dWUe4kz2TUQK6HBAE=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/TarteTatin_final.jpg",
 ];
