@@ -276,11 +276,39 @@ flutter:
     - assets/step/Kimbap_S4.jpeg
     - assets/step/Kimbap_S5.jpeg
     - assets/step/Kimbap_S6.jpeg
+    - assets/step/kimchi_M.jpeg
+    - assets/step/kimchi_S1.jpeg
+    - assets/step/kimchi_S2.jpeg
+    - assets/step/kimchi_S3.jpeg
+    - assets/step/kimchi_S4.jpeg
     - assets/step/koreanNoodle_M.jpeg
     - assets/step/koreanNoodle_S1.jpeg
     - assets/step/koreanNoodle_S2.jpeg
     - assets/step/koreanNoodle_S3.jpeg
     - assets/step/koreanNoodle_S4.jpeg
+    - assets/step/koreanBBQ_M.jpeg
+    - assets/step/koreanBBQ_S1.jpeg
+    - assets/step/koreanBBQ_S2.jpeg
+    - assets/step/koreanBBQ_S3.jpeg
+    - assets/step/koreanBBQ_S4.jpeg
+    - assets/step/koreanBBQ_S5.jpeg
+    - assets/step/koreanBBQ_S6.jpeg
+    - assets/step/koreanBBQ_S7.jpeg
+    - assets/step/koreanBBQ_S8.jpeg
+    - assets/step/shortRibs_M.jpeg
+    - assets/step/shortRibs_S1.jpeg
+    - assets/step/shortRibs_S2.jpeg
+    - assets/step/shortRibs_S3.jpeg
+    - assets/step/Jumeokbap_M.jpeg
+    - assets/step/Jumeokbap_S1.jpeg
+    - assets/step/Jumeokbap_S2.jpeg
+    - assets/step/Jumeokbap_S3.jpeg
+    - assets/step/BulgogiBeef_M.jpeg
+    - assets/step/BulgogiBeef_S1.jpeg
+    - assets/step/BulgogiBeef_S2.jpeg
+    - assets/step/BulgogiBeef_S3.jpeg
+    - assets/step/BulgogiBeef_S4.jpeg
+    
 
 
 
