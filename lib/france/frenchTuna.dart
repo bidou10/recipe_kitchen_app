@@ -224,29 +224,29 @@ final imageFrenchTuna = [
 
 // const product = [
 //   {
-//     "assets": "assets/step/FrenchTuna_M.jpeg",
+//     "assets": "assets/step/_M.jpeg",
 //     "info": "Final photo",
 //   },
 //   {
-//     "assets": "assets/step/FrenchTuna_S1.jpeg",
+//     "assets": "assets/step/_S1.jpeg",
 //     "info":
 //         "",
 //   },
 //   {
-//     "assets": "assets/step/FrenchTuna_S2.jpeg",
+//     "assets": "assets/step/_S2.jpeg",
 //     "info":
 //         "",
 //   },
 //   {
-//     "assets": "assets/step/FrenchTuna_S3.jpeg",
+//     "assets": "assets/step/_S3.jpeg",
 //     "info":
 //         "",
 //   },
 // ];
 
 // final imageFrenchTuna = [
-//   "assets/step/FrenchTuna_M.jpeg",
-//   "assets/step/FrenchTuna_S1.jpeg",
-//   "assets/step/FrenchTuna_S2.jpeg",
-//   "assets/step/FrenchTuna_S3.jpeg",
+//   "assets/step/_M.jpeg",
+//   "assets/step/_S1.jpeg",
+//   "assets/step/_S2.jpeg",
+//   "assets/step/_S3.jpeg",
 // ];
