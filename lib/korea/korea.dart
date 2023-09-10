@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_kitchen_app/korea/BulgogiBeef.dart';
+import 'package:recipe_kitchen_app/korea/Jumeokbap.dart';
 import 'package:recipe_kitchen_app/korea/bibimbap.dart';
 import 'package:recipe_kitchen_app/korea/kimbap.dart';
 import 'package:recipe_kitchen_app/korea/kimchi.dart';
+import 'package:recipe_kitchen_app/korea/koreaBBQ.dart';
 import 'package:recipe_kitchen_app/korea/ragu.dart';
+import 'package:recipe_kitchen_app/korea/shortRibs.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 
 class KoreaPage extends StatefulWidget {
@@ -67,25 +71,25 @@ class _koreaPageState extends State<KoreaPage> {
                   context,
                   MaterialPageRoute(builder: (context) => raguMushroom()),
                 );
-              } else if (nameRecipe[index] == "Kimchi") {
+              } else if (nameRecipe[index] == "Korean BBQ") {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => kimchi()),
+                  MaterialPageRoute(builder: (context) => koreanBBQ()),
                 );
-              } else if (nameRecipe[index] == "Kimchi") {
+              } else if (nameRecipe[index] == "Short ribs") {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => kimchi()),
+                  MaterialPageRoute(builder: (context) => shortRibs()),
                 );
-              } else if (nameRecipe[index] == "Kimchi") {
+              } else if (nameRecipe[index] == "Jumeokbap") {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => kimchi()),
+                  MaterialPageRoute(builder: (context) => jumeokbap()),
                 );
-              } else if (nameRecipe[index] == "Kimchi") {
+              } else if (nameRecipe[index] == "Bulgogi beef") {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => kimchi()),
+                  MaterialPageRoute(builder: (context) => bulgogiBeef()),
                 );
               }
             },
@@ -108,10 +112,10 @@ final nameRecipe = [
   "Kimbap",
   "Jaengban guksu",
   "Ragu mushroom",
-  "Kimchi",
-  "Kimchi",
-  "8",
-  "9",
+  "Korean BBQ",
+  "Short ribs",
+  "Jumeokbap",
+  "Bulgogi beef",
 ];
 
 final imageUrls = [
@@ -119,9 +123,9 @@ final imageUrls = [
   "https://images.services.kitchenstories.io/P2C2AuHdfRPFsI6S9G1mtJxMc90=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2455-final-photo-_2.jpg",
   "https://images.services.kitchenstories.io/a7Uh30NKeQ88tgigpwgNtjBRJYY=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2383-photo-final-1.jpg",
   "https://images.services.kitchenstories.io/jJYvMxlfrqn-l3iiMwBHTBi13Zk=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2402-photo-final-3.jpg",
-  "https://images.services.kitchenstories.io/8Cjk1BbdiAYe2XlWplomcJV1UTI=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/04_04_MiniQuicheLorraine_Final4x3.jpg",
-  "https://images.services.kitchenstories.io/KA8UNtiftT9fbucrkduHjGQcnzU=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/04_22_PistazienMacarons_TitlePicture.jpg",
-  "https://images.services.kitchenstories.io/eGo1uxv0-C1NTLBI5LFdeoqS9B0=/1200x0/filters:quality(80)/images.kitchenstories.io/recipeImages/05_07_CrepesSuzette_titlePicture.jpg",
-  "https://images.services.kitchenstories.io/0p5NLxB8SU--Nw26cyNk7D0UPag=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/RP02_21_05_quickChocolateCroissant_TitlePicture.jpg",
-  "https://images.services.kitchenstories.io/C8_S6f1oV0dWUe4kz2TUQK6HBAE=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/TarteTatin_final.jpg",
+  "https://images.services.kitchenstories.io/BCBgWRZtl3D_zIthLAIpjX_-0CE=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2134-photo-final-002.jpg",
+  "https://images.services.kitchenstories.io/JaiDypOtQJ1_uYPEN570pY4tBBQ=/1200x0/filters:quality(80)/images.kitchenstories.io/recipeStepImages/01_07_KoreanischesBarbecueMitSamJangDip_step08.jpg",
+  "https://images.services.kitchenstories.io/wnqvh8O6ddIAzaS_JjYj1DKLg-g=/1200x0/filters:quality(80)/images.kitchenstories.io/recipeImages/R1137-photo-final-4x3.jpg",
+  "https://images.services.kitchenstories.io/ON_zw9bBsoZZiOFohnJn5vs2BpY=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2920-final-photo-293.jpg",
+  "https://images.services.kitchenstories.io/FVk3lhT1S_pcLn-4ZuknfQu5ZmM=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/R667-photo-final-4x3.jpg",
 ];
