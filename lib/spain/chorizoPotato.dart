@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:full_screen_image/full_screen_image.dart';
 
 class ChorizoPotato extends StatelessWidget {
-  const ChorizoPotato({super.key});
+  const ChorizoPotato({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -56,28 +56,56 @@ class ChorizoPotato extends StatelessWidget {
               children: List.generate(
                 imageChorizoPotato.length,
                 (index) {
-                  return ListTile(
-                    leading: Container(
-                      height: 150,
-                      width: 110, // Ajustez la largeur ici
-                      child: Image.asset(
-                        product[index]['assets'] as String,
-                        fit: BoxFit.cover,
+                  return InkWell(
+                    onTap: () {
+                      // Afficher l'image en plein écran avec l'app bar
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => FullScreenPage(
+                            imageAsset: product[index]['assets'] as String,
+                            info: product[index]['info'] as String,
+                          ),
+                        ),
+                      );
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 100,
+                            width: 100,
+                            child: Image.asset(
+                              product[index]['assets'] as String,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(width: 16.0),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Step $index',
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    letterSpacing: 0.6,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                ),
+                                Text(
+                                  '${product[index]['info']}',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    letterSpacing: 0.7,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
-                    title: Text(
-                      'Step $index',
-                      style: TextStyle(
-                          fontSize: 20,
-                          letterSpacing: 0.6,
-                          fontWeight: FontWeight.w700),
-                    ),
-                    subtitle: Text(
-                      '${product[index]['info']},',
-                      style: TextStyle(
-                          fontSize: 18,
-                          letterSpacing: 0.7,
-                          fontWeight: FontWeight.w600),
                     ),
                   );
                 },
@@ -85,6 +113,37 @@ class ChorizoPotato extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class FullScreenPage extends StatelessWidget {
+  final String imageAsset;
+  final String info;
+
+  FullScreenPage({required this.imageAsset, required this.info});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        // App bar avec le bouton de retour
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            // Retour à l'écran précédent
+            Navigator.of(context).pop();
+          },
+        ),
+        title: Text('Full Screen Image'),
+      ),
+      body: FullScreenWidget(
+        child: Image.asset(
+          imageAsset,
+          fit: BoxFit.cover,
+        ),
+        disposeLevel: DisposeLevel.High,
       ),
     );
   }
@@ -127,63 +186,95 @@ final imageChorizoPotato = [
 
 
 
-    //  onTap: () {
-    //           // Afficher l'image en plein écran lorsqu'elle est cliquée
-    //           Navigator.of(context).push(
-    //             MaterialPageRoute(
-    //               builder: (context) => FullScreenWidget(
-    //                 child: Image.asset(
-    //                   imageUrl,
-    //                   fit: BoxFit.cover,
-    //                 ),
-    //                 disposeLevel: DisposeLevel.Low,
-    //               ),
-    //             ),
-    //           );
-    //         },
+// Column(
+//               children: List.generate(
+//                 imageChorizoPotato.length,
+//                 (index) {
+//                   return InkWell(
+//                     onTap: () {
+//                       // Afficher l'image en plein écran avec l'app bar
+//                       Navigator.of(context).push(
+//                         MaterialPageRoute(
+//                           builder: (context) => FullScreenPage(
+//                             imageAsset: product[index]['assets'] as String,
+//                             info: product[index]['info'] as String,
+//                           ),
+//                         ),
+//                       );
+//                     },
+//                     child: Padding(
+//                       padding: EdgeInsets.all(8.0),
+//                       child: Row(
+//                         children: [
+//                           Container(
+//                             height: 100,
+//                             width: 100,
+//                             child: Image.asset(
+//                               product[index]['assets'] as String,
+//                               fit: BoxFit.cover,
+//                             ),
+//                           ),
+//                           SizedBox(width: 16.0),
+//                           Expanded(
+//                             child: Column(
+//                               crossAxisAlignment: CrossAxisAlignment.start,
+//                               children: [
+//                                 Text(
+//                                   'Step $index',
+//                                   style: TextStyle(
+//                                     fontSize: 20,
+//                                     letterSpacing: 0.6,
+//                                     fontWeight: FontWeight.w700,
+//                                   ),
+//                                 ),
+//                                 Text(
+//                                   '${product[index]['info']}',
+//                                   style: TextStyle(
+//                                     fontSize: 18,
+//                                     letterSpacing: 0.7,
+//                                     fontWeight: FontWeight.w600,
+//                                   ),
+//                                 ),
+//                               ],
+//                             ),
+//                           ),
+//                         ],
+//                       ),
+//                     ),
+//                   );
+//                 },
+//               ),
+//             ),
 
 
+// class FullScreenPage extends StatelessWidget {
+//   final String imageAsset;
+//   final String info;
 
+//   FullScreenPage({required this.imageAsset, required this.info});
 
-        //  return InkWell(
-        //     onTap: () {
-        //       // Afficher l'image en plein écran lorsqu'elle est cliquée
-        //       Navigator.of(context).push(
-        //         MaterialPageRoute(
-        //           builder: (context) => FullScreenWidget(
-        //             child: Image.asset(
-        //               imageUrl,
-        //               fit: BoxFit.cover,
-        //             ),
-        //             disposeLevel: DisposeLevel.Low,
-        //           ),
-        //         ),
-        //       );
-        //     },
-        //     child: Padding(
-        //       padding: EdgeInsets.all(8.0),
-        //       child: Image.asset(
-        //         imageUrl,
-        //         height: 200, // Ajustez la hauteur selon vos besoins
-        //         fit: BoxFit.cover,
-        //       ),
-        //     ),
-        //   );
-
-
-//         class ChorizoPotat extends StatelessWidget {
 //   @override
 //   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: ImageListScreen(),
+//     return Scaffold(
+//       appBar: AppBar(
+//         // App bar avec le bouton de retour
+//         leading: IconButton(
+//           icon: Icon(Icons.arrow_back),
+//           onPressed: () {
+//             // Retour à l'écran précédent
+//             Navigator.of(context).pop();
+//           },
+//         ),
+//         title: Text('Full Screen Image'),
+//       ),
+//       body: FullScreenWidget(
+//         child: Image.asset(
+//           imageAsset,
+//           fit: BoxFit.cover,
+//         ),
+//         disposeLevel: DisposeLevel.High,
+//       ),
 //     );
 //   }
 // }
 
-// class ImageListScreen extends StatelessWidget {
-//   final List<String> imageUrls = [
-//     'assets/step/ChorizoPotato_S1.jpeg',
-//     'assets/step/ChorizoPotato_S2.jpeg',
-//     'assets/step/ChorizoPotato_S3.jpeg',
-//     // Ajoutez ici d'autres URL d'images
-//   ];
