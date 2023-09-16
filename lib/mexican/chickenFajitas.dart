@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:full_screen_image/full_screen_image.dart';
 
 class ChickenFajitas extends StatelessWidget {
   const ChickenFajitas({super.key});
@@ -55,28 +56,56 @@ class ChickenFajitas extends StatelessWidget {
               children: List.generate(
                 imageChickenFajitas.length,
                 (index) {
-                  return ListTile(
-                    leading: SizedBox(
-                      height: 70,
-                      width: 110, // Ajustez la largeur ici
-                      child: Image.asset(
-                        product[index]['assets'] as String,
-                        fit: BoxFit.cover,
+                  return InkWell(
+                    onTap: () {
+                      // Afficher l'image en plein écran avec l'app bar
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => FullScreenPage(
+                            imageAsset: product[index]['assets'] as String,
+                            info: product[index]['info'] as String,
+                          ),
+                        ),
+                      );
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 100,
+                            width: 100,
+                            child: Image.asset(
+                              product[index]['assets'] as String,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          SizedBox(width: 16.0),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Step $index',
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    letterSpacing: 0.6,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                ),
+                                Text(
+                                  '${product[index]['info']}',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    letterSpacing: 0.7,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
-                    title: Text(
-                      'Step $index',
-                      style: TextStyle(
-                          fontSize: 20,
-                          letterSpacing: 0.6,
-                          fontWeight: FontWeight.w700),
-                    ),
-                    subtitle: Text(
-                      '${product[index]['info']},',
-                      style: TextStyle(
-                          fontSize: 18,
-                          letterSpacing: 0.7,
-                          fontWeight: FontWeight.w600),
                     ),
                   );
                 },
@@ -117,3 +146,34 @@ final imageChickenFajitas = [
   "assets/step/ChickenFajitas_S2.jpeg",
   "assets/step/ChickenFajitas_S3.jpeg",
 ];
+
+class FullScreenPage extends StatelessWidget {
+  final String imageAsset;
+  final String info;
+
+  FullScreenPage({required this.imageAsset, required this.info});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        // App bar avec le bouton de retour
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            // Retour à l'écran précédent
+            Navigator.of(context).pop();
+          },
+        ),
+        title: Text('Full Screen Image'),
+      ),
+      body: FullScreenWidget(
+        child: Image.asset(
+          imageAsset,
+          fit: BoxFit.cover,
+        ),
+        disposeLevel: DisposeLevel.High,
+      ),
+    );
+  }
+}
