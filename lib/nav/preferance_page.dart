@@ -6,6 +6,7 @@ import 'package:recipe_kitchen_app/japan/japan.dart';
 import 'package:recipe_kitchen_app/korea/korea.dart';
 import 'package:recipe_kitchen_app/mexican/mexican.dart';
 import 'package:recipe_kitchen_app/nav/first_page.dart';
+import 'package:recipe_kitchen_app/spain/spain.dart';
 import 'package:recipe_kitchen_app/thai/thai.dart';
 
 class PreferancePage extends StatelessWidget {
@@ -111,7 +112,7 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('Korea Food'),
             subtitle: Text('best korean food recipe dishes'),
-            trailing: Icon(Icons.arrow_forward_ios),
+            trailing: Icon(Icons.more_vert),
             onTap: () {
               Navigator.of(context)
                   .push(MaterialPageRoute(builder: (context) => KoreaPage()));
@@ -126,7 +127,12 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('Spanish Food'),
             subtitle: Text('best spanish food recipe dishes'),
-            trailing: Icon(Icons.more_vert),
+            trailing: Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => SpainPage()),
+              );
+            },
           ),
           Divider(height: 0),
           ListTile(

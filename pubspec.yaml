@@ -49,6 +49,8 @@ dependencies:
   flutter_sticky_section_list: ^1.0.1
   image_network: ^2.5.4+1
   cached_network_image: ^3.2.3
+  full_screen_image: ^2.0.0
+  photo_view: ^0.14.0
 
 dev_dependencies:
   flutter_test:
@@ -77,11 +79,13 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - json/ThaiRecipe.json
+      # image icon
     - assets/icons/login.png
     - assets/icons/loginv1.png
     - assets/icons/facebook.png
     - assets/icons/google.png
     - assets/icons/user.png 
+      # image thai
     - assets/step/thai_stir_M.jpeg
     - assets/step/thai_stir_S1.jpeg
     - assets/step/thai_stir_S2.jpeg
@@ -133,6 +137,7 @@ flutter:
     - assets/step/thaiGreenCurry_S6.jpeg
     - assets/step/thaiGreenCurry_S7.jpeg
     - assets/step/thaiGreenCurry_S8.jpeg
+      # image japan
     - assets/step/Gyudon_M.jpeg
     - assets/step/Gyudon_S1.jpeg
     - assets/step/Gyudon_S2.jpeg
@@ -161,6 +166,7 @@ flutter:
     - assets/step/chickenKatsu_S2.jpeg
     - assets/step/chickenKatsu_S3.jpeg
     - assets/step/chickenKatsu_S4.jpeg
+      # image mexico
     - assets/step/tacosVegan_M.jpeg
     - assets/step/tacosVegan_S1.jpeg
     - assets/step/tacosVegan_S2.jpeg
@@ -210,6 +216,7 @@ flutter:
     - assets/step/Guacamole_S1.jpeg
     - assets/step/Guacamole_S2.jpeg
     - assets/step/Guacamole_S3.jpeg
+      # image france
     - assets/step/Tartiflette_M.jpeg
     - assets/step/Tartiflette_S1.jpeg
     - assets/step/Tartiflette_S2.jpeg
@@ -264,6 +271,7 @@ flutter:
     - assets/step/TarteTatin_S3.jpeg
     - assets/step/TarteTatin_S4.jpeg
     - assets/step/TarteTatin_S5.jpeg
+      # image korea
     - assets/step/Bibimbab_M.jpeg
     - assets/step/Bibimbab_S1.jpeg
     - assets/step/Bibimbab_S2.jpeg
@@ -308,6 +316,21 @@ flutter:
     - assets/step/BulgogiBeef_S2.jpeg
     - assets/step/BulgogiBeef_S3.jpeg
     - assets/step/BulgogiBeef_S4.jpeg
+    # image spain
+    - assets/step/paellaValenciana_M.jpeg
+    - assets/step/paellaValenciana_S1.jpeg
+    - assets/step/paellaValenciana_S2.jpeg
+    - assets/step/paellaValenciana_S3.jpeg
+    - assets/step/paellaValenciana_S4.jpeg
+    - assets/step/paellaValenciana_S5.jpeg
+    - assets/step/paellaValenciana_S6.jpeg
+    - assets/step/paellaValenciana_S7.jpeg
+    - assets/step/ChorizoPotato_M.jpeg
+    - assets/step/ChorizoPotato_S1.jpeg
+    - assets/step/ChorizoPotato_S2.jpeg
+    - assets/step/ChorizoPotato_S3.jpeg
+    - assets/step/ChorizoPotato_S4.jpeg
+    
     
 
 
