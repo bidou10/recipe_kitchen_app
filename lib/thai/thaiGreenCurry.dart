@@ -93,6 +93,9 @@ class thaiGreenCurry extends StatelessWidget {
                                     fontWeight: FontWeight.w700,
                                   ),
                                 ),
+                                SizedBox(
+                                  height: 10,
+                                ),
                                 Text(
                                   '${product[index]['info']}',
                                   style: TextStyle(

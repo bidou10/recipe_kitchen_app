@@ -90,8 +90,11 @@ class ChorizoPotato extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 20,
                                     letterSpacing: 0.6,
-                                    fontWeight: FontWeight.w700,
+                                    fontWeight: FontWeight.w900,
                                   ),
+                                ),
+                                SizedBox(
+                                  height: 10,
                                 ),
                                 Text(
                                   '${product[index]['info']}',
@@ -183,98 +186,3 @@ final imageChorizoPotato = [
   "assets/step/ChorizoPotato_S3.jpeg",
   "assets/step/ChorizoPotato_S4.jpeg",
 ];
-
-
-
-// Column(
-//               children: List.generate(
-//                 imageChorizoPotato.length,
-//                 (index) {
-//                   return InkWell(
-//                     onTap: () {
-//                       // Afficher l'image en plein écran avec l'app bar
-//                       Navigator.of(context).push(
-//                         MaterialPageRoute(
-//                           builder: (context) => FullScreenPage(
-//                             imageAsset: product[index]['assets'] as String,
-//                             info: product[index]['info'] as String,
-//                           ),
-//                         ),
-//                       );
-//                     },
-//                     child: Padding(
-//                       padding: EdgeInsets.all(8.0),
-//                       child: Row(
-//                         children: [
-//                           Container(
-//                             height: 100,
-//                             width: 100,
-//                             child: Image.asset(
-//                               product[index]['assets'] as String,
-//                               fit: BoxFit.cover,
-//                             ),
-//                           ),
-//                           SizedBox(width: 16.0),
-//                           Expanded(
-//                             child: Column(
-//                               crossAxisAlignment: CrossAxisAlignment.start,
-//                               children: [
-//                                 Text(
-//                                   'Step $index',
-//                                   style: TextStyle(
-//                                     fontSize: 20,
-//                                     letterSpacing: 0.6,
-//                                     fontWeight: FontWeight.w700,
-//                                   ),
-//                                 ),
-//                                 Text(
-//                                   '${product[index]['info']}',
-//                                   style: TextStyle(
-//                                     fontSize: 18,
-//                                     letterSpacing: 0.7,
-//                                     fontWeight: FontWeight.w600,
-//                                   ),
-//                                 ),
-//                               ],
-//                             ),
-//                           ),
-//                         ],
-//                       ),
-//                     ),
-//                   );
-//                 },
-//               ),
-//             ),
-
-
-// class FullScreenPage extends StatelessWidget {
-//   final String imageAsset;
-//   final String info;
-
-//   FullScreenPage({required this.imageAsset, required this.info});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         // App bar avec le bouton de retour
-//         leading: IconButton(
-//           icon: Icon(Icons.arrow_back),
-//           onPressed: () {
-//             // Retour à l'écran précédent
-//             Navigator.of(context).pop();
-//           },
-//         ),
-//         title: Text('Full Screen Image'),
-//       ),
-//       body: FullScreenWidget(
-//         child: Image.asset(
-//           imageAsset,
-//           fit: BoxFit.cover,
-//         ),
-//         disposeLevel: DisposeLevel.High,
-//       ),
-//     );
-//   }
-// }
-
