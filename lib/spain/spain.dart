@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_kitchen_app/spain/basqueBurnt.dart';
+import 'package:recipe_kitchen_app/spain/canarianPorkChops.dart';
+import 'package:recipe_kitchen_app/spain/ceviche.dart';
 import 'package:recipe_kitchen_app/spain/chorizoPotato.dart';
+import 'package:recipe_kitchen_app/spain/gazpacho.dart';
 import 'package:recipe_kitchen_app/spain/paella.dart';
+import 'package:recipe_kitchen_app/spain/serrano.dart';
+import 'package:recipe_kitchen_app/spain/spanishGarlicShrimp.dart';
+import 'package:recipe_kitchen_app/spain/sweetCornGazpacho.dart';
 import 'package:recipe_kitchen_app/spain/test2.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 
@@ -53,11 +60,53 @@ class _spainPageState extends State<SpainPage> {
                     builder: (context) => ChorizoPotato(),
                   ),
                 );
-              } else if (nameRecipe[index] == "chorizo test") {
+              } else if (nameRecipe[index] == "Gazpacho") {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ChorizoPota(),
+                    builder: (context) => gazpacho(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Ceviche") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ceviche(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Serrano") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Serrano(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Sweet Corn Gazpacho") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => sweetCornGazpacho(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Canarian Pork Chops") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CanarianPorkChops(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Spanish Garlic Shrimp") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => spanishGarlicShrimp(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Basque cheesecake") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => basqueBurnt(),
                   ),
                 );
               }
@@ -78,23 +127,23 @@ class _spainPageState extends State<SpainPage> {
 final nameRecipe = [
   "Paella",
   "Chorizo potato",
-  "chorizo test",
-  "Jaengban guksu",
-  "Ragu mushroom",
-  "Korean BBQ",
-  "Short ribs",
-  "Jumeokbap",
-  "Bulgogi beef",
+  "Gazpacho",
+  "Ceviche",
+  "Serrano",
+  "Sweet Corn Gazpacho",
+  "Canarian Pork Chops",
+  "Spanish Garlic Shrimp",
+  "Basque cheesecake",
 ];
 
 final imageUrls = [
   "https://images.services.kitchenstories.io/eVCKXHTMpdClQHGdd8mDk3debmU=/1080x0/filters:quality(80)/images.kitchenstories.io/recipeImages/RP02_18_06_valencianPaella_titlePicture.jpg",
   "https://images.services.kitchenstories.io/PPU9A06PL_ssttFgJFpHl2fxin0=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R3007-final-photo-1.jpg",
-  "https://images.services.kitchenstories.io/a7Uh30NKeQ88tgigpwgNtjBRJYY=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2383-photo-final-1.jpg",
-  "https://images.services.kitchenstories.io/jJYvMxlfrqn-l3iiMwBHTBi13Zk=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2402-photo-final-3.jpg",
-  "https://images.services.kitchenstories.io/BCBgWRZtl3D_zIthLAIpjX_-0CE=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2134-photo-final-002.jpg",
-  "https://images.services.kitchenstories.io/JaiDypOtQJ1_uYPEN570pY4tBBQ=/1200x0/filters:quality(80)/images.kitchenstories.io/recipeStepImages/01_07_KoreanischesBarbecueMitSamJangDip_step08.jpg",
-  "https://images.services.kitchenstories.io/wnqvh8O6ddIAzaS_JjYj1DKLg-g=/1200x0/filters:quality(80)/images.kitchenstories.io/recipeImages/R1137-photo-final-4x3.jpg",
-  "https://images.services.kitchenstories.io/ON_zw9bBsoZZiOFohnJn5vs2BpY=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2920-final-photo-293.jpg",
-  "https://images.services.kitchenstories.io/FVk3lhT1S_pcLn-4ZuknfQu5ZmM=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/R667-photo-final-4x3.jpg",
+  "https://images.services.kitchenstories.io/WoTGG0YkGTGs84DhO7ybWayQKXw=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2406-final-photo-1.jpg",
+  "https://images.services.kitchenstories.io/2k_M-z1kikmvouSzFyvcgcGJVTM=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/RP08_20_01_SummerCeviche_TitlePicture.jpg",
+  "https://images.services.kitchenstories.io/rOU6PDGQ_SU_ifG-f9LasTpUp94=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/10_10_StuffedSerranoWrappedChicken_titlePicture.jpg",
+  "https://images.services.kitchenstories.io/29KE7YERjfgPh6M3K960KKFNFng=/1080x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R1655-photo-final-01.jpg",
+  "https://images.services.kitchenstories.io/mATUJ6d_dcr0I8Ut68gMa0jKQqQ=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/R1195-photo-final.jpg",
+  "https://images.services.kitchenstories.io/Gg2_Z-3now1dt5UgFv7S47gXGT4=/1200x0/filters:quality(80)/images.kitchenstories.io/recipeImages/R1167-photo-final.jpg",
+  "https://images.services.kitchenstories.io/Dsj-1sRlFyk1folbmhrAuwIDNqw=/1200x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R1965-photo-final-001.jpg",
 ];

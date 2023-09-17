@@ -90,8 +90,11 @@ class paella extends StatelessWidget {
                                   style: TextStyle(
                                     fontSize: 20,
                                     letterSpacing: 0.6,
-                                    fontWeight: FontWeight.w700,
+                                    fontWeight: FontWeight.w900,
                                   ),
+                                ),
+                                SizedBox(
+                                  height: 10,
                                 ),
                                 Text(
                                   '${product[index]['info']}',
