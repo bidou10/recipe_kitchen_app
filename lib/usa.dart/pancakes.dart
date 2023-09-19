@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:full_screen_image/full_screen_image.dart';
 
-class basqueBurnt extends StatelessWidget {
-  const basqueBurnt({Key? key});
+class Pancakes extends StatelessWidget {
+  const Pancakes({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Basque Burnt Cheesecake'),
+        title: Text('Pancakes'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -16,14 +16,14 @@ class basqueBurnt extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/basqueBurnt_M.jpeg',
+              'assets/step/americanPancakes_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Basque Burnt Cheesecake',
+              'Pancakes',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -31,14 +31,14 @@ class basqueBurnt extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
-              'Recipe cake for eight persons',
+              'Recipe for two persons',
               style: TextStyle(
                 fontSize: 14.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
-              'Ingredient List: \n\n[Step 1] :unsalted butter\n\n[Step 2] :900 g cream cheese 300 g sugar\n\n [Step 3] :6 eggs 470 g heavy cream 1 tsp vanilla extract ½ tsp salt \n\n [Step 4] :50 g flour',
+              'Ingredient List: \n\n[Step 1] :125 g flour ,1 tsp baking powder, 1 tbsp sugar ,⅜ tsp salt\n\n[Step 2] :1 eggs 160 ml milk 1 tbsp unsalted butter (melted)\n\n [Step 3] :none \n\n [Step 4] : chocolate chip unsalted butter (for frying) maple syrup (for serving)',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -48,13 +48,13 @@ class basqueBurnt extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              'Items necessary: \n\n Step 1:oven,springform pan (9 in.), 2 parchment paper \n\n Step 2 :stand mixer with paddle \n\n Step 3 : rubber spatula \n\n Step 4 :sieve \n\n ',
+              'Items necessary: \n\n Step 1: liquid measuring cup,whisk \n\n Step 2 :liquid measuring cup \n\n Step 3 :none \n\n Step 4 :frying pan, spatula \n\n  ',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),
             ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageBasqueBurnt.length,
+                imagePancakes.length,
                 (index) {
                   return InkWell(
                     onTap: () {
@@ -154,35 +154,34 @@ class FullScreenPage extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/basqueBurnt_M.jpeg",
+    "assets": "assets/step/americanPancakes_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/basqueBurnt_S1.jpeg",
-    "info":
-        "Preheat the oven to 200°C/390°F. Grease a springform pan with butter, then line with 2 sheets of parchment paper, leaving enough to fold and hang over on the pan’s rim",
+    "assets": "assets/step/americanPancakes_S1.jpeg",
+    "info": "Combine flour, baking powder, sugar, and salt and set aside.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S2.jpeg",
+    "assets": "assets/step/americanPancakes_S2.jpeg",
     "info":
-        "Whip cream cheese and sugar together in a stand mixer with a paddle attachment for approx. 2 min., or until sugar has completely dissolved.",
+        "Beat eggs and milk together in another measuring cup, then stir in cooled melted butter until combined.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S3.jpeg",
+    "assets": "assets/step/americanPancakes_S3.jpeg",
     "info":
-        "Add eggs, one at a time, to the stand mixer, mixing in between. Brush the sides down with a rubber spatula, then add cream, vanilla extract, and salt, and stir to combine.",
+        "Pour wet ingredients into dry and stir just until combined (it should look a little lumpy).",
   },
   {
-    "assets": "assets/step/basqueBurnt_S4.jpeg",
+    "assets": "assets/step/americanPancakes_S4.jpeg",
     "info":
-        "Sift flour into the cream cheese mixture, then gently fold the ingredients together just until combined. Pour the batter into the lined springform pan and bake at 200°C/390°F for approx. 60 min. Let cool completely to room temperature before serving. Enjoy!",
+        "Heat pan over medium heat and add enough butter to coat well. Pour batter onto pan in small circles; if using, sprinkle with chocolate chips. Cook until their tops bubble and bottoms turn golden brown, approx. 1 – 2 min. Flip pancake and cook for approx. 30 more sec. If needed, add more butter and adjust heat as you go to prevent sticking or burning. Serve immediately. Enjoy with more butter and a drizzle of maple syrup.",
   },
 ];
 
-final imageBasqueBurnt = [
-  "assets/step/basqueBurnt_M.jpeg",
-  "assets/step/basqueBurnt_S1.jpeg",
-  "assets/step/basqueBurnt_S2.jpeg",
-  "assets/step/basqueBurnt_S3.jpeg",
-  "assets/step/basqueBurnt_S4.jpeg",
+final imagePancakes = [
+  "assets/step/americanPancakes_M.jpeg",
+  "assets/step/americanPancakes_S1.jpeg",
+  "assets/step/americanPancakes_S2.jpeg",
+  "assets/step/americanPancakes_S3.jpeg",
+  "assets/step/americanPancakes_S4.jpeg",
 ];

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:full_screen_image/full_screen_image.dart';
 
-class basqueBurnt extends StatelessWidget {
-  const basqueBurnt({Key? key});
+class Burger extends StatelessWidget {
+  const Burger({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Basque Burnt Cheesecake'),
+        title: Text('Burger'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -16,14 +16,14 @@ class basqueBurnt extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/basqueBurnt_M.jpeg',
+              'assets/step/americanBurger_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Basque Burnt Cheesecake',
+              'Burger',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -31,14 +31,14 @@ class basqueBurnt extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
-              'Recipe cake for eight persons',
+              'Recipe for two persons',
               style: TextStyle(
                 fontSize: 14.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
-              'Ingredient List: \n\n[Step 1] :unsalted butter\n\n[Step 2] :900 g cream cheese 300 g sugar\n\n [Step 3] :6 eggs 470 g heavy cream 1 tsp vanilla extract ½ tsp salt \n\n [Step 4] :50 g flour',
+              'Ingredient List: \n\n[Step 1] :2 onions olive oil for frying salt pepper\n\n[Step 2] :800 g ground beef pepper\n\n [Step 3] :4 slices cheddar cheese \n\n [Step 4] :cutting board,knife \n\n [Step 5] :4 leaves iceberg lettuce 4 tsp mayonnaise 4 tsp ketchup',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -48,13 +48,13 @@ class basqueBurnt extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              'Items necessary: \n\n Step 1:oven,springform pan (9 in.), 2 parchment paper \n\n Step 2 :stand mixer with paddle \n\n Step 3 : rubber spatula \n\n Step 4 :sieve \n\n ',
+              'Items necessary: \n\n Step 1:grill,small frying pan,cooking spoon,cutting board,knife \n\n Step 2 :large bowl \n\n Step 3 :grill,barbecue tongs \n\n Step 4 :1 tomato ½ cucumber butter for serving 4 burger buns \n\n Step 5 : none\n\n  ',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),
             ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageBasqueBurnt.length,
+                imageBurger.length,
                 (index) {
                   return InkWell(
                     onTap: () {
@@ -154,35 +154,41 @@ class FullScreenPage extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/basqueBurnt_M.jpeg",
+    "assets": "assets/step/americanBurger_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/basqueBurnt_S1.jpeg",
+    "assets": "assets/step/americanBurger_S1.jpeg",
     "info":
-        "Preheat the oven to 200°C/390°F. Grease a springform pan with butter, then line with 2 sheets of parchment paper, leaving enough to fold and hang over on the pan’s rim",
+        "Preheat the grill. Slice onion into thin rings. Gently sauté half of the onions in some olive oil. Season with salt and pepper.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S2.jpeg",
+    "assets": "assets/step/americanBurger_S2.jpeg",
     "info":
-        "Whip cream cheese and sugar together in a stand mixer with a paddle attachment for approx. 2 min., or until sugar has completely dissolved.",
+        "Season ground beef with some pepper to taste and form into burger patties with damp hands. Create a small well in the middle to prevent the burger from puffing up during cooking.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S3.jpeg",
+    "assets": "assets/step/americanBurger_S3.jpeg",
     "info":
-        "Add eggs, one at a time, to the stand mixer, mixing in between. Brush the sides down with a rubber spatula, then add cream, vanilla extract, and salt, and stir to combine.",
+        "Place patties on the hot grill and cook for approx. 4 – 5 min. per side, depending on the thickness. Place a slice of cheddar cheese on each patty and let it melt for a minute.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S4.jpeg",
+    "assets": "assets/step/americanBurger_S4.jpeg",
     "info":
-        "Sift flour into the cream cheese mixture, then gently fold the ingredients together just until combined. Pour the batter into the lined springform pan and bake at 200°C/390°F for approx. 60 min. Let cool completely to room temperature before serving. Enjoy!",
+        "Cut tomato and cucumber into slices. Cut the burger buns lengthwise and butter if desired.",
+  },
+  {
+    "assets": "assets/step/americanBurger_S5.jpeg",
+    "info":
+        "Assemble burger with grilled patties, tomato and cucumber slices, raw onion slices, sautéed onions, iceberg lettuce, ketchup, and mayonnaise. Enjoy!",
   },
 ];
 
-final imageBasqueBurnt = [
-  "assets/step/basqueBurnt_M.jpeg",
-  "assets/step/basqueBurnt_S1.jpeg",
-  "assets/step/basqueBurnt_S2.jpeg",
-  "assets/step/basqueBurnt_S3.jpeg",
-  "assets/step/basqueBurnt_S4.jpeg",
+final imageBurger = [
+  "assets/step/americanBurger_M.jpeg",
+  "assets/step/americanBurger_S1.jpeg",
+  "assets/step/americanBurger_S2.jpeg",
+  "assets/step/americanBurger_S3.jpeg",
+  "assets/step/americanBurger_S4.jpeg",
+  "assets/step/americanBurger_S5.jpeg",
 ];

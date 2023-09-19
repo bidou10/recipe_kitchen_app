@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:full_screen_image/full_screen_image.dart';
 
-class basqueBurnt extends StatelessWidget {
-  const basqueBurnt({Key? key});
+class friedChicken extends StatelessWidget {
+  const friedChicken({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Basque Burnt Cheesecake'),
+        title: Text('Fried Chicken'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -16,14 +16,14 @@ class basqueBurnt extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/basqueBurnt_M.jpeg',
+              'assets/step/FriedChicken_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Basque Burnt Cheesecake',
+              'Fried Chicken',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -31,14 +31,14 @@ class basqueBurnt extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
-              'Recipe cake for eight persons',
+              'Recipe for two persons',
               style: TextStyle(
                 fontSize: 14.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
-              'Ingredient List: \n\n[Step 1] :unsalted butter\n\n[Step 2] :900 g cream cheese 300 g sugar\n\n [Step 3] :6 eggs 470 g heavy cream 1 tsp vanilla extract ½ tsp salt \n\n [Step 4] :50 g flour',
+              'Ingredient List: \n\n[Step 1] :⅔ tbsp garlic powder ⅔ tbsp onion powder ⅔ tbsp salt ⅓ tbsp pepper ⅔ tbsp paprika\n\n[Step 2] :2⅔ chicken legs\n\n [Step 3] :1⅓ eggs 20 ml water ⅔ tbsp Tabasco 66⅔ g flour ⅓ tbsp baking powder salt \n\n [Step 4] :none \n\n [Step 5] :vegetable oil for deep frying',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -48,13 +48,13 @@ class basqueBurnt extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              'Items necessary: \n\n Step 1:oven,springform pan (9 in.), 2 parchment paper \n\n Step 2 :stand mixer with paddle \n\n Step 3 : rubber spatula \n\n Step 4 :sieve \n\n ',
+              'Items necessary: \n\n Step 1:oven,small bowl \n\n Step 2 :cutting board, knife \n\n Step 3 :2 large bowls,whisk \n\n Step 4 :tongs \n\n Step 5 :frying pan, baking sheet, parchment paper \n\n  ',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),
             ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageBasqueBurnt.length,
+                imageFriedChicken.length,
                 (index) {
                   return InkWell(
                     onTap: () {
@@ -154,35 +154,41 @@ class FullScreenPage extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/basqueBurnt_M.jpeg",
+    "assets": "assets/step/FriedChicken_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/basqueBurnt_S1.jpeg",
+    "assets": "assets/step/FriedChicken_S1.jpeg",
     "info":
-        "Preheat the oven to 200°C/390°F. Grease a springform pan with butter, then line with 2 sheets of parchment paper, leaving enough to fold and hang over on the pan’s rim",
+        "Preheat oven to 200°C/400°F. In a small bowl, mix together garlic powder, onion powder, salt, pepper, and paprika.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S2.jpeg",
+    "assets": "assets/step/FriedChicken_S2.jpeg",
     "info":
-        "Whip cream cheese and sugar together in a stand mixer with a paddle attachment for approx. 2 min., or until sugar has completely dissolved.",
+        "Carefully cut chicken legs in half at the joint. Rub them generously with spice rub, setting any excess spice rub aside.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S3.jpeg",
+    "assets": "assets/step/FriedChicken_S3.jpeg",
     "info":
-        "Add eggs, one at a time, to the stand mixer, mixing in between. Brush the sides down with a rubber spatula, then add cream, vanilla extract, and salt, and stir to combine.",
+        "In a large bowl, whisk together egg, water, and Tabasco. In a separate large bowl, whisk together flour, baking powder, a pinch of salt, and the excess spice rub.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S4.jpeg",
+    "assets": "assets/step/FriedChicken_S4.jpeg",
     "info":
-        "Sift flour into the cream cheese mixture, then gently fold the ingredients together just until combined. Pour the batter into the lined springform pan and bake at 200°C/390°F for approx. 60 min. Let cool completely to room temperature before serving. Enjoy!",
+        "Dip chicken pieces in the egg mixture until well coated on all sides. Lightly shake to remove excess liquid. Then dredge chicken in flour mixture until a thick and even crust is formed. Repeat these steps for a thicker crust if desired.",
+  },
+  {
+    "assets": "assets/step/FriedChicken_S5.jpeg",
+    "info":
+        "Preheat frying oil over medium-high heat in a large, deep frying pan. The right temperature is reached when small bubbles form when a wooden spoon is held into the oil. Fry chicken pieces in batches until brown and crispy for approx. 3 - 5 min. Transfer to a lined baking sheet and bake in a preheated oven at 200°C/400°F for approx. 10 - 15 min. Remove from oven and enjoy with lemon wedges and dipping sauces of your choice!",
   },
 ];
 
-final imageBasqueBurnt = [
-  "assets/step/basqueBurnt_M.jpeg",
-  "assets/step/basqueBurnt_S1.jpeg",
-  "assets/step/basqueBurnt_S2.jpeg",
-  "assets/step/basqueBurnt_S3.jpeg",
-  "assets/step/basqueBurnt_S4.jpeg",
+final imageFriedChicken = [
+  "assets/step/FriedChicken_M.jpeg",
+  "assets/step/FriedChicken_S1.jpeg",
+  "assets/step/FriedChicken_S2.jpeg",
+  "assets/step/FriedChicken_S3.jpeg",
+  "assets/step/FriedChicken_S4.jpeg",
+  "assets/step/FriedChicken_S5.jpeg",
 ];

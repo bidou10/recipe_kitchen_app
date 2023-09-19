@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:full_screen_image/full_screen_image.dart';
 
-class basqueBurnt extends StatelessWidget {
-  const basqueBurnt({Key? key});
+class ApplePie extends StatelessWidget {
+  const ApplePie({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Basque Burnt Cheesecake'),
+        title: Text('Apple Pie'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -16,14 +16,14 @@ class basqueBurnt extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/basqueBurnt_M.jpeg',
+              'assets/step/applePie_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Basque Burnt Cheesecake',
+              'Apple Pie',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -31,14 +31,14 @@ class basqueBurnt extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
-              'Recipe cake for eight persons',
+              'Recipe cake for twelve persons',
               style: TextStyle(
                 fontSize: 14.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
-              'Ingredient List: \n\n[Step 1] :unsalted butter\n\n[Step 2] :900 g cream cheese 300 g sugar\n\n [Step 3] :6 eggs 470 g heavy cream 1 tsp vanilla extract ½ tsp salt \n\n [Step 4] :50 g flour',
+              'Ingredient List: \n\n[Step 1] :360 g butter 500 g flour 1 egg yolk ½ tsp salt 120 g sugar 60 ml water\n\n[Step 2] :flour (for dusting)\n\n [Step 3] :none \n\n [Step 4] :8 apples \n\n [Step 5] :½ lemon ½ tsp ground cinnamon ¼ tsp ground nutmeg 20 g flour 50 g sugar 100 g raw sugar \n\n [Step 6] :40 g butter 1 egg white 1 tsp water',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -48,13 +48,13 @@ class basqueBurnt extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              'Items necessary: \n\n Step 1:oven,springform pan (9 in.), 2 parchment paper \n\n Step 2 :stand mixer with paddle \n\n Step 3 : rubber spatula \n\n Step 4 :sieve \n\n ',
+              'Items necessary: \n\n Step 1:stand mixer with dough hookplastic wrap \n\n Step 2 :oven,rolling pin \n\n Step 3 :parchment paper,pie dish,pie weights \n\n Step 4 :cutting board, knife \n\n  Step 5 :citrus press,bowl (large),cooking spoon \n\n Step 6 :pastry brush',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),
             ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageBasqueBurnt.length,
+                imageApplePie.length,
                 (index) {
                   return InkWell(
                     onTap: () {
@@ -154,35 +154,47 @@ class FullScreenPage extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/basqueBurnt_M.jpeg",
+    "assets": "assets/step/applePie_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/basqueBurnt_S1.jpeg",
+    "assets": "assets/step/applePie_S1.jpeg",
     "info":
-        "Preheat the oven to 200°C/390°F. Grease a springform pan with butter, then line with 2 sheets of parchment paper, leaving enough to fold and hang over on the pan’s rim",
+        "Cut some of butter into large pieces and add to a stand mixer with most of flour, egg yolk, salt, and sugar. Beat for approx. 2–3 min. until crumbly. Then, slowly add water and continue to beat for another 1–2 min. until dough is smooth and uniform in consistency. Wrap dough in plastic wrap and transfer to refrigerator. Allow to set for approx. 1 h.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S2.jpeg",
+    "assets": "assets/step/applePie_S2.jpeg",
     "info":
-        "Whip cream cheese and sugar together in a stand mixer with a paddle attachment for approx. 2 min., or until sugar has completely dissolved.",
+        "Preheat oven to 180°C/350°F. Cut dough into two even rounds. Then, flour work surface, place dough on top, and roll out, one at a time, using a rolling pin until rounds are larger than your pie dish.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S3.jpeg",
+    "assets": "assets/step/applePie_S3.jpeg",
     "info":
-        "Add eggs, one at a time, to the stand mixer, mixing in between. Brush the sides down with a rubber spatula, then add cream, vanilla extract, and salt, and stir to combine.",
+        "Flour both sides of dough and transfer to pie dish. Press evenly into all edges of dish and then remove excess dough. Place a piece of parchment paper on top of dish and fill with pie weights. Place in preheated oven at 180°C/350°F and blind bake for approx. 10 min.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S4.jpeg",
+    "assets": "assets/step/applePie_S4.jpeg",
     "info":
-        "Sift flour into the cream cheese mixture, then gently fold the ingredients together just until combined. Pour the batter into the lined springform pan and bake at 200°C/390°F for approx. 60 min. Let cool completely to room temperature before serving. Enjoy!",
+        "Peel, core, and quarter apples. Then, cut crosswise into medallion-sized pieces.",
+  },
+  {
+    "assets": "assets/step/applePie_S5.jpeg",
+    "info":
+        "Juice lemon. In a large bowl, thoroughly mix together apple, lemon juice, cinnamon, nutmeg, flour, sugar, and brown sugar.",
+  },
+  {
+    "assets": "assets/step/applePie_S6.jpeg",
+    "info":
+        "Transfer apple slices to pie dish and spread out evenly. Cut remainder of butter into pieces and place on top of apples. Cover pie with rest of dough. Make a small hole in the middle, so air can escape. Mix together egg white and water and brush on top. Return to oven and bake at 180°C/350°F for approx. 50–55 min. until golden brown. Enjoy!",
   },
 ];
 
-final imageBasqueBurnt = [
-  "assets/step/basqueBurnt_M.jpeg",
-  "assets/step/basqueBurnt_S1.jpeg",
-  "assets/step/basqueBurnt_S2.jpeg",
-  "assets/step/basqueBurnt_S3.jpeg",
-  "assets/step/basqueBurnt_S4.jpeg",
+final imageApplePie = [
+  "assets/step/applePie_M.jpeg",
+  "assets/step/applePie_S1.jpeg",
+  "assets/step/applePie_S2.jpeg",
+  "assets/step/applePie_S3.jpeg",
+  "assets/step/applePie_S4.jpeg",
+  "assets/step/applePie_S5.jpeg",
+  "assets/step/applePie_S6.jpeg",
 ];
