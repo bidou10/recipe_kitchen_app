@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:full_screen_image/full_screen_image.dart';
 
-class basqueBurnt extends StatelessWidget {
-  const basqueBurnt({Key? key});
+class EggsBenedict extends StatelessWidget {
+  const EggsBenedict({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Basque Burnt Cheesecake'),
+        title: Text('Eggs Benedict'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -16,14 +16,14 @@ class basqueBurnt extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/basqueBurnt_M.jpeg',
+              'assets/step/EggsBenedict_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Basque Burnt Cheesecake',
+              'Eggs Benedict',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -31,14 +31,14 @@ class basqueBurnt extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
-              'Recipe cake for eight persons',
+              'Recipe for two persons',
               style: TextStyle(
                 fontSize: 14.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
-              'Ingredient List: \n\n[Step 1] :unsalted butter\n\n[Step 2] :900 g cream cheese 300 g sugar\n\n [Step 3] :6 eggs 470 g heavy cream 1 tsp vanilla extract ½ tsp salt \n\n [Step 4] :50 g flour',
+              'Ingredient List: \n\n[Step 1] :62½ ml white wine 12½ ml white wine vinegar ½ sprig tarragon 1 peppercorns 1 mustard seeds\n\n[Step 2] :2 egg yolks\n\n [Step 3] :125 g butter salt \n\n [Step 4] :1 tbsp white wine vinegar 4 eggs \n\n [Step 5] :4 slices cooked ham \n\n [Step 6] :2 English muffins ,salt',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -48,13 +48,13 @@ class basqueBurnt extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              'Items necessary: \n\n Step 1:oven,springform pan (9 in.), 2 parchment paper \n\n Step 2 :stand mixer with paddle \n\n Step 3 : rubber spatula \n\n Step 4 :sieve \n\n ',
+              'Items necessary: \n\n Step 1:cooking spoon,small sauce pan \n\n Step 2 :sieve,heat resistant bowl,whisk \n\n Step 3 :none \n\n Step 4 :skimmer,large sauce pan,paper towel \n\n Step 5 :small frying pan,cooking spoon \n\n Step 6 :none \n\n  ',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),
             ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageBasqueBurnt.length,
+                imageEggsBenedict.length,
                 (index) {
                   return InkWell(
                     onTap: () {
@@ -154,35 +154,47 @@ class FullScreenPage extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/basqueBurnt_M.jpeg",
+    "assets": "assets/step/EggsBenedict_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/basqueBurnt_S1.jpeg",
+    "assets": "assets/step/EggsBenedict_S1.jpeg",
     "info":
-        "Preheat the oven to 200°C/390°F. Grease a springform pan with butter, then line with 2 sheets of parchment paper, leaving enough to fold and hang over on the pan’s rim",
+        "For the hollandaise, boil down white wine, some of the white wine vinegar, fresh tarragon, peppercorns, and mustard seeds in a small saucepan until half the liquid has evaporated.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S2.jpeg",
+    "assets": "assets/step/EggsBenedict_S2.jpeg",
     "info":
-        "Whip cream cheese and sugar together in a stand mixer with a paddle attachment for approx. 2 min., or until sugar has completely dissolved.",
+        "Pass liquid through a sieve and whisk with the egg yolks in a heat-resistant bowl over a bain-marie until the mixture has slightly thickened.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S3.jpeg",
+    "assets": "assets/step/EggsBenedict_S3.jpeg",
     "info":
-        "Add eggs, one at a time, to the stand mixer, mixing in between. Brush the sides down with a rubber spatula, then add cream, vanilla extract, and salt, and stir to combine.",
+        "Now, gradually fold in warm, melted butter into the foamy mass, while beating constantly. Season with salt to taste and set aside.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S4.jpeg",
+    "assets": "assets/step/EggsBenedict_S4.jpeg",
     "info":
-        "Sift flour into the cream cheese mixture, then gently fold the ingredients together just until combined. Pour the batter into the lined springform pan and bake at 200°C/390°F for approx. 60 min. Let cool completely to room temperature before serving. Enjoy!",
+        "Heat up some water in a large sauce pan until it simmers. Add rest of white wine vinegar and poach eggs in the water for approx. 2 – 3 min. Drain on a plate lined with paper towels.",
+  },
+  {
+    "assets": "assets/step/EggsBenedict_S5.jpeg",
+    "info":
+        "In the meantime, fry ham in frying pan on both sides for approx. 1 – 2 min. until crispy.",
+  },
+  {
+    "assets": "assets/step/EggsBenedict_S6.jpeg",
+    "info":
+        "Halve English muffins, top each with a slice of ham and a poached egg. Sprinkle with some salt and warm hollandaise sauce.",
   },
 ];
 
-final imageBasqueBurnt = [
-  "assets/step/basqueBurnt_M.jpeg",
-  "assets/step/basqueBurnt_S1.jpeg",
-  "assets/step/basqueBurnt_S2.jpeg",
-  "assets/step/basqueBurnt_S3.jpeg",
-  "assets/step/basqueBurnt_S4.jpeg",
+final imageEggsBenedict = [
+  "assets/step/EggsBenedict_M.jpeg",
+  "assets/step/EggsBenedict_S1.jpeg",
+  "assets/step/EggsBenedict_S2.jpeg",
+  "assets/step/EggsBenedict_S3.jpeg",
+  "assets/step/EggsBenedict_S4.jpeg",
+  "assets/step/EggsBenedict_S5.jpeg",
+  "assets/step/EggsBenedict_S6.jpeg",
 ];

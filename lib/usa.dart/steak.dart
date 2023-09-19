@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:full_screen_image/full_screen_image.dart';
 
-class basqueBurnt extends StatelessWidget {
-  const basqueBurnt({Key? key});
+class americanSteak extends StatelessWidget {
+  const americanSteak({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Basque Burnt Cheesecake'),
+        title: Text('American Steak'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -16,14 +16,14 @@ class basqueBurnt extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/basqueBurnt_M.jpeg',
+              'assets/step/americanSteak_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Basque Burnt Cheesecake',
+              'Amercian Steak',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -31,14 +31,14 @@ class basqueBurnt extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
-              'Recipe cake for eight persons',
+              'Recipe for two persons',
               style: TextStyle(
                 fontSize: 14.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
-              'Ingredient List: \n\n[Step 1] :unsalted butter\n\n[Step 2] :900 g cream cheese 300 g sugar\n\n [Step 3] :6 eggs 470 g heavy cream 1 tsp vanilla extract ½ tsp salt \n\n [Step 4] :50 g flour',
+              'Ingredient List: \n\n[Step 1] :2 russet potatoes\n\n[Step 2] :400 g beef tenderloin 2 sprigs rosemary 2 sprigs thyme 2 cloves garlic olive oil (for marinating)\n\n [Step 3] :10g chives \n\n [Step 4] :300 g sour cream 1 lemon salt pepper butter (for serving) ',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -48,13 +48,13 @@ class basqueBurnt extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              'Items necessary: \n\n Step 1:oven,springform pan (9 in.), 2 parchment paper \n\n Step 2 :stand mixer with paddle \n\n Step 3 : rubber spatula \n\n Step 4 :sieve \n\n ',
+              'Items necessary: \n\n Step 1:grill,oven,aluminum foil,tongs \n\n Step 2 :grill ,oven \n\n Step 3 :cutting board, knife \n\n Step 4 :bowl (small) \n\n  ',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),
             ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageBasqueBurnt.length,
+                imageSteak.length,
                 (index) {
                   return InkWell(
                     onTap: () {
@@ -154,35 +154,34 @@ class FullScreenPage extends StatelessWidget {
 
 const product = [
   {
-    "assets": "assets/step/basqueBurnt_M.jpeg",
+    "assets": "assets/step/americanSteak_M.jpeg",
     "info": "Final photo",
   },
   {
-    "assets": "assets/step/basqueBurnt_S1.jpeg",
+    "assets": "assets/step/americanSteak_S1.jpeg",
     "info":
-        "Preheat the oven to 200°C/390°F. Grease a springform pan with butter, then line with 2 sheets of parchment paper, leaving enough to fold and hang over on the pan’s rim",
+        "Preheat the oven to 60°C (140°F). Preheat the grill. Wrap each potato in some aluminum foil and place on grill for approx. 1 hour. Turn every 20 min. to ensure even cooking.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S2.jpeg",
+    "assets": "assets/step/americanSteak_S2.jpeg",
     "info":
-        "Whip cream cheese and sugar together in a stand mixer with a paddle attachment for approx. 2 min., or until sugar has completely dissolved.",
+        "Drizzle olive oil on both sides of the steak and season with rosemary and thyme. Add crushed garlic cloves and precook in the oven for approx. 15 – 20 min . Remove meat from the oven, take off herbs, and grill for approx. 2 – 3 min per side. Set aside to rest for approx. 5 – 10 min.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S3.jpeg",
-    "info":
-        "Add eggs, one at a time, to the stand mixer, mixing in between. Brush the sides down with a rubber spatula, then add cream, vanilla extract, and salt, and stir to combine.",
+    "assets": "assets/step/americanSteak_S3.jpeg",
+    "info": "In the meantime, finely chop chives.",
   },
   {
-    "assets": "assets/step/basqueBurnt_S4.jpeg",
+    "assets": "assets/step/americanSteak_S4.jpeg",
     "info":
-        "Sift flour into the cream cheese mixture, then gently fold the ingredients together just until combined. Pour the batter into the lined springform pan and bake at 200°C/390°F for approx. 60 min. Let cool completely to room temperature before serving. Enjoy!",
+        "Now, combine sour cream with finely chopped chives, zest of one lemon, and juice of half a lemon. Season with salt and pepper and serve with baked potato and steak.",
   },
 ];
 
-final imageBasqueBurnt = [
-  "assets/step/basqueBurnt_M.jpeg",
-  "assets/step/basqueBurnt_S1.jpeg",
-  "assets/step/basqueBurnt_S2.jpeg",
-  "assets/step/basqueBurnt_S3.jpeg",
-  "assets/step/basqueBurnt_S4.jpeg",
+final imageSteak = [
+  "assets/step/americanSteak_M.jpeg",
+  "assets/step/americanSteak_S1.jpeg",
+  "assets/step/americanSteak_S2.jpeg",
+  "assets/step/americanSteak_S3.jpeg",
+  "assets/step/americanSteak_S4.jpeg",
 ];

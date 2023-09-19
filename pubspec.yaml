@@ -366,6 +366,69 @@ flutter:
     - assets/step/basqueBurnt_S2.jpeg
     - assets/step/basqueBurnt_S3.jpeg
     - assets/step/basqueBurnt_S4.jpeg
+    # image usa
+    - assets/step/americanBurger_M.jpeg
+    - assets/step/americanBurger_S1.jpeg
+    - assets/step/americanBurger_S2.jpeg
+    - assets/step/americanBurger_S3.jpeg
+    - assets/step/americanBurger_S4.jpeg
+    - assets/step/americanBurger_S5.jpeg
+    - assets/step/americanPancakes_M.jpeg
+    - assets/step/americanPancakes_S1.jpeg
+    - assets/step/americanPancakes_S2.jpeg
+    - assets/step/americanPancakes_S3.jpeg
+    - assets/step/americanPancakes_S4.jpeg
+    - assets/step/applePie_M.jpeg
+    - assets/step/applePie_S1.jpeg
+    - assets/step/applePie_S2.jpeg
+    - assets/step/applePie_S3.jpeg
+    - assets/step/applePie_S4.jpeg
+    - assets/step/applePie_S5.jpeg
+    - assets/step/applePie_S6.jpeg
+    - assets/step/FriedChicken_M.jpeg
+    - assets/step/FriedChicken_S1.jpeg
+    - assets/step/FriedChicken_S2.jpeg
+    - assets/step/FriedChicken_S3.jpeg
+    - assets/step/FriedChicken_S4.jpeg
+    - assets/step/FriedChicken_S5.jpeg
+    - assets/step/EggsBenedict_M.jpeg
+    - assets/step/EggsBenedict_S1.jpeg
+    - assets/step/EggsBenedict_S2.jpeg
+    - assets/step/EggsBenedict_S3.jpeg
+    - assets/step/EggsBenedict_S4.jpeg
+    - assets/step/EggsBenedict_S5.jpeg
+    - assets/step/EggsBenedict_S6.jpeg
+    - assets/step/americanSteak_M.jpeg
+    - assets/step/americanSteak_S1.jpeg
+    - assets/step/americanSteak_S2.jpeg
+    - assets/step/americanSteak_S3.jpeg
+    - assets/step/americanSteak_S4.jpeg
+    - assets/step/baconEggs_M.jpeg
+    - assets/step/baconEggs_S1.jpeg
+    - assets/step/baconEggs_S2.jpeg
+    - assets/step/baconEggs_S3.jpeg
+    - assets/step/baconEggs_S4.jpeg
+    - assets/step/baconEggs_S5.jpeg
+    - assets/step/baconEggs_S6.jpeg
+    - assets/step/baconEggs_S7.jpeg
+    - assets/step/chickenWings_M.jpeg
+    - assets/step/chickenWings_S1.jpeg
+    - assets/step/chickenWings_S2.jpeg
+    - assets/step/chickenWings_S3.jpeg
+    - assets/step/chickenWings_S4.jpeg
+    # image Chine
+    - assets/step/friedRice_M.jpeg
+    - assets/step/friedRice_S1.jpeg
+    - assets/step/friedRice_S2.jpeg
+    - assets/step/friedRice_S3.jpeg
+    - assets/step/friedRice_S4.jpeg
+    - assets/step/noodleSalad_M.jpeg
+    - assets/step/noodleSalad_S1.jpeg
+    - assets/step/noodleSalad_S2.jpeg
+    - assets/step/noodleSalad_S3.jpeg
+    - assets/step/noodleSalad_S4.jpeg
+
+
     
     
 

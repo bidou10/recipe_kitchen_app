@@ -1,6 +1,7 @@
 import 'package:countries_flag/countries_flag.dart';
 import 'package:flag/flag.dart';
 import 'package:flutter/material.dart';
+import 'package:recipe_kitchen_app/china/china.dart';
 import 'package:recipe_kitchen_app/france/france.dart';
 import 'package:recipe_kitchen_app/japan/japan.dart';
 import 'package:recipe_kitchen_app/korea/korea.dart';
@@ -8,6 +9,7 @@ import 'package:recipe_kitchen_app/mexican/mexican.dart';
 import 'package:recipe_kitchen_app/nav/first_page.dart';
 import 'package:recipe_kitchen_app/spain/spain.dart';
 import 'package:recipe_kitchen_app/thai/thai.dart';
+import 'package:recipe_kitchen_app/usa.dart/usa.dart';
 
 class PreferancePage extends StatelessWidget {
   PreferancePage({super.key});
@@ -127,7 +129,7 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('Spanish Food'),
             subtitle: Text('best spanish food recipe dishes'),
-            trailing: Icon(Icons.arrow_forward_ios),
+            trailing: Icon(Icons.more_vert),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => SpainPage()),
@@ -144,6 +146,11 @@ class PreferancePage extends StatelessWidget {
             title: Text('United States Food'),
             subtitle: Text('best american food recipe dishes'),
             trailing: Icon(Icons.more_vert),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => UsaPage()),
+              );
+            },
           ),
           Divider(height: 0),
           ListTile(
@@ -154,7 +161,12 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('China Food'),
             subtitle: Text('best chinese food recipe dishes'),
-            trailing: Icon(Icons.more_vert),
+            trailing: Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => ChinaPage()),
+              );
+            },
           ),
           Divider(height: 0),
           ListTile(

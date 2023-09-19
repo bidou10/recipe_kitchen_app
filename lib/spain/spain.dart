@@ -8,7 +8,6 @@ import 'package:recipe_kitchen_app/spain/paella.dart';
 import 'package:recipe_kitchen_app/spain/serrano.dart';
 import 'package:recipe_kitchen_app/spain/spanishGarlicShrimp.dart';
 import 'package:recipe_kitchen_app/spain/sweetCornGazpacho.dart';
-import 'package:recipe_kitchen_app/spain/test2.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 
 class SpainPage extends StatefulWidget {
