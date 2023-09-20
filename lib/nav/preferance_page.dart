@@ -3,6 +3,7 @@ import 'package:flag/flag.dart';
 import 'package:flutter/material.dart';
 import 'package:recipe_kitchen_app/china/china.dart';
 import 'package:recipe_kitchen_app/france/france.dart';
+import 'package:recipe_kitchen_app/india/india.dart';
 import 'package:recipe_kitchen_app/japan/japan.dart';
 import 'package:recipe_kitchen_app/korea/korea.dart';
 import 'package:recipe_kitchen_app/mexican/mexican.dart';
@@ -178,6 +179,13 @@ class PreferancePage extends StatelessWidget {
             title: Text('Inde Food'),
             subtitle: Text('best indian food recipe dishes'),
             trailing: Icon(Icons.more_vert),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => IndiaPage(),
+                ),
+              );
+            },
           ),
           Divider(height: 0),
           ListTile(
