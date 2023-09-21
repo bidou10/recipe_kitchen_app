@@ -477,7 +477,81 @@ flutter:
     - assets/step/eggCurry_S2.jpeg
     - assets/step/eggCurry_S3.jpeg
     - assets/step/eggCurry_S4.jpeg
-
+    - assets/step/chickenTikka_M.jpeg
+    - assets/step/chickenTikka_S1.jpeg
+    - assets/step/chickenTikka_S2.jpeg
+    - assets/step/chickenTikka_S3.jpeg
+    - assets/step/chickenTikka_S4.jpeg
+    - assets/step/chickenTikka_S5.jpeg
+    - assets/step/chickenTikka_S6.jpeg
+    - assets/step/chickenTikka_S7.jpeg
+    - assets/step/chickenTikka_S8.jpeg
+    - assets/step/bombayPatato_M.jpeg
+    - assets/step/bombayPatato_S1.jpeg
+    - assets/step/bombayPatato_S2.jpeg
+    - assets/step/bombayPatato_S3.jpeg
+    - assets/step/bombayPatato_S4.jpeg
+    - assets/step/alooSabzi_M.jpeg
+    - assets/step/alooSabzi_S1.jpeg
+    - assets/step/alooSabzi_S2.jpeg
+    - assets/step/alooSabzi_S3.jpeg
+    - assets/step/alooSabzi_S4.jpeg
+    - assets/step/chickenPilaf_M.jpeg
+    - assets/step/chickenPilaf_S1.jpeg
+    - assets/step/chickenPilaf_S2.jpeg
+    - assets/step/chickenPilaf_S3.jpeg
+    - assets/step/chickenPilaf_S4.jpeg
+    - assets/step/chickenPilaf_S5.jpeg
+    - assets/step/dalSoup_M.jpeg
+    - assets/step/dalSoup_S1.jpeg
+    - assets/step/dalSoup_S2.jpeg
+    - assets/step/dalSoup_S3.jpeg
+    - assets/step/dalSoup_S4.jpeg
+    - assets/step/halloumi_M.jpeg
+    - assets/step/halloumi_S1.jpeg
+    - assets/step/halloumi_S2.jpeg
+    - assets/step/halloumi_S3.jpeg
+    - assets/step/spicyChickenTomato_M.jpeg
+    - assets/step/spicyChickenTomato_S1.jpeg
+    - assets/step/spicyChickenTomato_S2.jpeg
+    - assets/step/spicyChickenTomato_S3.jpeg
+    - assets/step/spicyChickenTomato_S4.jpeg
+    - assets/step/spicyChickenTomato_S5.jpeg
+    # image grece
+    - assets/step/greekSalad_M.jpeg
+    - assets/step/greekSalad_S1.jpeg
+    - assets/step/greekSalad_S2.jpeg
+    - assets/step/greekSalad_S3.jpeg
+    - assets/step/beefkKofta_M.jpeg
+    - assets/step/beefkKofta_S1.jpeg
+    - assets/step/beefkKofta_S2.jpeg
+    - assets/step/beefkKofta_S3.jpeg
+    - assets/step/greekTomatoOrzo_M.jpeg
+    - assets/step/greekTomatoOrzo_S1.jpeg
+    - assets/step/greekTomatoOrzo_S2.jpeg
+    - assets/step/greekTomatoOrzo_S3.jpeg
+    - assets/step/greekTomatoOrzo_S4.jpeg
+    - assets/step/greekHoneydew_M.jpeg
+    - assets/step/greekHoneydew_S1.jpeg
+    - assets/step/greekHoneydew_S2.jpeg
+    - assets/step/greekHoneydew_S3.jpeg
+    - assets/step/spanakopita_M.jpeg
+    - assets/step/spanakopita_S1.jpeg
+    - assets/step/spanakopita_S2.jpeg
+    - assets/step/spanakopita_S3.jpeg
+    - assets/step/spanakopita_S4.jpeg
+    - assets/step/moussaka_M.jpeg
+    - assets/step/moussaka_S1.jpeg
+    - assets/step/moussaka_S2.jpeg
+    - assets/step/moussaka_S3.jpeg
+    - assets/step/moussaka_S4.jpeg
+    - assets/step/moussaka_S5.jpeg
+    - assets/step/moussaka_S6.jpeg
+    - assets/step/moussaka_S7.jpeg
+    - assets/step/tzatziki_M.jpeg
+    - assets/step/tzatziki_S1.jpeg
+    - assets/step/tzatziki_S2.jpeg
+    - assets/step/tzatziki_S3.jpeg
 
     
     

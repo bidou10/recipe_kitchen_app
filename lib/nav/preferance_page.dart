@@ -3,6 +3,7 @@ import 'package:flag/flag.dart';
 import 'package:flutter/material.dart';
 import 'package:recipe_kitchen_app/china/china.dart';
 import 'package:recipe_kitchen_app/france/france.dart';
+import 'package:recipe_kitchen_app/greek/greek.dart';
 import 'package:recipe_kitchen_app/india/india.dart';
 import 'package:recipe_kitchen_app/japan/japan.dart';
 import 'package:recipe_kitchen_app/korea/korea.dart';
@@ -162,7 +163,7 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('China Food'),
             subtitle: Text('best chinese food recipe dishes'),
-            trailing: Icon(Icons.arrow_forward_ios),
+            trailing: Icon(Icons.more_vert),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => ChinaPage()),
@@ -178,7 +179,7 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('Inde Food'),
             subtitle: Text('best indian food recipe dishes'),
-            trailing: Icon(Icons.more_vert),
+            trailing: Icon(Icons.arrow_forward_ios),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -197,6 +198,13 @@ class PreferancePage extends StatelessWidget {
             title: Text('Greek Food'),
             subtitle: Text('best greque food recipe dishes'),
             trailing: Icon(Icons.more_vert),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => GreekPage(),
+                ),
+              );
+            },
           ),
           Divider(height: 0),
           ListTile(
