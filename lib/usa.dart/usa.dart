@@ -7,7 +7,7 @@ import 'package:recipe_kitchen_app/usa.dart/eggsBenedict.dart';
 import 'package:recipe_kitchen_app/usa.dart/friedChicken.dart';
 import 'package:recipe_kitchen_app/usa.dart/pancakes.dart';
 import 'package:recipe_kitchen_app/usa.dart/steak.dart';
-import 'package:recipe_kitchen_app/china/test2.dart';
+import 'package:recipe_kitchen_app/greek/test2.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 
 class UsaPage extends StatefulWidget {

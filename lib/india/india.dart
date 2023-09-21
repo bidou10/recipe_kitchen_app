@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_kitchen_app/india/alooSabzi.dart';
+import 'package:recipe_kitchen_app/india/bombayPatatoes.dart';
 import 'package:recipe_kitchen_app/india/chickenBiryani.dart';
+import 'package:recipe_kitchen_app/india/chickenPilaf.dart';
+import 'package:recipe_kitchen_app/india/chickenTikka.dart';
+import 'package:recipe_kitchen_app/india/dalSoup.dart';
 import 'package:recipe_kitchen_app/india/eggCurry.dart';
+import 'package:recipe_kitchen_app/india/halloumi.dart';
+import 'package:recipe_kitchen_app/india/spicyChickenTomato.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 
 class IndiaPage extends StatefulWidget {
@@ -52,6 +59,55 @@ class _IndiaPageState extends State<IndiaPage> {
                     builder: (context) => eggCurry(),
                   ),
                 );
+              } else if (nameRecipe[index] == "Chicken tikka masala") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => chickenTikka(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Bombay patatoes") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BombayPatatoes(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Aloo Sabzi") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => alooSabzi(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Chicken Pilaf") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => chickenPilaf(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Spicy Chicken tomato") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => spicyChickenTomato(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Halloumi Curry") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => halloumi(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Dal soup") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => dalSoup(),
+                  ),
+                );
               }
             },
           ),
@@ -70,23 +126,23 @@ class _IndiaPageState extends State<IndiaPage> {
 final nameRecipe = [
   "Chicken Biryani",
   "Egg Curry",
-  "Chinese cabbage rolls",
-  "Chinese garlic pancake",
-  "Chinese sweet sour omelette",
-  "Chinese eggplant",
-  "Chinese jiaozi",
-  "Chinese cumin lamb",
-  "Sweet pork ribs",
+  "Chicken tikka masala",
+  "Bombay patatoes",
+  "Aloo Sabzi",
+  "Chicken Pilaf",
+  "Spicy Chicken tomato",
+  "Halloumi Curry",
+  "Dal soup",
 ];
 
 final imageUrls = [
   "https://images.services.kitchenstories.io/YVIlql4cLAqTF3XTVizFZqZGFJk=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R1669-photo-final-1.jpg",
   "https://images.services.kitchenstories.io/a5pwa-tIMa9uSt7PP-sbkDrL3ts=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2899-photo-final-3x4.jpg",
-  "https://images.services.kitchenstories.io/1Eoj4F9hr62zG5aYAjhWDIv5PhE=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/R735-photo-final-4x3.jpg",
-  "https://images.services.kitchenstories.io/5qKeEWUJ77gx9T3b3d93QEfBYRs=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2365-photo-final-1.jpg",
-  "https://images.services.kitchenstories.io/zJPaalxbVgy89lCB3AO87eSLf4E=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2575-photo-final-1.jpg",
-  "https://images.services.kitchenstories.io/CEXipQ8ZPAznZL4J1o5j11XN23k=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/R1202-photo-final.jpg",
-  "https://images.services.kitchenstories.io/WNNA0jo3QQasnc10-sfxK2ASzPY=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/A1349-article-photo-_8.jpg",
-  "https://images.services.kitchenstories.io/3BYth2w6bJPWI2H6E8vUCoRpTXk=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/R1134-photo-final-4x3.jpg",
-  "https://images.services.kitchenstories.io/UhmApqAdh2PtKZjbMhTnqOe4ej0=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/16_01_35_Final.jpg",
+  "https://images.services.kitchenstories.io/ixEH2Kp89NcwYxEmzb9MXpw8BAk=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/RP16_01_103_Final_1x1.jpg",
+  "https://images.services.kitchenstories.io/GWUG7oKMbgGPXCkgGmQbRrwtVw4=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2443-final-photo-_0.jpg",
+  "https://images.services.kitchenstories.io/EikZY3sMNHoQySuXsNYvcAUtd40=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2703-photo-final-1-4x3-72dpi_1.jpg",
+  "https://images.services.kitchenstories.io/1nCyqtHVSyCnGvudqLbtNk_gmaw=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/20_16_ChickenPilaf_TitlePicture.jpg",
+  "https://images.services.kitchenstories.io/F9h6uoHOavrDrCyNPoYTVcRwI54=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2977-photo-final-1-4x3.jpg",
+  "https://images.services.kitchenstories.io/pOTl7cQt1pFiqKOSf8Yy46fTDQA=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2675-final-photo-_2.jpg",
+  "https://images.services.kitchenstories.io/9bw4Myp9OKnMjVVoLF2SgCMikSk=/1920x0/filters:quality(80)/images.kitchenstories.io/recipeImages/20_15_DalSoup_TitlePicture.jpg",
 ];
