@@ -7,11 +7,13 @@ import 'package:recipe_kitchen_app/greek/greek.dart';
 import 'package:recipe_kitchen_app/india/india.dart';
 import 'package:recipe_kitchen_app/japan/japan.dart';
 import 'package:recipe_kitchen_app/korea/korea.dart';
+import 'package:recipe_kitchen_app/lebanon/lebanon.dart';
 import 'package:recipe_kitchen_app/mexican/mexican.dart';
 import 'package:recipe_kitchen_app/nav/first_page.dart';
 import 'package:recipe_kitchen_app/spain/spain.dart';
 import 'package:recipe_kitchen_app/thai/thai.dart';
 import 'package:recipe_kitchen_app/usa.dart/usa.dart';
+import 'package:recipe_kitchen_app/vietnam/vietnam.dart';
 
 class PreferancePage extends StatelessWidget {
   PreferancePage({super.key});
@@ -179,7 +181,7 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('Inde Food'),
             subtitle: Text('best indian food recipe dishes'),
-            trailing: Icon(Icons.arrow_forward_ios),
+            trailing: Icon(Icons.more_vert),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
@@ -216,6 +218,13 @@ class PreferancePage extends StatelessWidget {
             title: Text('Lebanese Food'),
             subtitle: Text('best Lebanese food recipe dishes'),
             trailing: Icon(Icons.more_vert),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => LebanonPage(),
+                ),
+              );
+            },
           ),
           Divider(height: 0),
           ListTile(
@@ -226,7 +235,14 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('Vietnam Food'),
             subtitle: Text('best vietnam food recipe dishes'),
-            trailing: Icon(Icons.more_vert),
+            trailing: Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => VietnamPage(),
+                ),
+              );
+            },
           ),
           Divider(height: 0),
           ListTile(
