@@ -699,6 +699,18 @@ flutter:
     - assets/step/arugulaPasta_S1.jpeg
     - assets/step/arugulaPasta_S2.jpeg
     - assets/step/arugulaPasta_S3.jpeg
+    # image morrocco
+    - assets/step/moroccanChickpea_M.jpeg
+    - assets/step/moroccanChickpea_S1.jpeg
+    - assets/step/moroccanChickpea_S2.jpeg
+    - assets/step/moroccanChickpea_S3.jpeg
+    - assets/step/moroccanChickpea_S4.jpeg
+    - assets/step/moroccanChickpea_S5.jpeg
+    - assets/step/chermoula_M.jpeg
+    - assets/step/chermoula_S1.jpeg
+    - assets/step/chermoula_S2.jpeg
+    - assets/step/chermoula_S3.jpeg
+    - assets/step/chermoula_S4.jpeg
 
 
 
