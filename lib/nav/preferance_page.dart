@@ -13,7 +13,7 @@ import 'package:recipe_kitchen_app/mexican/mexican.dart';
 import 'package:recipe_kitchen_app/nav/first_page.dart';
 import 'package:recipe_kitchen_app/spain/spain.dart';
 import 'package:recipe_kitchen_app/thai/thai.dart';
-import 'package:recipe_kitchen_app/usa.dart/usa.dart';
+import 'package:recipe_kitchen_app/usa/usa.dart';
 import 'package:recipe_kitchen_app/vietnam/vietnam.dart';
 
 class PreferancePage extends StatelessWidget {

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_kitchen_app/usa.dart/applePie.dart';
-import 'package:recipe_kitchen_app/usa.dart/baconEggs.dart';
-import 'package:recipe_kitchen_app/usa.dart/burger.dart';
-import 'package:recipe_kitchen_app/usa.dart/chickenWings.dart';
-import 'package:recipe_kitchen_app/usa.dart/eggsBenedict.dart';
-import 'package:recipe_kitchen_app/usa.dart/friedChicken.dart';
-import 'package:recipe_kitchen_app/usa.dart/pancakes.dart';
-import 'package:recipe_kitchen_app/usa.dart/steak.dart';
+import 'package:recipe_kitchen_app/usa/applePie.dart';
+import 'package:recipe_kitchen_app/usa/baconEggs.dart';
+import 'package:recipe_kitchen_app/usa/burger.dart';
+import 'package:recipe_kitchen_app/usa/chickenWings.dart';
+import 'package:recipe_kitchen_app/usa/eggsBenedict.dart';
+import 'package:recipe_kitchen_app/usa/friedChicken.dart';
+import 'package:recipe_kitchen_app/usa/pancakes.dart';
+import 'package:recipe_kitchen_app/usa/steak.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 
 class UsaPage extends StatefulWidget {
