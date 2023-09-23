@@ -658,6 +658,48 @@ flutter:
     - assets/step/zwiebelrostbraten_S2.jpeg
     - assets/step/zwiebelrostbraten_S3.jpeg
     - assets/step/zwiebelrostbraten_S4.jpeg
+    # image italian
+    - assets/step/PesceAcquaPazza_M.jpeg
+    - assets/step/PesceAcquaPazza_S1.jpeg
+    - assets/step/PesceAcquaPazza_S2.jpeg
+    - assets/step/PesceAcquaPazza_S3.jpeg
+    - assets/step/PesceAcquaPazza_S4.jpeg
+    - assets/step/italianLasagna_M.jpeg
+    - assets/step/italianLasagna_S1.jpeg
+    - assets/step/italianLasagna_S2.jpeg
+    - assets/step/italianLasagna_S3.jpeg
+    - assets/step/italianLasagna_S4.jpeg
+    - assets/step/italianLasagna_S5.jpeg
+    - assets/step/italianLasagna_S6.jpeg
+    - assets/step/italianLasagna_S7.jpeg 
+    - assets/step/zucchini_M.jpeg
+    - assets/step/zucchini_S1.jpeg
+    - assets/step/zucchini_S2.jpeg
+    - assets/step/zucchini_S3.jpeg
+    - assets/step/spaghettiCarbonara_M.jpeg
+    - assets/step/chickenParmesan_M.jpeg
+    - assets/step/chickenParmesan_S1.jpeg
+    - assets/step/chickenParmesan_S2.jpeg
+    - assets/step/chickenParmesan_S3.jpeg
+    - assets/step/chickenParmesan_S4.jpeg
+    - assets/step/chickenParmesan_S5.jpeg
+    - assets/step/chickenParmesan_S6.jpeg
+    - assets/step/Gnocchi_M.jpeg
+    - assets/step/Gnocchi_S1.jpeg
+    - assets/step/Gnocchi_S2.jpeg
+    - assets/step/Gnocchi_S3.jpeg
+    - assets/step/Gnocchi_S4.jpeg
+    - assets/step/Gnocchi_S5.jpeg
+    - assets/step/pastaAlLimone_M.jpeg
+    - assets/step/pastaAlLimone_S1.jpeg
+    - assets/step/pastaAlLimone_S2.jpeg
+    - assets/step/pastaAlLimone_S3.jpeg
+    - assets/step/pastaAlLimone_S4.jpeg
+    - assets/step/arugulaPasta_M.jpeg
+    - assets/step/arugulaPasta_S1.jpeg
+    - assets/step/arugulaPasta_S2.jpeg
+    - assets/step/arugulaPasta_S3.jpeg
+
 
 
 
