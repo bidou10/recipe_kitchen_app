@@ -612,7 +612,57 @@ flutter:
     - assets/step/summerRolls_S4.jpeg
     - assets/step/summerRolls_S5.jpeg
     - assets/step/summerRolls_S6.jpeg
+  # image german
+    - assets/step/bauernfrühstück_M.jpeg
+    - assets/step/bauernfrühstück_S1.jpeg
+    - assets/step/bauernfrühstück_S2.jpeg
+    - assets/step/bauernfrühstück_S3.jpeg
+    - assets/step/brötchenkranz_M.jpeg
+    - assets/step/brötchenkranz_S1.jpeg
+    - assets/step/brötchenkranz_S2.jpeg
+    - assets/step/brötchenkranz_S3.jpeg
+    - assets/step/brötchenkranz_S4.jpeg
+    - assets/step/grünkohl_M.jpeg
+    - assets/step/handbrot_M.jpeg
+    - assets/step/handbrot_S1.jpeg
+    - assets/step/handbrot_S2.jpeg
+    - assets/step/handbrot_S3.jpeg
+    - assets/step/handbrot_S4.jpeg
+    - assets/step/kartoffelsuppe_M.jpeg
+    - assets/step/kartoffelsuppe_S1.jpeg
+    - assets/step/kartoffelsuppe_S2.jpeg
+    - assets/step/kartoffelsuppe_S3.jpeg
+    - assets/step/kohlsuppe_M.jpeg
+    - assets/step/kohlsuppe_S1.jpeg
+    - assets/step/kohlsuppe_S2.jpeg
+    - assets/step/königsbergerKlopse_M.jpeg
+    - assets/step/rotkohl_M.jpeg
+    - assets/step/rotkohl_S1.jpeg
+    - assets/step/rotkohl_S2.jpeg
+    - assets/step/rotkohl_S3.jpeg
+    - assets/step/sauerkrautPork_M.jpeg
+    - assets/step/sauerkrautPork_S1.jpeg
+    - assets/step/sauerkrautPork_S2.jpeg
+    - assets/step/sauerkrautPork_S3.jpeg
+    - assets/step/sauerkrautPork_S4.jpeg
+    - assets/step/sauerkrautPork_S5.jpeg
+    - assets/step/schnitzel_M.jpeg
+    - assets/step/schnitzel_S1.jpeg
+    - assets/step/schnitzel_S2.jpeg
+    - assets/step/schnitzel_S3.jpeg
+    - assets/step/schnitzel_S4.jpeg
+    - assets/step/schnitzel_S5.jpeg
+    - assets/step/schnitzel_S6.jpeg
+    - assets/step/zwiebelrostbraten_M.jpeg
+    - assets/step/zwiebelrostbraten_S1.jpeg
+    - assets/step/zwiebelrostbraten_S2.jpeg
+    - assets/step/zwiebelrostbraten_S3.jpeg
+    - assets/step/zwiebelrostbraten_S4.jpeg
 
+
+
+    
+    
 
 
 
