@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_kitchen_app/thai/thaiChickenNoodle.dart';
+import 'package:recipe_kitchen_app/thai/thaiChickenPotato.dart';
 import 'package:recipe_kitchen_app/thai/thaiClassic.dart';
-import 'package:recipe_kitchen_app/thai/thaiRedCurry.dart';
+import 'package:recipe_kitchen_app/thai/thaiGreenCurry.dart';
+import 'package:recipe_kitchen_app/thai/thaiHolyBasil.dart';
+import 'package:recipe_kitchen_app/thai/thaiLemongrass.dart';
+import 'package:recipe_kitchen_app/thai/thaiMushroomOmelette.dart';
 import 'package:recipe_kitchen_app/thai/thaiShrimp.dart';
 import 'package:sticky_headers/sticky_headers.dart';
-import 'package:flutter_sticky_header/flutter_sticky_header.dart';
 
 class ThaiPage extends StatefulWidget {
   @override
@@ -40,26 +44,65 @@ class _ThaiPageState extends State<ThaiPage> {
             trailing: Text('Click here for Details of ${nameRecipe[index]}'),
             tileColor: Colors.amber,
             onTap: () {
-              if (nameRecipe[index] == "Pad thai shrimp") {
+              if (nameRecipe[index] == "Pad Thai Shrimp") {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => ThaiShrimp(),
                   ),
                 );
-              } else if (nameRecipe[index] == "Pad thai classic") {
+              } else if (nameRecipe[index] == "Thai Stir Fried Noodles") {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => ThaiClassic(),
                   ),
                 );
-              } else if (nameRecipe[index] == "Red curry") {
+              } else if (nameRecipe[index] == "Thai Red Curry") {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ThaiRedCurry(),
+                    builder: (context) => ThaiClassic(),
                   ),
+                );
+              } else if (nameRecipe[index] ==
+                  "Thai Holy basil and pork stir fry") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ThaiHolyBasil(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Thai mushroom tuffed omelette") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ThaiMushroomOmelette(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Thai chicken noodles soup") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => thaiChickenNoodle(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Lemongrass meatballs") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => thaiLemongrass(),
+                  ),
+                );
+              } else if (nameRecipe[index] == "Thai chicken sweet potato") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => thaiChickenPotato()),
+                );
+              } else if (nameRecipe[index] == "Thai green curry shrimp") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => thaiGreenCurry()),
                 );
               }
             },
@@ -91,13 +134,13 @@ final nameRecipe = [
 ];
 
 final imageUrls = [
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/pad-thai.webp",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/pad-thai-2.webp",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/thai-red-curry(1).webp",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Minced-Pork-Stir-Fried-with-Thai-Basil.webp",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Stir-Fried-Chicken-with-Cashew-Nuts.webp",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Spicy-Green-Papaya-Salad.webp",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Thai-Coconut-Curry-Noodle-Soup.webp",
-  "https://images.asiahighlights.com/allpicture/2022/02/ca9d3c345fb14950adf2d939_cut_750x400_264.webp",
-  "https://data.asiahighlights.com/image/travel-guide/thailand/thai-food/Pad-See-Ew.webp",
+  "https://images.services.kitchenstories.io/T1x90P_WjjoE-JvJvbdUGWTUNFM=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2042-photo-final-002-16x9.jpg",
+  "https://images.services.kitchenstories.io/OmFK5XJFzzF4iHAnUB1WYiUuORI=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R1569-photo-final-02.jpg",
+  "https://images.services.kitchenstories.io/gqslNuqfstd1T9mtoE64Q1mTmgw=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2960-final-photo-2.jpg",
+  "https://images.services.kitchenstories.io/GaL2UgQSez4gVzBLRYdd-5h1pDo=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2592-final-photo.jpg",
+  "https://images.services.kitchenstories.io/UAzPu-TxYoZOUKiSQi2aK6RsJE0=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R1881-photo-final-4.jpg",
+  "https://images.services.kitchenstories.io/cJ8vygOwgm8sjiCnY_GjBhTQ2GQ=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/ThaiChickenNoodleSoup_Final.jpg",
+  "https://images.services.kitchenstories.io/kFQUdE54EOvyVczP3z__XIULAT4=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2676-final-photo-_2.jpg",
+  "https://images.services.kitchenstories.io/grYIGt5CdDqeTCZLShfMlnu9jT0=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/R666-photo-final-4x3.jpg",
+  "https://images.services.kitchenstories.io/7OFl-ilAoCeWSvrX5nvo2MRRJYY=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/09_01_ThaiGreenCurryWithShrimp_titlePicture.jpg",
 ];
