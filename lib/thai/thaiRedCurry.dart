@@ -1,25 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
-<<<<<<< HEAD
-=======
 import 'package:full_screen_image/full_screen_image.dart';
->>>>>>> V1Final
-import 'package:recipe_kitchen_app/thai/thaiClassic.dart';
-import 'package:recipe_kitchen_app/thai/thaiRedCurry.dart';
-import 'package:recipe_kitchen_app/thai/thaiShrimp.dart';
-import 'package:sticky_headers/sticky_headers.dart';
 
 class ThaiRedCurry extends StatelessWidget {
-  const ThaiRedCurry({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-<<<<<<< HEAD
-        title: Text('Red Curry'),
-=======
-        title: Text('Thai Red Curry'),
+        title: Text('Thai Red curry'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -27,14 +14,14 @@ class ThaiRedCurry extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              'assets/step/red_curry_M.jpeg',
+              'assets/step/RedCurry_M.jpeg',
               height: 300,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
             SizedBox(height: 16.0),
             Text(
-              'Thai red curry with turkey',
+              'Thai Red Curry',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -42,14 +29,19 @@ class ThaiRedCurry extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
-              'Recipe for two persons',
+              'authentic traditional pad thai of thailand.',
               style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.bold,
+                fontSize: 16.0,
               ),
             ),
             Text(
-              'Ingredient List: \n\n[Step 1] : 200 g turkey breasts ,½ bell pepper ,½ carrot ,1 shallots ,1 cloves garlic ,1 tsp ginger ,½ stalk lemongrass ,\n\n [Step 2] :½ tbsp Thai red curry paste, coconut oil (for frying) \n\n [Step 3] : ½ tbsp soy sauce 150 ml, coconut milk ,7½ g cilantro, 50 ml vegetable broth, 50 g spinach ,salt, sugar, jasmine rice (for serving) ',
+              'Recipe for two persons',
+              style: TextStyle(
+                fontSize: 16,
+              ),
+            ),
+            Text(
+              'Ingredient List: \n\n[Step 1] : 1 clove garlic 100 g snow peas 100 g green beans 1 red bell pepper 1 carrot 2 scallions 1 stalk lemongrass 300 g chicken breasts,\n\n [Step 2] : 4 tbsp sesame oil 1 tbsp red curry paste\n\n [Step 3] :  300 ml coconut milk 100 ml chicken stock 2 tbsp soy sauce 1 tbsp fish sauce 30 g cashews 7 g Thai basil jasmine rice (cooked, for serving)',
               style: TextStyle(
                 letterSpacing: 0.8,
                 fontSize: 16.0,
@@ -59,13 +51,13 @@ class ThaiRedCurry extends StatelessWidget {
               height: 8.0,
             ),
             Text(
-              'Items necessary: \n\n Step 1 :knife, cutting board \n\n Step 2 : frying pan (deep)spatula \n\n Step 3 : none',
+              'Items necessary: \n\n Step 1 : cutting board ,knife ,peeler \n\n Step 2 : wok ,spatula.\n\n Step 3: none',
               style: TextStyle(fontSize: 16, letterSpacing: 0.5),
             ),
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageRedCurry.length,
+                imageThaiRedCurry.length,
                 (index) {
                   return InkWell(
                     onTap: () {
@@ -104,6 +96,9 @@ class ThaiRedCurry extends StatelessWidget {
                                     fontWeight: FontWeight.w700,
                                   ),
                                 ),
+                                SizedBox(
+                                  height: 10,
+                                ),
                                 Text(
                                   '${product[index]['info']}',
                                   style: TextStyle(
@@ -129,33 +124,33 @@ class ThaiRedCurry extends StatelessWidget {
   }
 }
 
-const product = [
-  {
-    "assets": "assets/step/red_curry_M.jpeg",
-    "info": "Final photo",
-  },
-  {
-    "assets": "assets/step/red_curry_S1.jpeg",
-    "info":
-        "Cut turkey breast into approx. 2 cm/ 0.8 in. wide strips. Remove the core and slice the bell pepper into strips. Slice carrot diagonally. Halve shallots and slice into fine rings. Peel and finely mince garlic and ginger. Smash lemongrass with the back of a knife and chop finely.",
-  },
-  {
-    "assets": "assets/step/red_curry_S2.jpeg",
-    "info":
-        "In a deep frying pan or a wok, heat some coconut oil over medium heat. Once it’s melted, add shallots, ginger and garlic. Fry for approx. 2–3 min., until the shallots have softened and turned translucent. Add Thai curry paste and lemongrass and fry for approx. 1 min. until fragrant. Then add the turkey pieces and fry for approx. 3–5 min. while stirring. Add vegetables and let cook for approx. 2 min.",
-  },
-  {
-    "assets": "assets/step/red_curry_S3.jpeg",
-    "info":
-        "Deglaze with coconut milk, then season with soy sauce. Let simmer for approx. 15–20 min. or until the turkey is cooked through. Meanwhile, roughly chop most of the cilantro and set some aside for garnishing. If the curry is too creamy, add a little bit of broth one splash at a time until the desired consistency is reached. Then add spinach and cook briefly until the leaves wilt. Stir in the cilantro and season the curry with salt and sugar to taste. Serve with cooked jasmine rice and garnish with remaining cilantro.",
-  },
+final imageThaiRedCurry = [
+  "assets/step/RedCurry_M.jpeg",
+  "assets/step/RedCurry_S1.jpeg",
+  "assets/step/RedCurry_S2.jpeg",
+  "assets/step/RedCurry_S3.jpeg",
 ];
 
-final imageRedCurry = [
-  "assets/step/red_curry_M.jpeg",
-  "assets/step/red_curry_S1.jpeg",
-  "assets/step/red_curry_S2.jpeg",
-  "assets/step/red_curry_S3.jpeg",
+const product = [
+  {
+    "assets": "assets/step/RedCurry_M.jpeg",
+    "info": "Final photo , Enjoy your meal",
+  },
+  {
+    "assets": "assets/step/RedCurry_S1.jpeg",
+    "info":
+        "Finely mince garlic. Trim ends of snow peas and green beans. Trim ends of bell pepper and remove seeds. Peel carrots. Slice snow peas, green beans, bell pepper, carrots, and scallions into thin matchsticks. Bruise lemongrass with the back of the knife to help release flavor. Slice chicken into strips.",
+  },
+  {
+    "assets": "assets/step/RedCurry_S2.jpeg",
+    "info":
+        "Heat half of the sesame oil in a wok set over medium-high heat and briefly sear chicken, approx. 3 min. Remove and set aside. Add remaining sesame oil to the wok, then add the curry paste, whole lemongrass stalk, and garlic and fry for approx. 3 min until fragrant.",
+  },
+  {
+    "assets": "assets/step/RedCurry_S3.jpeg",
+    "info":
+        "Add coconut milk and chicken stock, followed by the vegetables. Bring to a boil, add soy sauce and fish sauce, reduce heat to low, and let simmer for 5 min. Add chicken and let cook for another 5 min. Serve with rice and garnish with cashew nuts and Thai basil. Enjoy!"
+  },
 ];
 
 class FullScreenPage extends StatelessWidget {
@@ -184,7 +179,6 @@ class FullScreenPage extends StatelessWidget {
           fit: BoxFit.cover,
         ),
         disposeLevel: DisposeLevel.High,
->>>>>>> V1Final
       ),
     );
   }

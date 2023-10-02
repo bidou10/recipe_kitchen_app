@@ -51,14 +51,14 @@ class _ThaiPageState extends State<ThaiPage> {
                     builder: (context) => ThaiShrimp(),
                   ),
                 );
-              } else if (nameRecipe[index] == "Thai Stir Fried Noodles") {
+              } else if (nameRecipe[index] == "Pad thai classic") {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => ThaiClassic(),
                   ),
                 );
-              } else if (nameRecipe[index] == "Thai Red Curry") {
+              } else if (nameRecipe[index] == "Red curry") {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -122,7 +122,7 @@ class _ThaiPageState extends State<ThaiPage> {
 }
 
 final nameRecipe = [
-  "Pad thai shrimp",
+  "Pad Thai Shrimp",
   "Pad thai classic",
   "Red curry",
   "Minced prok",
@@ -136,7 +136,7 @@ final nameRecipe = [
 final imageUrls = [
   "https://images.services.kitchenstories.io/T1x90P_WjjoE-JvJvbdUGWTUNFM=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2042-photo-final-002-16x9.jpg",
   "https://images.services.kitchenstories.io/OmFK5XJFzzF4iHAnUB1WYiUuORI=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R1569-photo-final-02.jpg",
-  "https://images.services.kitchenstories.io/gqslNuqfstd1T9mtoE64Q1mTmgw=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2960-final-photo-2.jpg",
+  "https://images.services.kitchenstories.io/HSFxkXMUF0PQizWAzT6QPHdEeXE=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R1565-photo-final-01.jpg",
   "https://images.services.kitchenstories.io/GaL2UgQSez4gVzBLRYdd-5h1pDo=/1920x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R2592-final-photo.jpg",
   "https://images.services.kitchenstories.io/UAzPu-TxYoZOUKiSQi2aK6RsJE0=/1920x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R1881-photo-final-4.jpg",
   "https://images.services.kitchenstories.io/cJ8vygOwgm8sjiCnY_GjBhTQ2GQ=/1920x0/filters:quality(85)/images.kitchenstories.io/recipeImages/ThaiChickenNoodleSoup_Final.jpg",
