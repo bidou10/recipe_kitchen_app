@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:full_screen_image/full_screen_image.dart';
 
 class ThaiClassic extends StatelessWidget {
@@ -29,10 +30,15 @@ class ThaiClassic extends StatelessWidget {
             ),
             SizedBox(height: 8.0),
             Text(
+              'authentic traditional pad thai of thailand.',
+              style: TextStyle(
+                fontSize: 16.0,
+              ),
+            ),
+            Text(
               'Recipe for two persons',
               style: TextStyle(
-                fontSize: 14.0,
-                fontWeight: FontWeight.bold,
+                fontSize: 16,
               ),
             ),
             Text(
