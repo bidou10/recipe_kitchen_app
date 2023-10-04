@@ -54,7 +54,7 @@ class spaghettiCarbonara extends StatelessWidget {
             SizedBox(height: 16.0),
             Column(
               children: List.generate(
-                imageChorizoPotato.length,
+                imageSpaghetti.length,
                 (index) {
                   return InkWell(
                     onTap: () {
@@ -158,37 +158,32 @@ const product = [
     "info": "Final photo",
   },
   {
-    "assets": "",
+    "assets": "assets/step/spaghettiCarbonara_M.jpeg",
     "info":
         "In a large serving bowl, whisk together egg yolks, a few grinds of black pepper, and cheese. Bring large pot of generously salted water to a boil. Add spaghetti and cook until al dente, approx. 7 – 9 min., or according to package instructions. Reserve about 120 ml/ 1/2 cup pasta water before draining and setting aside",
   },
   {
-    "assets": "",
+    "assets": "assets/step/spaghettiCarbonara_M.jpeg",
     "info":
         "Fry diced guanciale until it's crisp and the fat has rendered. Add peeled and crushed garlic, if desired.",
   },
   {
-    "assets": "",
+    "assets": "assets/step/spaghettiCarbonara_M.jpeg",
     "info":
         "Add pasta to frying pan and toss until coated with the fat, then remove the pan from the heat.",
   },
   {
-    "assets": "",
+    "assets": "assets/step/spaghettiCarbonara_M.jpeg",
     "info":
         "Transfer pasta from the frying pan along with half of the reserved pasta water to a serving bowl with the egg mixture, mixing everything together quickly so that the eggs don’t scramble. Toss until the mixture turns creamy and thick, adding more pasta water as needed.",
   },
   {
-    "assets": "",
+    "assets": "assets/step/spaghettiCarbonara_M.jpeg",
     "info":
         "Season to taste with salt and black pepper and serve garnished with more cheese. Enjoy!",
   },
 ];
 
-final imageChorizoPotato = [
+final imageSpaghetti = [
   "assets/step/spaghettiCarbonara_M.jpeg",
-  "",
-  "",
-  "",
-  "",
-  "",
 ];

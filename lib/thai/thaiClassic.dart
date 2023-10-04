@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:full_screen_image/full_screen_image.dart';
 
 import 'package:full_screen_image/full_screen_image.dart';
 

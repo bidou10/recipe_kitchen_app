@@ -23,11 +23,16 @@ class LoginPage extends StatelessWidget {
         ),
       ),
       body: SafeArea(
+<<<<<<< HEAD
         child: Container(
           height: MediaQuery.of(context).size.height,
           width:
               MediaQuery.of(context).size.width, // utilise  80% de la largeur
           child: SingleChildScrollView(
+=======
+        child: SingleChildScrollView(
+          child: Flexible(
+>>>>>>> JapanDescriptionV1
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -38,7 +43,11 @@ class LoginPage extends StatelessWidget {
                         Text(
                           "Login",
                           style: TextStyle(
+<<<<<<< HEAD
                             fontSize: 30,
+=======
+                            fontSize: 20,
+>>>>>>> JapanDescriptionV1
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -51,13 +60,21 @@ class LoginPage extends StatelessWidget {
                             "Welcome back ! Login in your account for to find old recipes that you used before",
                             textAlign: TextAlign.justify,
                             style: TextStyle(
+<<<<<<< HEAD
                               fontSize: 19,
+=======
+                              fontSize: 15,
+>>>>>>> JapanDescriptionV1
                               color: Colors.grey[700],
                             ),
                           ),
                         ),
                         SizedBox(
+<<<<<<< HEAD
                           height: 30,
+=======
+                          height: 10,
+>>>>>>> JapanDescriptionV1
                         ),
                         Container(
                           height: MediaQuery.of(context).size.height / 4,

@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:full_screen_image/full_screen_image.dart';
+import 'package:recipe_kitchen_app/thai/thaiClassic.dart';
+import 'package:recipe_kitchen_app/thai/thaiRedCurry.dart';
+import 'package:recipe_kitchen_app/thai/thaiShrimp.dart';
+import 'package:sticky_headers/sticky_headers.dart';
 
 class ThaiRedCurry extends StatelessWidget {
   @override
@@ -96,9 +101,6 @@ class ThaiRedCurry extends StatelessWidget {
                                     fontWeight: FontWeight.w700,
                                   ),
                                 ),
-                                SizedBox(
-                                  height: 10,
-                                ),
                                 Text(
                                   '${product[index]['info']}',
                                   style: TextStyle(
@@ -151,6 +153,13 @@ const product = [
     "info":
         "Add coconut milk and chicken stock, followed by the vegetables. Bring to a boil, add soy sauce and fish sauce, reduce heat to low, and let simmer for 5 min. Add chicken and let cook for another 5 min. Serve with rice and garnish with cashew nuts and Thai basil. Enjoy!"
   },
+];
+
+final imageRedCurry = [
+  "assets/step/red_curry_M.jpeg",
+  "assets/step/red_curry_S1.jpeg",
+  "assets/step/red_curry_S2.jpeg",
+  "assets/step/red_curry_S3.jpeg",
 ];
 
 class FullScreenPage extends StatelessWidget {
