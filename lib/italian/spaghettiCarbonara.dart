@@ -186,9 +186,4 @@ const product = [
 
 final imageChorizoPotato = [
   "assets/step/spaghettiCarbonara_M.jpeg",
-  "",
-  "",
-  "",
-  "",
-  "",
 ];

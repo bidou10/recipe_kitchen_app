@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_kitchen_app/nav/preferance_page.dart';
 import 'package:recipe_kitchen_app/nav/user_experience.dart';
 
 class SignUpPage extends StatelessWidget {
@@ -22,9 +23,7 @@ class SignUpPage extends StatelessWidget {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Container(
-            height: MediaQuery.of(context).size.height,
-            width: double.infinity,
+          child: Flexible(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -41,7 +40,7 @@ class SignUpPage extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          height: 20,
+                          height: 10,
                         ),
                         Text(
                           "Create an Account,Its free",
@@ -51,7 +50,7 @@ class SignUpPage extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          height: 30,
+                          height: 10,
                         ),
                         Container(
                           height: MediaQuery.of(context).size.height / 3,
@@ -62,7 +61,7 @@ class SignUpPage extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          height: 20,
+                          height: 10,
                         )
                       ],
                     ),
@@ -89,12 +88,12 @@ class SignUpPage extends StatelessWidget {
                                 left: BorderSide(color: Colors.black))),
                         child: MaterialButton(
                           minWidth: double.infinity,
-                          height: 60,
+                          height: 40,
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => UserPage(),
+                                builder: (context) => PreferancePage(),
                               ),
                             );
                           },
@@ -112,7 +111,7 @@ class SignUpPage extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 10,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -165,7 +164,7 @@ Widget makeInput({label, obsureText = false}) {
         ),
       ),
       SizedBox(
-        height: 30,
+        height: 10,
       )
     ],
   );

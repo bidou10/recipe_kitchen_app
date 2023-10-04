@@ -6,10 +6,12 @@ import 'package:recipe_kitchen_app/france/france.dart';
 import 'package:recipe_kitchen_app/german/german.dart';
 import 'package:recipe_kitchen_app/greek/greek.dart';
 import 'package:recipe_kitchen_app/india/india.dart';
+import 'package:recipe_kitchen_app/italian/italian.dart';
 import 'package:recipe_kitchen_app/japan/japan.dart';
 import 'package:recipe_kitchen_app/korea/korea.dart';
 import 'package:recipe_kitchen_app/lebanon/lebanon.dart';
 import 'package:recipe_kitchen_app/mexican/mexican.dart';
+import 'package:recipe_kitchen_app/morocco/morocco.dart';
 import 'package:recipe_kitchen_app/nav/first_page.dart';
 import 'package:recipe_kitchen_app/spain/spain.dart';
 import 'package:recipe_kitchen_app/thai/thai.dart';
@@ -272,7 +274,14 @@ class PreferancePage extends StatelessWidget {
             ),
             title: Text('Italian Food'),
             subtitle: Text('best italian food recipe dishes'),
-            trailing: Icon(Icons.arrow_forward_ios),
+            trailing: Icon(Icons.more_vert),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => ItalianPage(),
+                ),
+              );
+            },
           ),
           ListTile(
             leading: CircleAvatar(
@@ -283,6 +292,13 @@ class PreferancePage extends StatelessWidget {
             title: Text('Morocco Food'),
             subtitle: Text('best moroccan food recipe dishes'),
             trailing: Icon(Icons.more_vert),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => MoroccoPage(),
+                ),
+              );
+            },
           ),
         ],
       ),

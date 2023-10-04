@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_kitchen_app/nav/preferance_page.dart';
 import 'package:recipe_kitchen_app/nav/user_experience.dart';
 
 class LoginPage extends StatelessWidget {
@@ -21,113 +22,115 @@ class LoginPage extends StatelessWidget {
           ),
         ),
       ),
-      body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Column(
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Flexible(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
                   children: [
-                    Text(
-                      "Login",
-                      style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
+                    Column(
+                      children: [
+                        Text(
+                          "Login",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Container(
+                          padding: EdgeInsets.only(left: 30, right: 30),
+                          child: Text(
+                            "Welcome back ! Login in your account for to find old recipes that you used before",
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.grey[700],
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Container(
+                          height: MediaQuery.of(context).size.height / 4,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/icons/loginv1.png'),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 40),
+                      child: Column(
+                        children: [
+                          makeInput(label: "Email"),
+                          makeInput(label: "Password", obsureText: true),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 40),
+                      child: Container(
+                        padding: EdgeInsets.only(top: 3, left: 3),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(40),
+                            border: Border(
+                                bottom: BorderSide(color: Colors.black),
+                                top: BorderSide(color: Colors.black),
+                                right: BorderSide(color: Colors.black),
+                                left: BorderSide(color: Colors.black))),
+                        child: MaterialButton(
+                          minWidth: double.infinity,
+                          height: 60,
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => PreferancePage(),
+                              ),
+                            );
+                          },
+                          color: Colors.amber[400],
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(40)),
+                          child: Text(
+                            "Login",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 25,
+                              color: Colors.black,
+                              fontStyle: FontStyle.italic,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                     SizedBox(
                       height: 20,
                     ),
-                    Container(
-                      padding: EdgeInsets.only(left: 30, right: 30),
-                      child: Text(
-                        "Welcome back ! Login in your account for to find old recipes that you used before",
-                        textAlign: TextAlign.justify,
-                        style: TextStyle(
-                          fontSize: 19,
-                          color: Colors.grey[700],
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("Dont have an account?"),
+                        Text(
+                          "Sign Up",
+                          style: TextStyle(
+                              fontWeight: FontWeight.w600, fontSize: 18),
                         ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    Container(
-                      height: MediaQuery.of(context).size.height / 4,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('assets/icons/loginv1.png'),
-                        ),
-                      ),
-                    ),
+                      ],
+                    )
                   ],
                 ),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 40),
-                  child: Column(
-                    children: [
-                      makeInput(label: "Email"),
-                      makeInput(label: "Password", obsureText: true),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 40),
-                  child: Container(
-                    padding: EdgeInsets.only(top: 3, left: 3),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(40),
-                        border: Border(
-                            bottom: BorderSide(color: Colors.black),
-                            top: BorderSide(color: Colors.black),
-                            right: BorderSide(color: Colors.black),
-                            left: BorderSide(color: Colors.black))),
-                    child: MaterialButton(
-                      minWidth: double.infinity,
-                      height: 60,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => UserPage(),
-                          ),
-                        );
-                      },
-                      color: Colors.amber[400],
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(40)),
-                      child: Text(
-                        "Login",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 25,
-                          color: Colors.black,
-                          fontStyle: FontStyle.italic,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text("Dont have an account?"),
-                    Text(
-                      "Sign Up",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
-                    ),
-                  ],
-                )
               ],
             ),
-          ],
+          ),
         ),
       ),
     );
